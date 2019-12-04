@@ -4,12 +4,12 @@ self.__precacheManifest = [
     "url": "/static/media/section-3-partner-mobile.dfb759e6.png"
   },
   {
-    "revision": "8544ae1c07dbe9c77e6f",
+    "revision": "eaae07538dff6eddf2c4",
     "url": "/static/css/main.e2aad579.chunk.css"
   },
   {
-    "revision": "4589b9b43bbad8c86a72",
-    "url": "/static/js/runtime~main.5af24b5c.js"
+    "revision": "08aa01330b592455644f",
+    "url": "/static/js/runtime~main.579f245a.js"
   },
   {
     "revision": "6f87c0a38954bf07ac15",
@@ -24,8 +24,8 @@ self.__precacheManifest = [
     "url": "/static/media/section-2-alex.a11ad30b.png"
   },
   {
-    "revision": "604bafb4c576a673527a",
-    "url": "/static/js/4.50317051.chunk.js"
+    "revision": "03d42efce58072531c49",
+    "url": "/static/js/4.2660b814.chunk.js"
   },
   {
     "revision": "18d8d0694fec8623f8a2",
@@ -60,8 +60,8 @@ self.__precacheManifest = [
     "url": "/static/media/section-1-evoland.bfc2989f.png"
   },
   {
-    "revision": "8544ae1c07dbe9c77e6f",
-    "url": "/static/js/main.932a779a.chunk.js"
+    "revision": "eaae07538dff6eddf2c4",
+    "url": "/static/js/main.dbf54fb5.chunk.js"
   },
   {
     "revision": "3110379b583a895f915e4f329c94b417",
@@ -112,11 +112,11 @@ self.__precacheManifest = [
     "url": "/static/media/section-2-denny.f67491f9.png"
   },
   {
-    "revision": "604bafb4c576a673527a",
+    "revision": "03d42efce58072531c49",
     "url": "/static/css/4.28328e2e.chunk.css"
   },
   {
-    "revision": "a283fdda12409af4ce19c18f067ea8bc",
+    "revision": "a3ab9fcb1e23a020020ff6afa2e6c7f3",
     "url": "/index.html"
   }
 ];
