@@ -1,43 +1,43 @@
 self.__precacheManifest = [
   {
-    "revision": "dfb759e6aa768a6587713b34f357aae2",
-    "url": "/static/media/section-3-partner-mobile.dfb759e6.png"
+    "revision": "760b87d16a4b782cccf1a0badacb0382",
+    "url": "/static/media/section-3-partner-mobile.760b87d1.png"
   },
   {
-    "revision": "eaae07538dff6eddf2c4",
+    "revision": "fca6eb5bb9902c8834db",
     "url": "/static/css/main.e2aad579.chunk.css"
   },
   {
-    "revision": "08aa01330b592455644f",
-    "url": "/static/js/runtime~main.579f245a.js"
+    "revision": "7304fa42c319677d6967",
+    "url": "/static/js/runtime~main.c299971e.js"
   },
   {
     "revision": "6f87c0a38954bf07ac15",
     "url": "/static/js/2.32cecfc8.chunk.js"
   },
   {
-    "revision": "afeaf3e001256f1eba6b",
-    "url": "/static/js/3.796fdeb5.chunk.js"
+    "revision": "f92b90fa9c52f0df4b4f",
+    "url": "/static/js/3.53bf7c36.chunk.js"
   },
   {
     "revision": "a11ad30b716b68505e64b535499d3c53",
     "url": "/static/media/section-2-alex.a11ad30b.png"
   },
   {
-    "revision": "03d42efce58072531c49",
-    "url": "/static/js/4.2660b814.chunk.js"
+    "revision": "b4c1213e18b12522e44b",
+    "url": "/static/js/4.60f35676.chunk.js"
   },
   {
-    "revision": "18d8d0694fec8623f8a2",
-    "url": "/static/js/5.1af24038.chunk.js"
-  },
-  {
-    "revision": "1dcabfe91ab841d8bba2737620b29ddc",
-    "url": "/static/media/Eina01SemiBold.1dcabfe9.otf"
+    "revision": "675794bf9f26715605de",
+    "url": "/static/js/5.5d78c88e.chunk.js"
   },
   {
     "revision": "c411f608b82aaf80d9fa1ac9e316b3ce",
     "url": "/static/media/Eina01Regular.c411f608.otf"
+  },
+  {
+    "revision": "1dcabfe91ab841d8bba2737620b29ddc",
+    "url": "/static/media/Eina01SemiBold.1dcabfe9.otf"
   },
   {
     "revision": "9f04d8e29fb2c2e80892e10deea9608e",
@@ -52,20 +52,20 @@ self.__precacheManifest = [
     "url": "/static/media/logo.6b9d15b7.svg"
   },
   {
-    "revision": "3511f06a64e831a63ffd23a8d9e70337",
-    "url": "/static/media/logo-light.3511f06a.svg"
+    "revision": "780f4e7588be68e937944543a5a74cca",
+    "url": "/static/media/logo-light.780f4e75.svg"
   },
   {
     "revision": "bfc2989f3b125c77bc1a509e367d4551",
     "url": "/static/media/section-1-evoland.bfc2989f.png"
   },
   {
-    "revision": "eaae07538dff6eddf2c4",
-    "url": "/static/js/main.dbf54fb5.chunk.js"
+    "revision": "fca6eb5bb9902c8834db",
+    "url": "/static/js/main.5575d72b.chunk.js"
   },
   {
-    "revision": "3110379b583a895f915e4f329c94b417",
-    "url": "/static/media/section-3-partner.3110379b.png"
+    "revision": "3bc38b8064dde97177d613c86d4b9352",
+    "url": "/static/media/section-3-partner.3bc38b80.png"
   },
   {
     "revision": "77952c1b500e8d0b48b57ba81e11596a",
@@ -112,11 +112,11 @@ self.__precacheManifest = [
     "url": "/static/media/section-2-denny.f67491f9.png"
   },
   {
-    "revision": "03d42efce58072531c49",
-    "url": "/static/css/4.28328e2e.chunk.css"
+    "revision": "b4c1213e18b12522e44b",
+    "url": "/static/css/4.9fa063ae.chunk.css"
   },
   {
-    "revision": "a3ab9fcb1e23a020020ff6afa2e6c7f3",
+    "revision": "f71c1a32f2507fc4fde4357615528c98",
     "url": "/index.html"
   }
 ];
