@@ -8,8 +8,8 @@ self.__precacheManifest = [
     "url": "/static/css/main.e2aad579.chunk.css"
   },
   {
-    "revision": "7304fa42c319677d6967",
-    "url": "/static/js/runtime~main.c299971e.js"
+    "revision": "957f09ddc0000a40de87",
+    "url": "/static/js/runtime~main.3b4301a7.js"
   },
   {
     "revision": "6f87c0a38954bf07ac15",
@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/static/media/section-2-alex.a11ad30b.png"
   },
   {
-    "revision": "b4c1213e18b12522e44b",
+    "revision": "8ff3f674a661257fa971",
     "url": "/static/js/4.60f35676.chunk.js"
   },
   {
@@ -84,39 +84,39 @@ self.__precacheManifest = [
     "url": "/static/media/section-1-darwinia-hover.8688e339.png"
   },
   {
-    "revision": "5e0868979459bf1479549dcf775cf0c9",
-    "url": "/static/media/home-banner-mobile.5e086897.png"
-  },
-  {
     "revision": "3aaeb39d5b939acfc5820000fb850970",
     "url": "/static/media/section-4-location-mobile.3aaeb39d.png"
+  },
+  {
+    "revision": "84e5e6ca81446a1f3d4b419feb5b282a",
+    "url": "/static/media/section-3-bg.84e5e6ca.png"
+  },
+  {
+    "revision": "5e0868979459bf1479549dcf775cf0c9",
+    "url": "/static/media/home-banner-mobile.5e086897.png"
   },
   {
     "revision": "43169463527694f997e0d0eeabae4a3b",
     "url": "/static/media/section-1-nft-hover.43169463.png"
   },
   {
-    "revision": "b6e450d617aeafe2ae14941a1e17791a",
-    "url": "/static/media/section-3-bg.b6e450d6.png"
+    "revision": "a64a9425720820b824236224f92e5d5d",
+    "url": "/static/media/home-banner.a64a9425.png"
   },
   {
-    "revision": "612544210ce80b85a93b6c70c23b0528",
-    "url": "/static/media/home-banner.61254421.png"
-  },
-  {
-    "revision": "d55ae6cf1f4d596316f4f2273b24de61",
-    "url": "/static/media/section-4-location.d55ae6cf.png"
+    "revision": "d0ecf76a1b8b26a84fc4aeff3c6956d2",
+    "url": "/static/media/section-4-location.d0ecf76a.png"
   },
   {
     "revision": "f67491f9239029bcae5342dfd903176b",
     "url": "/static/media/section-2-denny.f67491f9.png"
   },
   {
-    "revision": "b4c1213e18b12522e44b",
-    "url": "/static/css/4.9fa063ae.chunk.css"
+    "revision": "8ff3f674a661257fa971",
+    "url": "/static/css/4.9d69c1b6.chunk.css"
   },
   {
-    "revision": "f71c1a32f2507fc4fde4357615528c98",
+    "revision": "1a60dc96f9efa99a5a320d9b2b2c0c78",
     "url": "/index.html"
   }
 ];
