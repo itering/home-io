@@ -4,12 +4,12 @@ self.__precacheManifest = [
     "url": "/static/media/section-3-partner-mobile.760b87d1.png"
   },
   {
-    "revision": "fca6eb5bb9902c8834db",
+    "revision": "e9ad07df5b405e4e621e",
     "url": "/static/css/main.e2aad579.chunk.css"
   },
   {
-    "revision": "957f09ddc0000a40de87",
-    "url": "/static/js/runtime~main.3b4301a7.js"
+    "revision": "bfc75a215950d16b01bb",
+    "url": "/static/js/runtime~main.00c6789c.js"
   },
   {
     "revision": "6f87c0a38954bf07ac15",
@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/static/media/section-2-alex.a11ad30b.png"
   },
   {
-    "revision": "8ff3f674a661257fa971",
+    "revision": "349c73b1f2e75f792ace",
     "url": "/static/js/4.60f35676.chunk.js"
   },
   {
@@ -32,20 +32,20 @@ self.__precacheManifest = [
     "url": "/static/js/5.5d78c88e.chunk.js"
   },
   {
-    "revision": "c411f608b82aaf80d9fa1ac9e316b3ce",
-    "url": "/static/media/Eina01Regular.c411f608.otf"
-  },
-  {
     "revision": "1dcabfe91ab841d8bba2737620b29ddc",
     "url": "/static/media/Eina01SemiBold.1dcabfe9.otf"
   },
   {
-    "revision": "9f04d8e29fb2c2e80892e10deea9608e",
-    "url": "/static/media/lng.9f04d8e2.svg"
+    "revision": "c411f608b82aaf80d9fa1ac9e316b3ce",
+    "url": "/static/media/Eina01Regular.c411f608.otf"
   },
   {
     "revision": "e0b783915d8fa4c85c6486f9ebcf045f",
     "url": "/static/media/lng-light.e0b78391.svg"
+  },
+  {
+    "revision": "9f04d8e29fb2c2e80892e10deea9608e",
+    "url": "/static/media/lng.9f04d8e2.svg"
   },
   {
     "revision": "6b9d15b710902b0a00afd726b7c5a7d5",
@@ -60,8 +60,8 @@ self.__precacheManifest = [
     "url": "/static/media/section-1-evoland.bfc2989f.png"
   },
   {
-    "revision": "fca6eb5bb9902c8834db",
-    "url": "/static/js/main.5575d72b.chunk.js"
+    "revision": "e9ad07df5b405e4e621e",
+    "url": "/static/js/main.7a0b2352.chunk.js"
   },
   {
     "revision": "3bc38b8064dde97177d613c86d4b9352",
@@ -84,6 +84,10 @@ self.__precacheManifest = [
     "url": "/static/media/section-1-darwinia-hover.8688e339.png"
   },
   {
+    "revision": "5e0868979459bf1479549dcf775cf0c9",
+    "url": "/static/media/home-banner-mobile.5e086897.png"
+  },
+  {
     "revision": "3aaeb39d5b939acfc5820000fb850970",
     "url": "/static/media/section-4-location-mobile.3aaeb39d.png"
   },
@@ -92,12 +96,8 @@ self.__precacheManifest = [
     "url": "/static/media/section-3-bg.84e5e6ca.png"
   },
   {
-    "revision": "5e0868979459bf1479549dcf775cf0c9",
-    "url": "/static/media/home-banner-mobile.5e086897.png"
-  },
-  {
-    "revision": "43169463527694f997e0d0eeabae4a3b",
-    "url": "/static/media/section-1-nft-hover.43169463.png"
+    "revision": "a27aa7cc66015bc2b5c5af9b33a74353",
+    "url": "/static/media/section-1-nft-hover.a27aa7cc.png"
   },
   {
     "revision": "a64a9425720820b824236224f92e5d5d",
@@ -112,11 +112,11 @@ self.__precacheManifest = [
     "url": "/static/media/section-2-denny.f67491f9.png"
   },
   {
-    "revision": "8ff3f674a661257fa971",
-    "url": "/static/css/4.9d69c1b6.chunk.css"
+    "revision": "349c73b1f2e75f792ace",
+    "url": "/static/css/4.aceffe97.chunk.css"
   },
   {
-    "revision": "1a60dc96f9efa99a5a320d9b2b2c0c78",
+    "revision": "dfface894d02569aa3c4363e10cb1b60",
     "url": "/index.html"
   }
 ];
