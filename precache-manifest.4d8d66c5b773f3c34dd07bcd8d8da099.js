@@ -8,8 +8,8 @@ self.__precacheManifest = [
     "url": "/static/css/main.e2aad579.chunk.css"
   },
   {
-    "revision": "bfc75a215950d16b01bb",
-    "url": "/static/js/runtime~main.00c6789c.js"
+    "revision": "e7284f6f69516026f991",
+    "url": "/static/js/runtime~main.07541b91.js"
   },
   {
     "revision": "6f87c0a38954bf07ac15",
@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/static/media/section-2-alex.a11ad30b.png"
   },
   {
-    "revision": "349c73b1f2e75f792ace",
+    "revision": "3d0e9d621e7b81d05470",
     "url": "/static/js/4.60f35676.chunk.js"
   },
   {
@@ -32,20 +32,20 @@ self.__precacheManifest = [
     "url": "/static/js/5.5d78c88e.chunk.js"
   },
   {
-    "revision": "1dcabfe91ab841d8bba2737620b29ddc",
-    "url": "/static/media/Eina01SemiBold.1dcabfe9.otf"
-  },
-  {
     "revision": "c411f608b82aaf80d9fa1ac9e316b3ce",
     "url": "/static/media/Eina01Regular.c411f608.otf"
   },
   {
-    "revision": "e0b783915d8fa4c85c6486f9ebcf045f",
-    "url": "/static/media/lng-light.e0b78391.svg"
+    "revision": "1dcabfe91ab841d8bba2737620b29ddc",
+    "url": "/static/media/Eina01SemiBold.1dcabfe9.otf"
   },
   {
     "revision": "9f04d8e29fb2c2e80892e10deea9608e",
     "url": "/static/media/lng.9f04d8e2.svg"
+  },
+  {
+    "revision": "e0b783915d8fa4c85c6486f9ebcf045f",
+    "url": "/static/media/lng-light.e0b78391.svg"
   },
   {
     "revision": "6b9d15b710902b0a00afd726b7c5a7d5",
@@ -84,16 +84,16 @@ self.__precacheManifest = [
     "url": "/static/media/section-1-darwinia-hover.8688e339.png"
   },
   {
-    "revision": "5e0868979459bf1479549dcf775cf0c9",
-    "url": "/static/media/home-banner-mobile.5e086897.png"
-  },
-  {
-    "revision": "3aaeb39d5b939acfc5820000fb850970",
-    "url": "/static/media/section-4-location-mobile.3aaeb39d.png"
+    "revision": "3ad0db2eb6714dcba642610dffb1e289",
+    "url": "/static/media/section-4-location-mobile.3ad0db2e.png"
   },
   {
     "revision": "84e5e6ca81446a1f3d4b419feb5b282a",
     "url": "/static/media/section-3-bg.84e5e6ca.png"
+  },
+  {
+    "revision": "5e0868979459bf1479549dcf775cf0c9",
+    "url": "/static/media/home-banner-mobile.5e086897.png"
   },
   {
     "revision": "a27aa7cc66015bc2b5c5af9b33a74353",
@@ -104,19 +104,19 @@ self.__precacheManifest = [
     "url": "/static/media/home-banner.a64a9425.png"
   },
   {
-    "revision": "d0ecf76a1b8b26a84fc4aeff3c6956d2",
-    "url": "/static/media/section-4-location.d0ecf76a.png"
+    "revision": "c60d05a939a7ba8e6a0ea912d36a44c1",
+    "url": "/static/media/section-4-location.c60d05a9.png"
   },
   {
     "revision": "f67491f9239029bcae5342dfd903176b",
     "url": "/static/media/section-2-denny.f67491f9.png"
   },
   {
-    "revision": "349c73b1f2e75f792ace",
-    "url": "/static/css/4.aceffe97.chunk.css"
+    "revision": "3d0e9d621e7b81d05470",
+    "url": "/static/css/4.4d648b9f.chunk.css"
   },
   {
-    "revision": "dfface894d02569aa3c4363e10cb1b60",
+    "revision": "b85518429aa58579b3d4de74df5751aa",
     "url": "/index.html"
   }
 ];
