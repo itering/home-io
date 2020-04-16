@@ -1,0 +1,33 @@
+{
+  "header": {
+    "home": "Home",
+    "solution": "Solution",
+    "about": "About",
+    "dkms": "Itering DKMS"
+  },
+  "footer": {
+    "record_1": "©2018-{{year}} Itering Tech Pte. Ltd."
+  },
+
+  "home_page": {
+    "slogan": "Promote the massive adoption of blockchain and iterate to a trust-free future",
+    "view_more": "View More",
+    "section_1_title": "Products and Services",
+    "section_1_darwinia": "Darwinia Network",
+    "section_1_darwinia_content": "Darwinia Network is an open, cross-chain protocol support games for cross-chain interaction in game logic and game assets",
+    "section_1_evoland": "Evolution Land",
+    "section_1_evoland_content": "Evolution Land is a virtual management game , base on blockchain and autonomy",
+    "section_1_itering": "Itering ID",
+    "section_1_itering_content": "A safe and easy-to-use digital wallet & user portal, equipped with air-isolated scan code technology, supporting multi-scene, multi-platform, multi-application information interaction technology",
+    "section_1_nft": "NFT Shifter",
+    "section_1_nft_content": "Quickly create exclusive custom NFT assets, used for game asset blockchainized, equity voucher and more",
+    "section_2_title": "Founder",
+    "section_2_alex": "Alex Chen",
+    "section_2_alex_intro": "Excellent technical expert in the field of blockchain, full stack engineer, has been involved in the technical work of bitcoin and blockchain since 2011, and has participated in the technology development of several open source projects, especially in graphene technology and EVM smart contract technology. Very rich development experience. Graduated from Shanghai Jiaotong University",
+    "section_2_denny": "Denny Wang",
+    "section_2_denny_intro": "Excellent technical expert in the field of blockchain, 1.0 core developer of BitShares, intelligent contract security expert. Now he is mainly engaged in Ethereum's second-tier network and Polkadot cross-chain related research. He has served as technical leader in several blockchain technology companies and graduated from the Mathematics Department of Nanjing University",
+    "section_2_job": "Co - founder",
+    "section_3_title": "Partner",
+    "section_4_title": "Location"
+  }
+}
