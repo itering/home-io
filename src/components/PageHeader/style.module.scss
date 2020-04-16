@@ -1,0 +1,49 @@
+@import "../../style/index";
+
+.lngBtn{
+  width: 24px;
+  height: 24px;
+  background: url("./img/lng.svg") top center no-repeat;
+  background-size: contain;
+  padding: $nav-link-padding-y 0 $nav-link-padding-y $nav-link-padding-x;
+  @extend .extend-link:hover;
+}
+.lngBtnLight {
+  @extend .lngBtn;
+  background: url("./img/lng-light.svg") top center no-repeat;
+}
+
+
+.Navbar{
+  background: transparent;
+  padding: .5rem 40px;
+  justify-content: space-between;
+}
+
+.closeBox{
+  padding: 11px 15px;
+  background: #F7F7F7;
+}
+
+.lngBox{
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background: #F7F7F7;
+}
+
+.navLinkSub{
+  font-size: 14px;
+  font-weight: normal;
+  padding: 0.5rem 0;
+}
+
+@media (max-width: 575.98px) {
+  .Navbar{
+    padding: .5rem 1rem;
+    a{
+      img {
+        width: 254px;
+      }
+    }
+  }
+}

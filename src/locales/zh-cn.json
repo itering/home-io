@@ -1,0 +1,33 @@
+{
+  "header": {
+    "home": "首页",
+    "solution": "解决方案",
+    "about": "关于我们",
+    "dkms": "分布式私钥管理系统"
+  },
+  "footer": {
+    "record_1": "©2018-{{year}} Itering Tech Pte. Ltd."
+  },
+
+  "home_page": {
+    "slogan": "推动区块链技术的大规模应用，迎接可信未来",
+    "view_more": "查看更多",
+    "section_1_title": "产品与服务",
+    "section_1_darwinia": "达尔文网络",
+    "section_1_darwinia_content": "达尔文网络是一个开放的跨链协议，用来支持游戏在不同公链之间进行游戏逻辑和游戏资产的跨链交互",
+    "section_1_evoland": "进化星球",
+    "section_1_evoland_content": "进化星球是一个基于区块链和自治生态的虚拟经营类游戏",
+    "section_1_itering": "去中心化身份/移动钱包",
+    "section_1_itering_content": "一个安全易用的数字钱包与用户入口，搭载空气隔离的扫码技术，支持多场景，多平台，多应用的信息交互技术",
+    "section_1_nft": "NFT生成器",
+    "section_1_nft_content": "精简版在线非标资产生成工具，通过智能合约，快速创建专属自定义NFT资产，适用于游戏资产上链、权益凭证以及更多用途",
+    "section_2_title": "创始人",
+    "section_2_alex": "钱晓栋",
+    "section_2_alex_intro": "区块链领域优秀技术专家，全栈工程师，从2011年就投入比特币及区块链领域的技术工作，参与了多个开源项目的技术开发，尤其在石墨烯技术和EVM智能合约技术上具有很丰富的开发经验，毕业于上海交通大学",
+    "section_2_denny": "王晓寅",
+    "section_2_denny_intro": "区块链领域优秀技术专家，比特股1.0核心开发者，智能合约安全专家。现在主要从事以太坊第二层网络和 Polkadot 跨链相关研究，曾在多个区块链科技公司担任技术负责人，毕业于南京大学数学系",
+    "section_2_job": "联合创始人",
+    "section_3_title": "合作伙伴",
+    "section_4_title": "地址"
+  }
+}
