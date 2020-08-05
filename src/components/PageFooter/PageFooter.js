@@ -9,7 +9,7 @@ class PageFooter extends Component {
         return (
             <div className={styles.navFooter}>
                 <div className={`${styles.recordPC}`}>
-                    <p>{t('footer:record_1', {year: 2020})}</p>
+                    <div>{t('footer:record_1', {year: 2020})}</div>
                     <div className={`${styles.social}`}>
                         <a href="https://github.com/itering" target="_blank" rel="noopener noreferrer">
                             <div className={styles.githubIcon}></div>

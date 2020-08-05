@@ -77,32 +77,21 @@
 
 @media (max-width: 575.98px) {
   .navFooter {
-    padding-top: 0px;
+    padding: 0 20px 40px;
     .recordPC {
       padding: 0;
+      flex-direction: column;
       .social {
-        margin: 16px 0;
+        margin: 20px 0 0;
         font-size: 0;
-        a {
-          width: 42px;
-          height: 42px;
-          padding: 0px;
-          margin-right: 20px;
-          &:last-child {
-            margin-right: 20px;
-          }
-          div {
-            height: 100%;
-          }
-        }
         .githubIcon {
-          width: 100%;
-          background: url("./img/github-mobile.png") no-repeat;
+          width: 18px;
+          background: url("./img/md_github.png") no-repeat;
           background-size: cover;
         }
         .twitterIcon {
-          width: 100%;
-          background: url("./img/twitter-mobile.png") no-repeat;
+          width: 22px;
+          background: url("./img/md_twitter.png") no-repeat;
           background-size: cover;
         }
       }

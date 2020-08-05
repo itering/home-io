@@ -3,6 +3,8 @@ import {Router, Route, Switch} from "react-router-dom";
 import {asyncComponent} from "./components/AsyncComponent";
 import { createBrowserHistory} from "history";
 const AsyncHome = asyncComponent(import("./page/Home"));
+// const AsyncNews = asyncComponent(import("./page/News"));
+const AsyncAbout = asyncComponent(import("./page/About"));
 const AsyncNotFound = asyncComponent(import("./page/NotFound"));
 
 const history = createBrowserHistory();
@@ -15,6 +17,11 @@ export default () =>
                 exact
                 component={AsyncHome}
                 path='/'
+            />
+            <Route
+                exact
+                component={AsyncAbout}
+                path='/about'
             />
 
             <Route component={AsyncNotFound}/>

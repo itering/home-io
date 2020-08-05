@@ -98,12 +98,13 @@ class Home extends Component {
             leaving: 'slidePrevLeaving'
         };
         return (
-            <div className='App'>
+            <div className='home'>
                 <div className={styles.homeBannerArea}>
                     <PageHeader className={styles.pageHeader}/>
                 </div>
                 <Deck
-                    className='deck'
+                    // className='deck'
+                    className={`${styles.deckPc} deck`}
                     wheel={this.state.wheel}
                     current={this.state.current}
                     horizontal={this.state.horizontal}
@@ -360,7 +361,11 @@ class Home extends Component {
                         </div>
                     </Deck.Slide>
                 </Deck>
-                {/*<PageFooter/>*/}
+                <div className={styles.deckMobile}>
+                </div>
+                <div className={styles.pageFooterMobile}>
+                    <PageFooter/>
+                </div>
             </div>
         );
     }

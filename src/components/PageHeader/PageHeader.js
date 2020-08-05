@@ -83,10 +83,10 @@ class PageHeader extends Component {
                                 <Navbar.Brand href="/">
                                     <img src={theme === 'dark' ? logo_light : logo}/>
                                 </Navbar.Brand>
-                                <Nav>
+                                <Nav className={styles.navLinks}>
                                     <Nav.Link href="#product"><span className={styles.NavLink}>{t('header:product')}</span></Nav.Link>
                                     <Nav.Link href="#news"><span className={styles.NavLink}>{t('header:news')}</span></Nav.Link>
-                                    <Nav.Link href="#about"><span className={styles.NavLink}>{t('header:about')}</span></Nav.Link>
+                                    <Nav.Link href="/about"><span className={styles.NavLink}>{t('header:about')}</span></Nav.Link>
                                     {curLang.toLowerCase()==='zh-cn' ? <div className={styles.Language} onClick={() => this.changeLng('en-us')}>English</div> : <div className={styles.Language} onClick={() => this.changeLng('zh-cn')}>中文</div>}
                                 </Nav>
                             </Navbar>
