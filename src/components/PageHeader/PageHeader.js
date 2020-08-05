@@ -1,6 +1,6 @@
 import React, {Component} from "react";
-import {Navbar, NavDropdown, Dropdown, Nav, Form, Container, Row, Col} from 'react-bootstrap'
-import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
+import {Navbar, Nav, Form, Container, Row, Col} from 'react-bootstrap'
+import {disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks} from 'body-scroll-lock';
 
 import styles from './style.module.scss'
 import logo from '../../logo.svg'
@@ -8,21 +8,21 @@ import logo_light from '../../logo-light.svg'
 import closeIcon from './img/close.png'
 import {withTranslation} from "react-i18next";
 
-const CustomToggle = React.forwardRef(({ children, onClick }, ref) => (
+const CustomToggle = React.forwardRef(({children, onClick}, ref) => (
     <div
-      ref={ref}
-      onMouseEnter={e => {
-        e.preventDefault();
-        onClick(e);
-      }}
-      onClick={e => {
-        e.preventDefault();
-        onClick(e);
-      }}
+        ref={ref}
+        onMouseEnter={e => {
+            e.preventDefault();
+            onClick(e);
+        }}
+        onClick={e => {
+            e.preventDefault();
+            onClick(e);
+        }}
     >
-      {children}
+        {children}
     </div>
-  ));
+));
 
 class PageHeader extends Component {
     constructor(props, context) {
@@ -72,26 +72,27 @@ class PageHeader extends Component {
 
 
     render() {
-        const {theme} = this.props
+        const {theme, t, i18n} = this.props
+        let curLang = i18n.language;
         return (
             <div className={theme}>
-                <Navbar className={`${styles.Navbar} cs-header`}>
-                    <Navbar.Brand href="/">
-                        <img src={theme === 'dark' ? logo_light : logo}/>
-                    </Navbar.Brand>
-                    <Dropdown drop='left'>
-                    <Dropdown.Toggle as={CustomToggle} id="dropdown-custom-components">
-                        <div className={theme === 'dark' ? styles.lngBtnLight : styles.lngBtn}/>
-                    </Dropdown.Toggle>
-                    <Dropdown.Menu  className=' animated fadeIn faster'>
-                        <Dropdown.Item onClick={() => this.changeLng('zh-cn')} eventKey="4.1">
-                            简体中文
-                        </Dropdown.Item>
-                        <Dropdown.Item eventKey="4.2"
-                                        onClick={() => this.changeLng('en-us')}>English</Dropdown.Item>
-                    </Dropdown.Menu>
-                </Dropdown>
-                </Navbar>
+                <Container>
+                    <Row>
+                        <Col>
+                            <Navbar className={`${styles.Navbar} cs-header`}>
+                                <Navbar.Brand href="/">
+                                    <img src={theme === 'dark' ? logo_light : logo}/>
+                                </Navbar.Brand>
+                                <Nav>
+                                    <Nav.Link href="#product"><span className={styles.NavLink}>{t('header:product')}</span></Nav.Link>
+                                    <Nav.Link href="#news"><span className={styles.NavLink}>{t('header:news')}</span></Nav.Link>
+                                    <Nav.Link href="#about"><span className={styles.NavLink}>{t('header:about')}</span></Nav.Link>
+                                    {curLang.toLowerCase()==='zh-cn' ? <div className={styles.Language} onClick={() => this.changeLng('en-us')}>English</div> : <div className={styles.Language} onClick={() => this.changeLng('zh-cn')}>中文</div>}
+                                </Nav>
+                            </Navbar>
+                        </Col>
+                    </Row>
+                </Container>
             </div>
 
         );

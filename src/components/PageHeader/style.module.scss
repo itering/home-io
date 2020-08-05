@@ -16,8 +16,20 @@
 
 .Navbar{
   background: transparent;
-  padding: .5rem 40px;
+  padding: .5rem 0;
   justify-content: space-between;
+}
+
+.NavLink {
+  color: $text-main;
+  cursor: pointer;
+}
+
+.Language {
+  color: $text-main;
+  cursor: pointer;
+  padding-right: .5rem;
+  padding-left: .5rem;
 }
 
 .closeBox{
