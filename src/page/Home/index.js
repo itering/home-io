@@ -65,11 +65,8 @@ class Home extends Component {
     }
 
     onSwitching(factor, deck) {
-        const prev = this.state.index, current = deck.state.current;
-        //let indicatorLineLeft = 25 * index + '%';
-        const indicatorLineLeft = (prev + (current - prev) * factor) * 25 + '%';
-        const status = 'switching...';
-        this.setState({indicatorLineLeft, current, status, progress: factor});
+        const current = deck.state.current;
+        this.setState({current});
     }
 
     onSwitchDone(state) {
@@ -89,19 +86,22 @@ class Home extends Component {
             [key]: status
         })
     }
-
-    toIteringID = () => {
+    changeCurrent(number) {
+        if (number) {
+            this.setState({current: number - 1});
+        }
     }
 
     render() {
         const {t} = this.props
-        const {area1, area2, area3} = this.state
+        const {current} = this.state
         const slideClasses = {
             current: 'slideCurrent',
             entering: 'slideCurrentEntering',
             prev: 'slidePrev',
             leaving: 'slidePrevLeaving'
         };
+        let filled = Array.from(Array(7), (v,k) => k+1);
         return (
             <div className='home'>
                 <div className={styles.homeBannerArea}>
@@ -114,10 +114,10 @@ class Home extends Component {
                     current={this.state.current}
                     horizontal={this.state.horizontal}
                     swipe={this.state.swipe}
-                    // onSwitching={this.onSwitching}
+                    onSwitching={this.onSwitching}
                     // onSwitchDone={this.onSwitchDone}
                     slideClasses={slideClasses}
-                    dura={1000}
+                    dura={800}
                 >
                     <Deck.Slide className='first slide'>
                         <div className={styles.section1}>
@@ -367,6 +367,11 @@ class Home extends Component {
                         </div>
                     </Deck.Slide>
                 </Deck>
+                <ul className={styles.sliderIndicator}>
+                    {
+                        filled.map((number)=><li className={number === (current + 1) ? styles.current: ''} key={number.toString()} onClick={() => this.changeCurrent(number)}></li>)
+                    }   
+                </ul>
                 <div className={styles.deckMobile}>
                     <div className={styles.section1}>
                         <Container>

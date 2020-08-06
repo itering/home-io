@@ -176,7 +176,6 @@ class Deck extends Component {
         (Math.abs(delta) > 0) && this.setState({ prevWheelDelta: delta });
         if (Math.abs(delta) > 0) {
             if (Date.now() - this.latestWheel > WHEELABLE_THROTTLE_MS) {
-                console.log('WHEELABLE_THROTTLE_MS');
                 this.setState({ prevWheelDelta: undefined });
             } else {
                 this.setState({ prevWheelDelta: delta });
@@ -366,7 +365,7 @@ class Deck extends Component {
     }
 
     render() {
-        const { children, current, horizontal, loop, swipe, wheel, slideClasses, ...props } = this.props;
+        const { children, current, horizontal, loop, swipe, wheel, onSwitchDone, onSwitching, slideClasses, ...props } = this.props;
         if (wheel) {
             props.onWheel = this.handleWheel;
         }
