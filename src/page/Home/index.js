@@ -43,11 +43,12 @@ class Home extends Component {
         super(props, context);
 
         this.state = {
-            current: 6,
+            current: 0,
             horizontal: false,
             swipe: true,
             wheel: true,
-            index: 0
+            index: 0,
+            total: 6
         };
         this.change = this.change.bind(this);
         this.onSwitching = this.onSwitching.bind(this);
@@ -78,7 +79,49 @@ class Home extends Component {
     }
 
     componentDidMount() {
-        archorsComponent()
+        archorsComponent();
+        this.archorDeck();
+        document.addEventListener("keydown", this.debounce(this._handleKeyDown, 300));
+    }
+    componentWillUnmount() {
+        document.removeEventListener("keydown", this.debounce(this._handleKeyDown, 300));
+    }
+    archorDeck = () =>{
+        setTimeout(
+            () => {
+                let {hash} = window.location;
+                const id = hash.replace('#', '');
+                switch(id) {
+                    case 'product':
+                        this.setState({current: 0});
+                        break;
+                    case 'news':
+                        this.setState({current: 5});
+                        break;
+                    default:
+                        break;
+                }
+            },
+            0
+        );
+    }
+    debounce = (fn, delay) => {
+        let timer = null;
+        return (...args) => {
+            clearTimeout(timer);
+            timer = setTimeout(() => {
+                fn.apply(this, args);
+            }, delay);
+        }
+    }
+
+    _handleKeyDown = (e) => {
+        const {current, total} = this.state;
+        if (e.key === "ArrowDown") {
+            this.setState({current: Math.min(total, current + 1)});
+        } else if (e.key === "ArrowUp") {
+            this.setState({current: Math.max(0, current - 1)});
+        }
     }
 
     areaMapHandle = (key, status) => {
@@ -104,9 +147,6 @@ class Home extends Component {
         let filled = Array.from(Array(7), (v,k) => k+1);
         return (
             <div className='home'>
-                <div className={styles.homeBannerArea}>
-                    <PageHeader className={styles.pageHeader}/>
-                </div>
                 <Deck
                     // className='deck'
                     className={`${styles.deckPc} deck`}
@@ -367,6 +407,9 @@ class Home extends Component {
                         </div>
                     </Deck.Slide>
                 </Deck>
+                <div className={styles.homeBannerArea}>
+                    <PageHeader className={styles.pageHeader} handleAnchor={this.archorDeck}/>
+                </div>
                 <ul className={styles.sliderIndicator}>
                     {
                         filled.map((number)=><li className={number === (current + 1) ? styles.current: ''} key={number.toString()} onClick={() => this.changeCurrent(number)}></li>)
@@ -374,6 +417,7 @@ class Home extends Component {
                 </ul>
                 <div className={styles.deckMobile}>
                     <div className={styles.section1}>
+                        <a id="product"></a>
                         <Container>
                             <Row className={styles.row}>
                                 <Col className={styles.col} xs={12} sm={5}>
@@ -553,6 +597,7 @@ class Home extends Component {
                         </Container>
                     </div>
                     <div className={styles.section6}>
+                        <a id="news"></a>
                         <Container>
                             <Row className={styles.row}>
                                 <Col className={styles.col} xs={12}>

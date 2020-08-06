@@ -167,8 +167,13 @@ class Deck extends Component {
 
         return false;
     }
+    isSafari() {
+        return /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari']);
+    }
     handleWheel(e) {
-        e.preventDefault();
+        if (this.isSafari()) {
+            e.preventDefault();
+        }
         const { children: slides, loop, horizontal } = this.props;
         const delta = horizontal ? e.deltaX : e.deltaY;
         const { status: prevStatus, prevWheelDelta } = this.state;

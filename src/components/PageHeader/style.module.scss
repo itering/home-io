@@ -13,7 +13,9 @@
   background: url("./img/lng-light.svg") top center no-repeat;
 }
 
-
+.mobileMenu {
+  display: none;
+}
 .Navbar{
   background: transparent;
   padding: .5rem 0;
@@ -25,11 +27,54 @@
   cursor: pointer;
 }
 
+.ant-drawer-body {
+  padding: 0;
+}
 .Language {
   color: $text-main;
   cursor: pointer;
   padding-right: .5rem;
   padding-left: .5rem;
+}
+.menuIcon {
+  width: 34px;
+  height: 34px;
+}
+.drawer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  .linkContent {
+    flex: 1 1 auto;
+    margin-top: 60px;
+    a {
+      font-weight:300;
+      font-size:22px;
+      margin-bottom: 30px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      .NavLink {
+        color: #061A9D;
+      }
+    }
+    .Language {
+      color: #061A9D;
+      font-weight:300;
+      font-size:22px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+    }
+  }
+  .closeBtn {
+    text-align: right;
+    padding: 10px;
+    img {
+      width: 34px;
+      height: 34px;
+    }
+  }
 }
 
 .closeBox{
@@ -57,6 +102,9 @@
         width: 160px;
       }
     }
+  }
+  .mobileMenu {
+    display: block;
   }
   .navLinks {
     display: none;

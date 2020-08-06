@@ -35,21 +35,11 @@
 }
 
 .homeBannerArea {
-
-  // background: url("./img/home-banner.png") top center no-repeat;
-  // background-size: cover;
-  .nav-light {
-    // color: #FFF;
-  }
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }
-
-
-.scroll {
-  ::-webkit-scrollbar {
-    width: 0 !important
-  }
-}
-
 .row {
   li.col {
     padding: 0;
@@ -74,6 +64,7 @@ p {
 }
 
 .section1 {
+
   .subTitle {
     font-size: 30px;
     font-weight: 300;
@@ -268,6 +259,9 @@ p {
 @media (max-width: 575.98px) {
   .deckPc {
     display: none;
+  }
+  .homeBannerArea {
+    position: relative;
   }
   .sliderIndicator {
     display: none;

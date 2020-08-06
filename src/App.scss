@@ -1,14 +1,11 @@
 @import "style/index";
 
-.App {
-  font-family:CeraPro,PingFangSC-Regular,PingFang SC;
-}
-
 body {
   color: $text-main;
   font-size: 14px;
   margin: 0;
   padding: 0;
+  font-family:CeraPro,PingFangSC-Regular,PingFang SC !important;
 }
 
 .nav-link {

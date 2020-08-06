@@ -30,8 +30,38 @@ body,
 
 .deck {
   width: 100%;
-  height: calc(100% - 56px);
+  height: calc(100%);
 }
+
+.first {
+  background: url("./img/P1.jpg") top center no-repeat;
+  background-size: cover;
+}
+.second {
+  background: url("./img/P2.jpg") top center no-repeat;
+  background-size: cover;
+}
+.third {
+  background: url("./img/P3.jpg") top center no-repeat;
+  background-size: cover;
+}
+.fourth {
+  background: url("./img/P4.jpg") top center no-repeat;
+  background-size: cover;
+}
+.fifth {
+  background: url("./img/P5.jpg") top center no-repeat;
+  background-size: cover;
+}
+.sixth {
+  background: url("./img/P6.jpg") top center no-repeat;
+  background-size: cover;
+}
+.seventh {
+  background: url("./img/P7.jpg") top center no-repeat;
+  background-size: cover;
+}
+
 
 .indicator.current {
   color: white;
@@ -45,10 +75,6 @@ body,
   height: 3px;
   background: red;
   z-index: 2;
-}
-
-.deck {
-  height: calc(100% - 56px);
 }
 
 .metas-ctrls {
