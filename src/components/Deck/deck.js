@@ -32,13 +32,14 @@ import styles from './style.scss';
 
 const SWIPE_DURA = 1000; // default transition duration
 const SWIPE_MIN_DISTANCE = 0;
-const SWIPE_FACTOR = 0.22;
+const SWIPE_FACTOR = 0.3;
 const FORWARD_SPEED = 6;
 const CURRENT_SLIDE_REF = 'current slide';
 
 // really hacky to disable wheel event during scrolling
 const WHEELABLE_AFTER_SCROLL_MS = 100;
 const SCROLL_THROTTLE_MS = 100;
+const WHEELABLE_THROTTLE_MS = 500;
 
 const STATUS = {
     NORMAL: 0,
@@ -167,12 +168,21 @@ class Deck extends Component {
         return false;
     }
     handleWheel(e) {
+        e.preventDefault();
         const { children: slides, loop, horizontal } = this.props;
         const delta = horizontal ? e.deltaX : e.deltaY;
         const { status: prevStatus, prevWheelDelta } = this.state;
         const status = STATUS.WHEELING | STATUS.FORWARDING | (delta > 0 ? STATUS.DOWN : STATUS.UP);
         (Math.abs(delta) > 0) && this.setState({ prevWheelDelta: delta });
-
+        if (Math.abs(delta) > 0) {
+            if (Date.now() - this.latestWheel > WHEELABLE_THROTTLE_MS) {
+                console.log('WHEELABLE_THROTTLE_MS');
+                this.setState({ prevWheelDelta: undefined });
+            } else {
+                this.setState({ prevWheelDelta: delta });
+            }
+        }
+        this.latestWheel = Date.now();
         if (Date.now() - this.latestScroll <= WHEELABLE_AFTER_SCROLL_MS) {
             return;
         }
@@ -198,6 +208,8 @@ class Deck extends Component {
         if (current >= 0 && current < slidesCount) {
             this.setState({ prev, current, status });
             this.startTran(0, (status & STATUS.DOWN ? -1 : 1) * (horizontal ? this.state.width : this.state.height));
+        } else {
+            this.setState({ prevWheelDelta: undefined });
         }
     }
     handleSwipeStart({ x, y }) {
