@@ -57,6 +57,16 @@
   color: #071B9E !important;
 }
 
+.gifPlayer {
+  position: relative;
+  .static {
+    position:absolute;
+    background: #fff;
+    &:hover {
+      opacity: 0;
+    }
+  }
+}
 p {
   font-weight: 300;
   line-height: 24px;

@@ -2,19 +2,25 @@ import React, {Component} from "react";
 import {Container, Row, Col, Image, Nav, Dropdown, Button} from 'react-bootstrap'
 import {PageHeader} from '../../components/PageHeader'
 import {PageFooter} from '../../components/PageFooter'
-import styles from './style.module.scss'
+
+import styles from './style.module.scss';
 import './index.scss';
 import Deck from '../../components/Deck/deck';
 import cube from "./img/section-1-cube.gif"
+import cube_static from "./img/section-1-cube-static.png"
 import cube_png from "./img/section-1-cube.png"
 import section_1_logo from "./img/section-1-logo.png"
 import section_2_item_1 from "./img/section-2-item-1.gif"
+import section_2_item_1_static from "./img/section-2-item-1-static.png"
 import section_2_item_1_png from "./img/section-2-item-1.png"
 import section_2_item_2 from "./img/section-2-item-2.gif"
+import section_2_item_2_static from "./img/section-2-item-2-static.png"
 import section_2_item_2_png from "./img/section-2-item-2.png"
 import section_2_item_3 from "./img/section-2-item-3.gif"
+import section_2_item_3_static from "./img/section-2-item-3-static.png"
 import section_2_item_3_png from "./img/section-2-item-3.png"
 import section_3_evo from "./img/section-3-evo.gif"
+import section_3_evo_static from "./img/section-3-evo-static.png"
 import section_3_evo_png from "./img/section-3-evo.png"
 import section_4_item_1 from "./img/section-4-item-1.png"
 import section_4_item_2 from "./img/section-4-item-2.png"
@@ -200,19 +206,28 @@ class Home extends Component {
                                 <Row className={styles.row}>
                                     <Col className={styles.col} xs={12} sm={4}>
                                         <div className={styles.section2_item}>
-                                            <img src={section_2_item_1}/>
+                                            <div className={styles.gifPlayer}>
+                                                <img className={styles.static} src={section_2_item_1_static}/>
+                                                <img src={section_2_item_1}/>
+                                            </div>
                                             <p>{t('home_page:section_2_item_1')}</p>
                                         </div>
                                     </Col>
                                     <Col className={styles.col} xs={12} sm={4}>
                                         <div className={styles.section2_item}>
-                                            <img src={section_2_item_2}/>
+                                            <div className={styles.gifPlayer}>
+                                                <img className={styles.static} src={section_2_item_2_static}/>
+                                                <img src={section_2_item_2}/>
+                                            </div>
                                             <p>{t('home_page:section_2_item_2')}</p>
                                         </div>
                                     </Col>
                                     <Col className={styles.col} xs={12} sm={4}>
                                         <div className={styles.section2_item}>
-                                            <img src={section_2_item_3}/>
+                                            <div className={styles.gifPlayer}>
+                                                <img className={styles.static} src={section_2_item_3_static}/>
+                                                <img src={section_2_item_3}/>
+                                            </div>
                                             <p>{t('home_page:section_2_item_3')}</p>
                                         </div>
                                     </Col>
