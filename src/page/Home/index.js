@@ -409,8 +409,16 @@ class Home extends Component {
                                         <div className={styles.section7_item}>
                                             <div className={styles.title}>{t('home_page:section_7_title')}</div>
                                             <div className={styles.subTitle}>{t('home_page:section_7_subtitle')}</div>
+                                        </div>
+                                    </Col>
+                                    <Col className={styles.col} xs={{span: 9, offset: 1}} >
+                                        <div className={styles.section7_item}>
                                             <p>{t('home_page:section_7_detail_1')}</p>
                                             <p>{t('home_page:section_7_detail_2')}</p>
+                                        </div>
+                                    </Col>
+                                    <Col className={styles.col} xs={12}>
+                                        <div className={styles.section7_item}>
                                             <a className={styles.linkBtn}>{t('home_page:view_posts')}</a>
                                         </div>
                                     </Col>

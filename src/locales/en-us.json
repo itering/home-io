@@ -5,11 +5,10 @@
     "about": "About",
     "product": "Product",
     "news": "News",
-    "sample_lang": "中文",
-    "dkms": "Itering DKMS"
+    "sample_lang": "中文"
   },
   "footer": {
-    "record_1": "©2018-{{year}} Itering.IO"
+    "record_1": "©2018-{{year}} Itering IO Pte. Ltd."
   },
 
   "home_page": {
@@ -27,7 +26,7 @@
     "section_2_item_1": "Darwinia Network is a cross-chain bridge chain built on Substrate, focusing on the construction of future Internet of tokens, including cross-chain NFT auction market, stablecoins, cross-chain token swap exchange and markets",
     "section_2_item_2": "It supports the development and growth of future internet of tokens by building infrastructure and core applications, and help realizes tokens connected, solving the problems of scalability and isolation of blockchain networks",
     "section_2_item_3": "Different blockchain networks are connected and able to interact with each other where assets can flow freely to realize efficient cross-chain transmission of information and value",
-    "section_3_title": "EvolutionLand",
+    "section_3_title": "Evolution Land",
     "section_3_p_1": "Evolution Land is a virtual business blockchain game that supports cross-chain. The game is divided into 26 continents, each of which is deployed on a different blockchain. The governance parameters are set by users autonomously. Users can buy and sell land, mine elements for them through the Apostles, build buildings, and make props.",
     "section_3_p_2": "The apostles can reproduce the inheritance genes of descendants, can upgrade their abilities by upgrading equipment and attributes, and can choose miners, warriors, doctors, musicians and other occupations in the game. Different continents will evolve into different countries, through cross-chain to achieve trade circulation between the mainland countries, war and other gameplay ...",
     "section_4_item_1_title": "Itering ID",
