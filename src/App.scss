@@ -12,6 +12,12 @@ body {
   padding: 0;
   cursor: pointer;
 }
+.news-link {
+  color: initial;
+  &:hover {
+    color: initial;
+  }
+}
 
 @font-face {
   font-family: CeraPro;

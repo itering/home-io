@@ -98,7 +98,9 @@ class Home extends Component {
                                         {t('about_page:rust_bonus_4')}
                                     </p>
                                     <div className={styles.rustBtn}>
-                                        <a className={styles.linkBtn}>{t('about_page:apply_now')}</a>
+                                        <a className={styles.linkBtn} target="_blank"
+                                           rel="noopener"
+                                           href="mailto:contact@itering.com">{t('about_page:apply_now')}</a>
                                     </div>
 
                                     <div className={styles.jobTitle}>
@@ -138,7 +140,9 @@ class Home extends Component {
                                         {t('about_page:tech_bonus_3')}
                                     </p>
                                     <div className={styles.techBtn}>
-                                        <a className={styles.linkBtn}>{t('about_page:apply_now')}</a>
+                                        <a className={styles.linkBtn} target="_blank"
+                                           rel="noopener"
+                                           href="mailto:contact@itering.com">{t('about_page:apply_now')}</a>
                                     </div>
                                 </div>
 

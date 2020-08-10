@@ -3,7 +3,8 @@ import fetch from 'node-fetch';
 import { writeFile, makeDir } from './lib/fs';
 
 const routes = [
-    // '/',
+    '/news',
+    '/about',
     '/404', // https://help.github.com/articles/creating-a-custom-404-page-for-your-github-pages-site/
 ];
 

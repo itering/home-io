@@ -103,7 +103,7 @@ class PageHeader extends Component {
                                 <Nav className={styles.navLinks}>
                                     <Nav.Link href="/#product" onClick={this.onClickAnchor}><span
                                         className={styles.NavLink}>{t('header:product')}</span></Nav.Link>
-                                    <Nav.Link href="/#news" onClick={this.onClickAnchor}><span
+                                    <Nav.Link href="/news" onClick={this.onClickAnchor}><span
                                         className={styles.NavLink}>{t('header:news')}</span></Nav.Link>
                                     <Nav.Link href="/about"><span className={styles.NavLink}>{t('header:about')}</span></Nav.Link>
                                     {curLang.toLowerCase() === 'zh-cn' ? <div className={styles.Language}
@@ -130,7 +130,7 @@ class PageHeader extends Component {
                                                 className={styles.NavLink}>{t('header:home')}</span></Nav.Link>
                                             <Nav.Link href="/#product" onClick={this.onClose}><span
                                                 className={styles.NavLink}>{t('header:product')}</span></Nav.Link>
-                                            <Nav.Link href="/#news" onClick={this.onClose}><span
+                                            <Nav.Link href="/news" onClick={this.onClose}><span
                                                 className={styles.NavLink}>{t('header:news')}</span></Nav.Link>
                                             <Nav.Link href="/about" onClick={this.onClose}><span
                                                 className={styles.NavLink}>{t('header:about')}</span></Nav.Link>
