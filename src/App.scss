@@ -1,28 +1,41 @@
 @import "style/index";
 
-.App {
-  font-family: eina, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-}
-
 body {
   color: $text-main;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  font-family:CeraPro,PingFangSC-Regular,PingFang SC !important;
 }
 
 .nav-link {
   padding: 0;
   cursor: pointer;
 }
+.news-link {
+  color: initial;
+  &:hover {
+    color: initial;
+  }
+}
 
 @font-face {
-  font-family: eina;
-  src: url('./style/font/Eina01Regular.otf');
+  font-family: CeraPro;
+  src: url('./style/font/cerapro-light.ttf');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: CeraPro;
+  src: url('./style/font/CeraPro.ttf');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: eina;
-  src: url('./style/font/Eina01SemiBold.otf');
+  font-family: CeraPro;
+  src: url('./style/font/cerapro_bold.ttf');
   font-weight: bold;
   font-style: normal;
 }

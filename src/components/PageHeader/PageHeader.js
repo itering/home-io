@@ -1,28 +1,30 @@
 import React, {Component} from "react";
-import {Navbar, NavDropdown, Dropdown, Nav, Form, Container, Row, Col} from 'react-bootstrap'
-import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
-
+import {Navbar, Nav, Form, Container, Row, Col} from 'react-bootstrap'
+import {disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks} from 'body-scroll-lock';
+import {Drawer} from 'antd';
+import {PageFooter} from '../../components/PageFooter'
 import styles from './style.module.scss'
 import logo from '../../logo.svg'
 import logo_light from '../../logo-light.svg'
-import closeIcon from './img/close.png'
+import menu_icon from './img/menu.png'
+import close_icon from './img/close.png'
 import {withTranslation} from "react-i18next";
 
-const CustomToggle = React.forwardRef(({ children, onClick }, ref) => (
+const CustomToggle = React.forwardRef(({children, onClick}, ref) => (
     <div
-      ref={ref}
-      onMouseEnter={e => {
-        e.preventDefault();
-        onClick(e);
-      }}
-      onClick={e => {
-        e.preventDefault();
-        onClick(e);
-      }}
+        ref={ref}
+        onMouseEnter={e => {
+            e.preventDefault();
+            onClick(e);
+        }}
+        onClick={e => {
+            e.preventDefault();
+            onClick(e);
+        }}
     >
-      {children}
+        {children}
     </div>
-  ));
+));
 
 class PageHeader extends Component {
     constructor(props, context) {
@@ -30,6 +32,7 @@ class PageHeader extends Component {
 
         this.state = {
             open: false,
+            visible: false,
         };
     }
 
@@ -70,28 +73,79 @@ class PageHeader extends Component {
         enableBodyScroll(this.targetElement);
     }
 
+    showDrawer = () => {
+        this.setState({visible: true})
+    };
+
+    onClickAnchor = () => {
+        const {handleAnchor} = this.props;
+        handleAnchor && handleAnchor();
+    }
+
+    onClose = () => {
+        this.setState({visible: false})
+    };
+
 
     render() {
-        const {theme} = this.props
+        const {theme, t, i18n} = this.props
+        const {visible} = this.state
+        let curLang = i18n.language;
         return (
             <div className={theme}>
-                <Navbar className={`${styles.Navbar} cs-header`}>
-                    <Navbar.Brand href="/">
-                        <img src={theme === 'dark' ? logo_light : logo}/>
-                    </Navbar.Brand>
-                    <Dropdown drop='left'>
-                    <Dropdown.Toggle as={CustomToggle} id="dropdown-custom-components">
-                        <div className={theme === 'dark' ? styles.lngBtnLight : styles.lngBtn}/>
-                    </Dropdown.Toggle>
-                    <Dropdown.Menu  className=' animated fadeIn faster'>
-                        <Dropdown.Item onClick={() => this.changeLng('zh-cn')} eventKey="4.1">
-                            简体中文
-                        </Dropdown.Item>
-                        <Dropdown.Item eventKey="4.2"
-                                        onClick={() => this.changeLng('en-us')}>English</Dropdown.Item>
-                    </Dropdown.Menu>
-                </Dropdown>
-                </Navbar>
+                <Container>
+                    <Row>
+                        <Col>
+                            <Navbar className={`${styles.Navbar} cs-header`}>
+                                <Navbar.Brand href="/">
+                                    <img src={theme === 'dark' ? logo_light : logo}/>
+                                </Navbar.Brand>
+                                <Nav className={styles.navLinks}>
+                                    <Nav.Link href="/#product" onClick={this.onClickAnchor}><span
+                                        className={styles.NavLink}>{t('header:product')}</span></Nav.Link>
+                                    <Nav.Link href="/news" onClick={this.onClickAnchor}><span
+                                        className={styles.NavLink}>{t('header:news')}</span></Nav.Link>
+                                    <Nav.Link href="/about"><span className={styles.NavLink}>{t('header:about')}</span></Nav.Link>
+                                    {curLang.toLowerCase() === 'zh-cn' ? <div className={styles.Language}
+                                                                              onClick={() => this.changeLng('en-us')}>English</div> :
+                                        <div className={styles.Language}
+                                             onClick={() => this.changeLng('zh-cn')}>中文</div>}
+                                </Nav>
+                                <div className={styles.mobileMenu} onClick={this.showDrawer}>
+                                    <img className={styles.menuIcon} src={menu_icon}/>
+                                </div>
+                                <Drawer
+                                    placement="right"
+                                    closable={false}
+                                    onClose={this.onClose}
+                                    visible={visible}
+                                    bodyStyle={{padding: '0'}}
+                                >
+                                    <div className={styles.drawer}>
+                                        <div className={styles.closeBtn}>
+                                            <img onClick={this.onClose} src={close_icon}/>
+                                        </div>
+                                        <Nav className={styles.linkContent}>
+                                            <Nav.Link href="/" onClick={this.onClose}><span
+                                                className={styles.NavLink}>{t('header:home')}</span></Nav.Link>
+                                            <Nav.Link href="/#product" onClick={this.onClose}><span
+                                                className={styles.NavLink}>{t('header:product')}</span></Nav.Link>
+                                            <Nav.Link href="/news" onClick={this.onClose}><span
+                                                className={styles.NavLink}>{t('header:news')}</span></Nav.Link>
+                                            <Nav.Link href="/about" onClick={this.onClose}><span
+                                                className={styles.NavLink}>{t('header:about')}</span></Nav.Link>
+                                            {curLang.toLowerCase() === 'zh-cn' ? <div className={styles.Language}
+                                                                                      onClick={() => this.changeLng('en-us')}>English</div> :
+                                                <div className={styles.Language}
+                                                     onClick={() => this.changeLng('zh-cn')}>中文</div>}
+                                        </Nav>
+                                        <PageFooter/>
+                                    </div>
+                                </Drawer>
+                            </Navbar>
+                        </Col>
+                    </Row>
+                </Container>
             </div>
 
         );
