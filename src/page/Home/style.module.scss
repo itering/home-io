@@ -425,9 +425,12 @@ p {
       margin: 0 0 20px;
       text-align: center;
     }
+    li {
+      width: 45%;
+    }
     img {
-      width: 162px;
-      height: 60px;
+      width: 100%;
+      height: auto;
     }
   }
   .section6 {
