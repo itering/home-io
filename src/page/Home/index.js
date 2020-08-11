@@ -208,7 +208,7 @@ class Home extends Component {
                                 </Row>
                                 <Row className={styles.row}>
                                     <Col className={styles.col} xs={12} sm={4}>
-                                        <div className={styles.section2_item}>
+                                        <div className={styles.section2_item_1}>
                                             <div className={styles.gifPlayer}>
                                                 <img className={styles.static} src={section_2_item_1_static}/>
                                                 <img src={section_2_item_1}/>
@@ -217,7 +217,7 @@ class Home extends Component {
                                         </div>
                                     </Col>
                                     <Col className={styles.col} xs={12} sm={4}>
-                                        <div className={styles.section2_item}>
+                                        <div className={styles.section2_item_2}>
                                             <div className={styles.gifPlayer}>
                                                 <img className={styles.static} src={section_2_item_2_static}/>
                                                 <img src={section_2_item_2}/>
@@ -226,7 +226,7 @@ class Home extends Component {
                                         </div>
                                     </Col>
                                     <Col className={styles.col} xs={12} sm={4}>
-                                        <div className={styles.section2_item}>
+                                        <div className={styles.section2_item_3}>
                                             <div className={styles.gifPlayer}>
                                                 <img className={styles.static} src={section_2_item_3_static}/>
                                                 <img src={section_2_item_3}/>
@@ -239,10 +239,12 @@ class Home extends Component {
                                     <Col className={styles.col} xs={12} sm={4}>
                                     </Col>
                                     <Col className={styles.col} xs={12} sm={4}>
-                                        <a className={styles.linkBtn} href="https://darwinia.network/"
-                                           target="_blank">{t('home_page:learn_more')}</a>
-                                        <a className={styles.linkBtn} href={t('home_page:section_2_paper')}
-                                           target="_blank">{t('home_page:white_paper')}</a>
+                                        <div className={styles.linkBtns}>
+                                            <a className={styles.linkBtn} href="https://darwinia.network/"
+                                            target="_blank">{t('home_page:learn_more')}</a>
+                                            <a className={styles.linkBtn} href={t('home_page:section_2_paper')}
+                                            target="_blank">{t('home_page:white_paper')}</a>
+                                        </div>
                                     </Col>
                                     <Col className={styles.col} xs={12} sm={4}>
                                     </Col>
@@ -376,23 +378,19 @@ class Home extends Component {
                                 </Row>
                                 <Row className={styles.row}>
                                     <Col className={styles.col} xs={12} sm={4}>
-                                        <a className="news-link"
-                                           href="https://mp.weixin.qq.com/s/PTGocYpIf0v2-IgJFzQE6Q"
-                                           target="_blank">
-                                            <div className={styles.section6_item}>
-                                                <a className="news-link"
-                                                   href="https://mp.weixin.qq.com/s/PTGocYpIf0v2-IgJFzQE6Q"
-                                                   target="_blank">
-                                                    <img src={section_6_item_1}/>
-                                                    <div
-                                                        className={styles.subTitle}>{t('home_page:section_6_item_1_title')}</div>
-                                                    <p>{t('home_page:section_6_item_1_detail')}</p>
-                                                </a>
-                                            </div>
-                                        </a>
+                                        <div className={styles.section6_item_1}>
+                                            <a className="news-link"
+                                                href="https://mp.weixin.qq.com/s/PTGocYpIf0v2-IgJFzQE6Q"
+                                                target="_blank">
+                                                <img src={section_6_item_1}/>
+                                                <div
+                                                    className={styles.subTitle}>{t('home_page:section_6_item_1_title')}</div>
+                                                <p>{t('home_page:section_6_item_1_detail')}</p>
+                                            </a>
+                                        </div>
                                     </Col>
                                     <Col className={styles.col} xs={12} sm={4}>
-                                        <div className={styles.section6_item}>
+                                        <div className={styles.section6_item_2}>
                                             <a className="news-link"
                                                href="https://mp.weixin.qq.com/s/MZRZC9UDkXzmBCd-GWIRmw"
                                                target="_blank">
@@ -404,7 +402,7 @@ class Home extends Component {
                                         </div>
                                     </Col>
                                     <Col className={styles.col} xs={12} sm={4}>
-                                        <div className={styles.section6_item}>
+                                        <div className={styles.section6_item_3}>
                                             <a className="news-link"
                                                href="https://mp.weixin.qq.com/s/6tZFYa3d7ujpas2XJ30rbw"
                                                target="_blank">
@@ -436,10 +434,11 @@ class Home extends Component {
                                             <div className={styles.subTitle}>{t('home_page:section_7_subtitle')}</div>
                                         </div>
                                     </Col>
-                                    <Col className={styles.col} xs={{span: 9, offset: 1}}>
-                                        <div className={styles.section7_item}>
+                                    <Col className={styles.col} xs={{span: 12}}>
+                                        <div className={styles.section7_detail}>
                                             <p>{t('home_page:section_7_detail_1')}</p>
                                             <p>{t('home_page:section_7_detail_2')}</p>
+                                            <p>{t('home_page:section_7_detail_3')}</p>
                                         </div>
                                     </Col>
                                     <Col className={styles.col} xs={12}>
@@ -663,7 +662,7 @@ class Home extends Component {
                             </Row>
                             <Row className={styles.row}>
                                 <Col className={styles.col} xs={12} sm={4}>
-                                    <div className={styles.section6_item}>
+                                    <div className={styles.section6_item_1}>
                                         <a className="news-link"
                                            href="https://mp.weixin.qq.com/s/PTGocYpIf0v2-IgJFzQE6Q"
                                            target="_blank">
@@ -675,7 +674,7 @@ class Home extends Component {
                                     </div>
                                 </Col>
                                 <Col className={styles.col} xs={12} sm={4}>
-                                    <div className={styles.section6_item}>
+                                    <div className={styles.section6_item_2}>
                                         <a className="news-link"
                                            href="https://mp.weixin.qq.com/s/MZRZC9UDkXzmBCd-GWIRmw"
                                            target="_blank">
@@ -687,7 +686,7 @@ class Home extends Component {
                                     </div>
                                 </Col>
                                 <Col className={styles.col} xs={12} sm={4}>
-                                    <div className={styles.section6_item}>
+                                    <div className={styles.section6_item_3}>
                                         <a className="news-link"
                                            href="https://mp.weixin.qq.com/s/6tZFYa3d7ujpas2XJ30rbw"
                                            target="_blank">
@@ -717,6 +716,7 @@ class Home extends Component {
                                         <div className={styles.subTitle}>{t('home_page:section_7_subtitle')}</div>
                                         <p>{t('home_page:section_7_detail_1')}</p>
                                         <p>{t('home_page:section_7_detail_2')}</p>
+                                        <p>{t('home_page:section_7_detail_3')}</p>
                                         <a className={styles.linkBtn}>{t('home_page:view_posts')}</a>
                                     </div>
                                 </Col>

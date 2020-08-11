@@ -40,7 +40,7 @@ class Home extends Component {
                         </Row>
                         <Row className={styles.row}>
                             <Col className={styles.col} xs={12} sm={4}>
-                                <div className={styles.section6_item}>
+                                <div className={styles.section6_item_1}>
                                     <a className="news-link" href="https://mp.weixin.qq.com/s/PTGocYpIf0v2-IgJFzQE6Q"
                                        target="_blank">
                                         <img src={section_6_item_1}/>
@@ -51,7 +51,7 @@ class Home extends Component {
                                 </div>
                             </Col>
                             <Col className={styles.col} xs={12} sm={4}>
-                                <div className={styles.section6_item}>
+                                <div className={styles.section6_item_2}>
                                     <a className="news-link" href="https://mp.weixin.qq.com/s/MZRZC9UDkXzmBCd-GWIRmw"
                                        target="_blank">
                                         <img src={section_6_item_2}/>
@@ -62,7 +62,7 @@ class Home extends Component {
                                 </div>
                             </Col>
                             <Col className={styles.col} xs={12} sm={4}>
-                                <div className={styles.section6_item}>
+                                <div className={styles.section6_item_3}>
                                     <a className="news-link" href="https://mp.weixin.qq.com/s/6tZFYa3d7ujpas2XJ30rbw"
                                        target="_blank">
                                         <img src={section_6_item_3}/>
