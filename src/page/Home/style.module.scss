@@ -74,6 +74,10 @@ p {
 }
 
 .section1 {
+  .colFlex {
+    display: flex;
+    align-items: center;
+  }
   .subTitle {
     font-size: 30px;
     font-weight: 300;
@@ -129,6 +133,10 @@ p {
 }
 
 .section3 {
+  .colFlex {
+    display: flex;
+    align-items: center;
+  }
   .title {
     font-size: 40px;
     color: #061A9D;
