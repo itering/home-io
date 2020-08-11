@@ -485,7 +485,6 @@ class Home extends Component {
                                         <div className={styles.detail}>
                                             <p>{t('home_page:section_1_p_1')}</p>
                                             <p>{t('home_page:section_1_p_2')}</p>
-                                            <p>{t('home_page:section_1_p_3')}</p>
                                         </div>
                                     </div>
                                 </Col>
@@ -701,7 +700,7 @@ class Home extends Component {
                             <Row className={styles.row}>
                                 <Col className={styles.col} xs={12}>
                                     <div className={styles.btns}>
-                                        <a className={styles.linkBtn}>{t('home_page:view_more')}</a>
+                                        <a className={styles.linkBtn} href="/news">{t('home_page:view_more')}</a>
                                     </div>
                                 </Col>
                             </Row>
@@ -717,7 +716,7 @@ class Home extends Component {
                                         <p>{t('home_page:section_7_detail_1')}</p>
                                         <p>{t('home_page:section_7_detail_2')}</p>
                                         <p>{t('home_page:section_7_detail_3')}</p>
-                                        <a className={styles.linkBtn}>{t('home_page:view_posts')}</a>
+                                        <a className={styles.linkBtn} href="/about">{t('home_page:view_posts')}</a>
                                     </div>
                                 </Col>
                             </Row>
