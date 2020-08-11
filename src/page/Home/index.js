@@ -172,7 +172,7 @@ class Home extends Component {
                         <div className={styles.section1}>
                             <Container>
                                 <Row className={styles.row}>
-                                    <Col className={styles.col} xs={12} sm={7}>
+                                    <Col className={`${styles.col} ${styles.colFlex}`} xs={12} sm={7}>
                                         <div className={styles.sectionWrapper}>
                                             <img className={styles.logo} src={section_1_logo}/>
                                             <div className={styles.subTitle}>
@@ -256,7 +256,7 @@ class Home extends Component {
                         <div className={styles.section3}>
                             <Container>
                                 <Row className={styles.row}>
-                                    <Col className={styles.col} xs={12} sm={4}>
+                                    <Col className={`${styles.col} ${styles.colFlex}`} xs={12} sm={4}>
                                         <div className={styles.sectionWrapper}>
                                             <div className={styles.title}>
                                                 {t('home_page:section_3_title')}
