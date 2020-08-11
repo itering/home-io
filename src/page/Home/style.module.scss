@@ -74,7 +74,6 @@ p {
 }
 
 .section1 {
-
   .subTitle {
     font-size: 30px;
     font-weight: 300;
@@ -82,7 +81,6 @@ p {
     line-height: 41px;
     margin-bottom: 40px;
   }
-
   .logo {
     width: 321px;
     height: 38px;
@@ -111,6 +109,13 @@ p {
   .linkBtn {
     margin-top: 40px;
     width: 150px;
+  }
+  .section2_item_1, .section2_item_2, .section2_item_3 {
+    &:hover {
+      .static {
+        opacity: 0;
+      }
+    }
   }
   .section2_item_1 {
     margin-right: 2vw;
