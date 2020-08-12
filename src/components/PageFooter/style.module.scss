@@ -43,11 +43,9 @@
       display: flex;
     }
     .recordText {
-      width: 100%;
-      text-align: center;
+      flex: 1 1 auto;
     }
     .social {
-      flex: 1 1 auto;
       text-align: right;
       margin: 14px 0;
       a {
@@ -85,6 +83,10 @@
     .recordPC {
       padding: 0;
       flex-direction: column;
+      .recordText {
+        width: 100%;
+        text-align: center;
+      }
       .social {
         margin: 20px 0 0;
         font-size: 0;
