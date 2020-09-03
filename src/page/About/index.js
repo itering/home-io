@@ -7,6 +7,7 @@ import archorsComponent from '../../components/anchorsComponent'
 
 import about_png from "./img/about.png"
 import {withTranslation} from "react-i18next";
+import i18n from '../../locales/i18n';
 
 class Home extends Component {
     constructor(props, context) {
@@ -55,6 +56,7 @@ class Home extends Component {
                                         <p>{t('about_page:join_p_1')}</p>
                                         <p>{t('about_page:join_p_2')}</p>
                                     </div>
+
                                     <div className={styles.jobTitle}>
                                         {t('about_page:rust')}
                                     </div>
@@ -104,6 +106,151 @@ class Home extends Component {
                                     </div>
 
                                     <div className={styles.jobTitle}>
+                                        {t('about_page:go')}
+                                    </div>
+                                    <div className={styles.subTitle}>
+                                        {t('about_page:about_the_post')}
+                                    </div>
+                                    <p>
+                                        {t('about_page:go_post')}
+                                    </p>
+                                    <div className={styles.subTitle}>
+                                        {t('about_page:job_des')}
+                                    </div>
+                                    <p>
+                                        {t('about_page:go_1')}
+                                    </p>
+                                    <p>
+                                        {t('about_page:go_2')}
+                                    </p>
+                                    <p>
+                                        {t('about_page:go_3')}
+                                    </p>
+                                    <p>
+                                        {t('about_page:go_4')}
+                                    </p>
+                                    <p>
+                                        {t('about_page:go_5')}
+                                    </p>
+                                    <div className={styles.subTitle}>
+                                        {t('about_page:bonus')}
+                                    </div>
+                                    <p>
+                                        {t('about_page:go_bonus_1')}
+                                    </p>
+                                    <p>
+                                        {t('about_page:go_bonus_2')}
+                                    </p>
+                                    <p>
+                                        {t('about_page:go_bonus_3')}
+                                    </p>
+                                    <p>
+                                        {t('about_page:go_bonus_4')}
+                                    </p>
+                                    <div className={styles.rustBtn}>
+                                        <a className={styles.linkBtn} target="_blank"
+                                           rel="noopener"
+                                           href="mailto:contact@itering.com">{t('about_page:apply_now')}</a>
+                                    </div>
+
+                                    <div className={styles.jobTitle}>
+                                        {t('about_page:frontend')}
+                                    </div>
+                                    <div className={styles.subTitle}>
+                                        {t('about_page:about_the_post')}
+                                    </div>
+                                    <p>
+                                        {t('about_page:frontend_post')}
+                                    </p>
+                                    <div className={styles.subTitle}>
+                                        {t('about_page:job_des')}
+                                    </div>
+                                    <p>
+                                        {t('about_page:frontend_1')}
+                                    </p>
+                                    <p>
+                                        {t('about_page:frontend_2')}
+                                    </p>
+                                    <p>
+                                        {t('about_page:frontend_3')}
+                                    </p>
+                                    <p>
+                                        {t('about_page:frontend_4')}
+                                    </p>
+                                    <p>
+                                        {t('about_page:frontend_5')}
+                                    </p>
+                                    <div className={styles.subTitle}>
+                                        {t('about_page:bonus')}
+                                    </div>
+                                    <p>
+                                        {t('about_page:frontend_bonus_1')}
+                                    </p>
+                                    <p>
+                                        {t('about_page:frontend_bonus_2')}
+                                    </p>
+                                    <p>
+                                        {t('about_page:frontend_bonus_3')}
+                                    </p>
+                                    <p>
+                                        {t('about_page:frontend_bonus_4')}
+                                    </p>
+                                    <div className={styles.rustBtn}>
+                                        <a className={styles.linkBtn} target="_blank"
+                                           rel="noopener"
+                                           href="mailto:contact@itering.com">{t('about_page:apply_now')}</a>
+                                    </div>
+
+                                    {i18n.language.indexOf('en') > -1 ? <div/> :
+                                        <div>
+                                            <div className={styles.jobTitle}>
+                                                {t('about_page:test')}
+                                            </div>
+                                            <div className={styles.subTitle}>
+                                                {t('about_page:about_the_post')}
+                                            </div>
+                                            <p>
+                                                {t('about_page:test_post_1')}
+                                            </p>
+                                            <p>
+                                                {t('about_page:test_post_2')}
+                                            </p>
+                                            <p>
+                                                {t('about_page:test_post_3')}
+                                            </p>
+                                            <p>
+                                                {t('about_page:test_post_4')}
+                                            </p>
+                                            <div className={styles.subTitle}>
+                                                {t('about_page:job_des')}
+                                            </div>
+                                            <p>
+                                                {t('about_page:test_1')}
+                                            </p>
+                                            <p>
+                                                {t('about_page:test_2')}
+                                            </p>
+                                            <p>
+                                                {t('about_page:test_3')}
+                                            </p>
+                                            <p>
+                                                {t('about_page:test_4')}
+                                            </p>
+                                            <p>
+                                                {t('about_page:test_5')}
+                                            </p>
+                                            <p>
+                                                {t('about_page:test_6')}
+                                            </p>
+                                            <div className={styles.techBtn}>
+                                                <a className={styles.linkBtn} target="_blank"
+                                                   rel="noopener"
+                                                   href="mailto:contact@itering.com">{t('about_page:apply_now')}</a>
+                                            </div>
+                                        </div>
+                                    }
+
+                                    <div className={styles.jobTitle}>
                                         {t('about_page:tech')}
                                     </div>
                                     <div className={styles.subTitle}>
@@ -127,6 +274,9 @@ class Home extends Component {
                                     <p>
                                         {t('about_page:tech_4')}
                                     </p>
+                                    <p>
+                                        {t('about_page:tech_5')}
+                                    </p>
                                     <div className={styles.subTitle}>
                                         {t('about_page:bonus')}
                                     </div>
@@ -144,8 +294,107 @@ class Home extends Component {
                                            rel="noopener"
                                            href="mailto:contact@itering.com">{t('about_page:apply_now')}</a>
                                     </div>
-                                </div>
 
+                                    <div className={styles.jobTitle}>
+                                        {t('about_page:edu')}
+                                    </div>
+                                    <div className={styles.subTitle}>
+                                        {t('about_page:about_the_post')}
+                                    </div>
+                                    <p>
+                                        {t('about_page:edu_post_1')}
+                                    </p>
+                                    <p>
+                                        {t('about_page:edu_post_2')}
+                                    </p>
+                                    <div className={styles.subTitle}>
+                                        {t('about_page:job_des')}
+                                    </div>
+                                    <p>
+                                        {t('about_page:edu_1')}
+                                    </p>
+                                    <p>
+                                        {t('about_page:edu_2')}
+                                    </p>
+                                    <p>
+                                        {t('about_page:edu_3')}
+                                    </p>
+                                    <p>
+                                        {t('about_page:edu_4')}
+                                    </p>
+                                    <p>
+                                        {t('about_page:edu_5')}
+                                    </p>
+                                    <div className={styles.subTitle}>
+                                        {t('about_page:bonus')}
+                                    </div>
+                                    <p>
+                                        {t('about_page:edu_bonus_1')}
+                                    </p>
+                                    <p>
+                                        {t('about_page:edu_bonus_2')}
+                                    </p>
+                                    <p>
+                                        {t('about_page:edu_bonus_3')}
+                                    </p>
+                                    <p>
+                                        {t('about_page:edu_bonus_4')}
+                                    </p>
+                                    <div className={styles.techBtn}>
+                                        <a className={styles.linkBtn} target="_blank"
+                                           rel="noopener"
+                                           href="mailto:contact@itering.com">{t('about_page:apply_now')}</a>
+                                    </div>
+
+                                    <div className={styles.jobTitle}>
+                                        {t('about_page:oper')}
+                                    </div>
+                                    <div className={styles.subTitle}>
+                                        {t('about_page:about_the_post')}
+                                    </div>
+                                    <p>
+                                        {t('about_page:oper_post_1')}
+                                    </p>
+                                    <p>
+                                        {t('about_page:oper_post_2')}
+                                    </p>
+                                    <p>
+                                        {t('about_page:oper_post_3')}
+                                    </p>
+                                    <div className={styles.subTitle}>
+                                        {t('about_page:job_des')}
+                                    </div>
+                                    <p>
+                                        {t('about_page:oper_1')}
+                                    </p>
+                                    <p>
+                                        {t('about_page:oper_2')}
+                                    </p>
+                                    <p>
+                                        {t('about_page:oper_3')}
+                                    </p>
+                                    <p>
+                                        {t('about_page:oper_4')}
+                                    </p>
+                                    <div className={styles.subTitle}>
+                                        {t('about_page:bonus')}
+                                    </div>
+                                    <p>
+                                        {t('about_page:oper_bonus_1')}
+                                    </p>
+                                    <p>
+                                        {t('about_page:oper_bonus_2')}
+                                    </p>
+                                    <p>
+                                        {t('about_page:oper_bonus_3')}
+                                    </p>
+                                    <div className={styles.techBtn}>
+                                        <a className={styles.linkBtn} target="_blank"
+                                           rel="noopener"
+                                           href="mailto:contact@itering.com">{t('about_page:apply_now')}</a>
+                                    </div>
+
+                                </div>
                                 <div className={styles.tips}>
                                     <div>{t('about_page:tip_1')}</div>
                                     <div>{t('about_page:tip_2')}<a>contact@itering.com</a></div>

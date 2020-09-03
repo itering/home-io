@@ -241,9 +241,9 @@ class Home extends Component {
                                     <Col className={styles.col} xs={12} sm={4}>
                                         <div className={styles.linkBtns}>
                                             <a className={styles.linkBtn} href="https://darwinia.network/"
-                                            target="_blank">{t('home_page:learn_more')}</a>
+                                               target="_blank">{t('home_page:learn_more')}</a>
                                             <a className={styles.linkBtn} href={t('home_page:section_2_paper')}
-                                            target="_blank">{t('home_page:white_paper')}</a>
+                                               target="_blank">{t('home_page:white_paper')}</a>
                                         </div>
                                     </Col>
                                     <Col className={styles.col} xs={12} sm={4}>
@@ -380,8 +380,8 @@ class Home extends Component {
                                     <Col className={styles.col} xs={12} sm={4}>
                                         <div className={styles.section6_item_1}>
                                             <a className="news-link"
-                                                href="https://mp.weixin.qq.com/s/PTGocYpIf0v2-IgJFzQE6Q"
-                                                target="_blank">
+                                               href="https://mp.weixin.qq.com/s/PTGocYpIf0v2-IgJFzQE6Q"
+                                               target="_blank">
                                                 <img src={section_6_item_1}/>
                                                 <div
                                                     className={styles.subTitle}>{t('home_page:section_6_item_1_title')}</div>
