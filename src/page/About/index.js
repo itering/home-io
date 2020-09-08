@@ -6,7 +6,7 @@ import styles from './style.module.scss'
 import archorsComponent from '../../components/anchorsComponent'
 
 import about_png from "./img/about.png"
-import {withTranslation} from "react-i18next";
+import {withTranslation, Trans, useTranslation} from "react-i18next";
 import i18n from '../../locales/i18n';
 
 class Home extends Component {
@@ -64,7 +64,11 @@ class Home extends Component {
                                         {t('about_page:about_the_post')}
                                     </div>
                                     <p>
-                                        {t('about_page:rust_post')}
+                                        <Trans i18nKey="userMessagesUnread">
+                                            {t('about_page:rust_post1')} 
+                                            <a href='https://github.com/darwinia-network' rel='noopener'>https://github.com/darwinia-network</a>
+                                            {t('about_page:rust_post2')}
+                                        </Trans>
                                     </p>
                                     <div className={styles.subTitle}>
                                         {t('about_page:job_des')}
