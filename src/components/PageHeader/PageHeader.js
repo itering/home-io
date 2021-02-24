@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import {Navbar, Nav, Form, Container, Row, Col} from 'react-bootstrap'
+import {Navbar, Nav, Container, Row, Col} from 'react-bootstrap'
 import {disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks} from 'body-scroll-lock';
 import {Drawer} from 'antd';
 import {PageFooter} from '../../components/PageFooter'
@@ -10,21 +10,21 @@ import menu_icon from './img/menu.png'
 import close_icon from './img/close.png'
 import {withTranslation} from "react-i18next";
 
-const CustomToggle = React.forwardRef(({children, onClick}, ref) => (
-    <div
-        ref={ref}
-        onMouseEnter={e => {
-            e.preventDefault();
-            onClick(e);
-        }}
-        onClick={e => {
-            e.preventDefault();
-            onClick(e);
-        }}
-    >
-        {children}
-    </div>
-));
+// const CustomToggle = React.forwardRef(({children, onClick}, ref) => (
+//     <div
+//         ref={ref}
+//         onMouseEnter={e => {
+//             e.preventDefault();
+//             onClick(e);
+//         }}
+//         onClick={e => {
+//             e.preventDefault();
+//             onClick(e);
+//         }}
+//     >
+//         {children}
+//     </div>
+// ));
 
 class PageHeader extends Component {
     constructor(props, context) {
@@ -98,7 +98,7 @@ class PageHeader extends Component {
                         <Col>
                             <Navbar className={`${styles.Navbar} cs-header`}>
                                 <Navbar.Brand href="/">
-                                    <img src={theme === 'dark' ? logo_light : logo}/>
+                                    <img alt="logo" src={theme === 'dark' ? logo_light : logo}/>
                                 </Navbar.Brand>
                                 <Nav className={styles.navLinks}>
                                     <Nav.Link href="/#product" onClick={this.onClickAnchor}><span
@@ -112,7 +112,7 @@ class PageHeader extends Component {
                                              onClick={() => this.changeLng('zh-cn')}>中文</div>}
                                 </Nav>
                                 <div className={styles.mobileMenu} onClick={this.showDrawer}>
-                                    <img className={styles.menuIcon} src={menu_icon}/>
+                                    <img alt="menu" className={styles.menuIcon} src={menu_icon}/>
                                 </div>
                                 <Drawer
                                     placement="right"
@@ -123,7 +123,7 @@ class PageHeader extends Component {
                                 >
                                     <div className={styles.drawer}>
                                         <div className={styles.closeBtn}>
-                                            <img onClick={this.onClose} src={close_icon}/>
+                                            <img alt="close" onClick={this.onClose} src={close_icon}/>
                                         </div>
                                         <Nav className={styles.linkContent}>
                                             <Nav.Link href="/" onClick={this.onClose}><span

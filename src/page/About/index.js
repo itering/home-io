@@ -1,12 +1,12 @@
 import React, {Component} from "react";
-import {Container, Row, Col, Image, Nav, Dropdown, Button} from 'react-bootstrap'
+import {Container, Row, Col} from 'react-bootstrap'
 import {PageHeader} from '../../components/PageHeader'
 import {PageFooter} from '../../components/PageFooter'
 import styles from './style.module.scss'
 import archorsComponent from '../../components/anchorsComponent'
 
 import about_png from "./img/about.png"
-import {withTranslation, Trans, useTranslation} from "react-i18next";
+import {withTranslation, Trans} from "react-i18next";
 import i18n from '../../locales/i18n';
 
 class Home extends Component {
@@ -105,7 +105,7 @@ class Home extends Component {
                                     </p>
                                     <div className={styles.rustBtn}>
                                         <a className={styles.linkBtn} target="_blank"
-                                           rel="noopener"
+                                           rel="noopener noreferrer"
                                            href="mailto:contact@itering.com">{t('about_page:apply_now')}</a>
                                     </div>
 
@@ -153,8 +153,8 @@ class Home extends Component {
                                     </p>
                                     <div className={styles.rustBtn}>
                                         <a className={styles.linkBtn} target="_blank"
-                                           rel="noopener"
-                                           href="mailto:contact@itering.com">{t('about_page:apply_now')}</a>
+                                            rel="noopener noreferrer"
+                                            href="mailto:contact@itering.com">{t('about_page:apply_now')}</a>
                                     </div>
 
                                     <div className={styles.jobTitle}>
@@ -201,8 +201,8 @@ class Home extends Component {
                                     </p>
                                     <div className={styles.rustBtn}>
                                         <a className={styles.linkBtn} target="_blank"
-                                           rel="noopener"
-                                           href="mailto:contact@itering.com">{t('about_page:apply_now')}</a>
+                                            rel="noopener noreferrer"
+                                            href="mailto:contact@itering.com">{t('about_page:apply_now')}</a>
                                     </div>
 
                                     {i18n.language.indexOf('en') > -1 ? <div/> :
@@ -248,8 +248,8 @@ class Home extends Component {
                                             </p>
                                             <div className={styles.techBtn}>
                                                 <a className={styles.linkBtn} target="_blank"
-                                                   rel="noopener"
-                                                   href="mailto:contact@itering.com">{t('about_page:apply_now')}</a>
+                                                    rel="noopener noreferrer"
+                                                    href="mailto:contact@itering.com">{t('about_page:apply_now')}</a>
                                             </div>
                                         </div>
                                     }
@@ -295,8 +295,8 @@ class Home extends Component {
                                     </p>
                                     <div className={styles.techBtn}>
                                         <a className={styles.linkBtn} target="_blank"
-                                           rel="noopener"
-                                           href="mailto:contact@itering.com">{t('about_page:apply_now')}</a>
+                                            rel="noopener noreferrer"
+                                            href="mailto:contact@itering.com">{t('about_page:apply_now')}</a>
                                     </div>
 
                                     <div className={styles.jobTitle}>
@@ -346,7 +346,7 @@ class Home extends Component {
                                     </p>
                                     <div className={styles.techBtn}>
                                         <a className={styles.linkBtn} target="_blank"
-                                           rel="noopener"
+                                           rel="noopener noreferrer"
                                            href="mailto:contact@itering.com">{t('about_page:apply_now')}</a>
                                     </div>
 
@@ -394,21 +394,21 @@ class Home extends Component {
                                     </p>
                                     <div className={styles.techBtn}>
                                         <a className={styles.linkBtn} target="_blank"
-                                           rel="noopener"
+                                           rel="noopener noreferrer"
                                            href="mailto:contact@itering.com">{t('about_page:apply_now')}</a>
                                     </div>
 
                                 </div>
                                 <div className={styles.tips}>
                                     <div>{t('about_page:tip_1')}</div>
-                                    <div>{t('about_page:tip_2')}<a>contact@itering.com</a></div>
+                                    <div>{t('about_page:tip_2')}<a href="mailto:contact@itering.com">contact@itering.com</a></div>
                                 </div>
 
 
                             </Col>
                             <Col className={styles.col} xs={0} sm={5}>
                                 <div className={styles.imgWrapper}>
-                                    <img src={about_png}/>
+                                    <img alt="about" src={about_png}/>
                                 </div>
                             </Col>
                         </Row>
