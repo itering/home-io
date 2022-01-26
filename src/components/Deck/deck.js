@@ -27,7 +27,6 @@ import Tween from './tween';
 import cx from 'classnames';
 import raf from 'raf';
 import Slide from './slide';
-import styles from './style.scss';
 // import throttle from 'utils/throttle';
 
 const SWIPE_DURA = 1000; // default transition duration
@@ -38,7 +37,7 @@ const CURRENT_SLIDE_REF = 'current slide';
 
 // really hacky to disable wheel event during scrolling
 const WHEELABLE_AFTER_SCROLL_MS = 100;
-const SCROLL_THROTTLE_MS = 100;
+// const SCROLL_THROTTLE_MS = 100;
 const WHEELABLE_THROTTLE_MS = 500;
 
 const STATUS = {
@@ -271,7 +270,7 @@ class Deck extends Component {
         let { prev, current, width, height, status, distance = 0, gear = 0 } = this.state;
         gear = Math.floor(gear);
 
-        if (distance == 0) return;
+        if (distance === 0) return;
         if (status & STATUS.SWIPE_STARTED) return this.resumeTran();
 
         const shouldForward = distance * gear >= 0 && (Math.abs(distance) / (horizontal ? width : height) >= factor || Math.abs(gear) >= speed);
@@ -305,8 +304,10 @@ class Deck extends Component {
     }
 
     genSlideStyle(factor) {
-        const { horizontal, loop, swipe } = this.props;
-        const { prev, current, status, distance, width, height } = this.state;
+        // const { loop } = this.props;
+        // const { prev, current, status, swipe } = this.state;
+        const { horizontal } = this.props;
+        const { distance, width, height } = this.state;
         const dx = horizontal ? distance + factor * width : 0;
         const dy = !horizontal ? distance + factor * height : 0;
         const transform = `translate3d(${dx}px, ${dy}px, 0)`;
@@ -314,11 +315,12 @@ class Deck extends Component {
     }
 
     renderSlides() {
-        const { children, horizontal, loop, slideClasses } = this.props;
+        // const { horizontal } = this.props;
+        const { children, loop, slideClasses } = this.props;
         const { prev, current, status } = this.state;
         // const slides = Children.toArray(children);
         const slides = Array.isArray(children) ? children :  [children];
-        const slidesCount = Children.count(slides), lastIndex = slidesCount - 1;
+        // const slidesCount = Children.count(slides), lastIndex = slidesCount - 1;
 
         const isSwiping = status & STATUS.SWIPING,
             isForwarding = status & STATUS.FORWARDING,

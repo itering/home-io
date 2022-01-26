@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import cx from 'classnames';
-import styles from './style.scss';
 
 class Slide extends Component {
     render() {

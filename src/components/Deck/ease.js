@@ -72,16 +72,16 @@ ease.inOutSine = function(n){
 };
 
 ease.inExpo = function(n){
-    return 0 == n ? 0 : Math.pow(1024, n - 1);
+    return 0 === n ? 0 : Math.pow(1024, n - 1);
 };
 
 ease.outExpo = function(n){
-    return 1 == n ? n : 1 - Math.pow(2, -10 * n);
+    return 1 === n ? n : 1 - Math.pow(2, -10 * n);
 };
 
 ease.inOutExpo = function(n){
-    if (0 == n) return 0;
-    if (1 == n) return 1;
+    if (0 === n) return 0;
+    if (1 === n) return 1;
     if ((n *= 2) < 1) return .5 * Math.pow(1024, n - 1);
     return .5 * (-Math.pow(2, -10 * (n - 1)) + 2);
 };
