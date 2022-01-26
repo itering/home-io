@@ -1,0 +1,93 @@
+.page-main {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.page-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.itering-hero-section-wrap {
+  background: url('./img2/itering-hero-section-bg.jpg');
+
+  @media (max-width: 575.98px) {
+    background: linear-gradient(180deg, #F6F9FC 0%, #FFFFFF 100%);
+  }
+}
+
+.itering-hero-section-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 120px;
+
+  @media (max-width: 575.98px) {
+    flex-direction: column;
+  }
+}
+
+.itering-hero-section-container-symbol {
+  display: initial;
+  @media (max-width: 575.98px) {
+    display: none;
+  }
+}
+
+.itering-hero-section-container-symbol-m {
+  display: none;
+  @media (max-width: 575.98px) {
+    display: initial;
+    order: 0;
+    width: fit-content;
+  }
+}
+
+.itering-hero-section-container-content {
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 575.98px) {
+    order: 1;
+  }
+}
+
+.itering-hero-section-container-content-logo {
+  width: fit-content;
+
+  @media (max-width: 575.98px) {
+    display: none;
+  }
+}
+
+.itering-hero-section-container-content-title {
+  font-family: Cera Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 41px;
+  color: #061A9D;
+  margin-top: 30px;
+  margin-bottom: 26px;
+  @media (max-width: 575.98px) {
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+.itering-hero-section-container-content-desc {
+  font-family: Cera Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+  @media (max-width: 575.98px) {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
