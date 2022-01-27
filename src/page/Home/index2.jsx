@@ -22,7 +22,73 @@ import projectsSectionCardTwitterIcon from './img2/projects-section-card-twitter
 import projectsSectionCardTelegramIcon from './img2/projects-section-card-telegram-icon.svg';
 import projectsSectionCardGithubIcon from './img2/projects-section-card-github-icon.svg';
 
+import ecoFriendsSectionPolkadot from './img2/eco-friend-polkadot.svg';
+import ecoFriendsSectionWeb3Foundation from './img2/eco-friend-web3-foundation.svg';
+import ecoFriendsSectionParity from './img2/eco-friend-parity.svg';
+import ecoFriendsSectionHashkey from './img2/eco-friend-hashkey.svg';
+import ecoFriendsSectionSNZ from './img2/eco-friend-snz.svg';
+import ecoFriendsSectionMathWallet from './img2/eco-friend-math-wallet.svg';
+import ecoFriendsSectionImToken from './img2/eco-friend-imtoken.svg';
+import ecoFriendsSectionDarwinia from './img2/eco-friend-darwinia.svg';
+import ecoFriendsSectionWormhole from './img2/eco-friend-wormhole.svg';
+import ecoFriendsSectionEvolution from './img2/eco-friend-evolution.svg';
+
+import ecoFriendsSectionPolkadotM from './img2/eco-friend-polkadot-m.svg';
+import ecoFriendsSectionWeb3FoundationM from './img2/eco-friend-web3-foundation-m.svg';
+import ecoFriendsSectionParityM from './img2/eco-friend-parity-m.svg';
+import ecoFriendsSectionHashkeyM from './img2/eco-friend-hashkey-m.svg';
+import ecoFriendsSectionSNZM from './img2/eco-friend-snz-m.svg';
+import ecoFriendsSectionMathWalletM from './img2/eco-friend-math-wallet-m.svg';
+import ecoFriendsSectionImTokenM from './img2/eco-friend-imtoken-m.svg';
+import ecoFriendsSectionDarwiniaM from './img2/eco-friend-darwinia-m.svg';
+import ecoFriendsSectionWormholeM from './img2/eco-friend-wormhole-m.svg';
+import ecoFriendsSectionEvolutionM from './img2/eco-friend-evolution-m.svg';
+
 const cx = classNames.bind(styles);
+
+const ecosystemFriendsData = [{
+  icon: ecoFriendsSectionPolkadot,
+}, {
+  icon: ecoFriendsSectionWeb3Foundation,
+}, {
+  icon: ecoFriendsSectionParity,
+}, {
+  icon: ecoFriendsSectionHashkey,
+}, {
+  icon: ecoFriendsSectionSNZ,
+}, {
+  icon: ecoFriendsSectionMathWallet,
+}, {
+  icon: ecoFriendsSectionImToken,
+}, {
+  icon: ecoFriendsSectionDarwinia,
+}, {
+  icon: ecoFriendsSectionWormhole,
+}, {
+  icon: ecoFriendsSectionEvolution,
+}];
+
+const ecosystemFriendsDataM = [{
+  icon: ecoFriendsSectionPolkadotM,
+}, {
+  icon: ecoFriendsSectionWeb3FoundationM,
+}, {
+  icon: ecoFriendsSectionParityM,
+}, {
+  icon: ecoFriendsSectionHashkeyM,
+}, {
+  icon: ecoFriendsSectionSNZM,
+}, {
+  icon: ecoFriendsSectionMathWalletM,
+}, {
+  icon: ecoFriendsSectionImTokenM,
+}, {
+  icon: ecoFriendsSectionDarwiniaM,
+}, {
+  icon: ecoFriendsSectionWormholeM,
+}, {
+  icon: ecoFriendsSectionEvolutionM,
+}];
 
 const Home = () => {
   return (
@@ -105,6 +171,28 @@ const Home = () => {
                   <a href='https://github.com/evolutionlandorg' target='_blank' rel='noopener noreferrer'><img alt='...' src={projectsSectionCardGithubIcon} /></a>
                 </div>
               </div>
+            </div>
+          </div>
+        </Container>
+      </div>
+
+      <div className={cx('eco-friends-section-wrap')}>
+        <Container>
+          <div className={cx('eco-friends-section-container')}>
+            <h3 className={cx('eco-friends-section-container-title')}>Ecosystem Firends</h3>
+            <div className={cx('eco-friends-section-container-friends')}>
+              {ecosystemFriendsData.map((value, idx) => (
+                <div className={cx('eco-friends-section-container-friend')} key={idx}>
+                  <img alt='...' src={value.icon} />
+                </div>
+              ))}
+            </div>
+            <div className={cx('eco-friends-section-container-friends-m')}>
+              {ecosystemFriendsDataM.map((value, idx) => (
+                <div className={cx('eco-friends-section-container-friend')} key={idx}>
+                  <img alt='...' src={value.icon} />
+                </div>
+              ))}
             </div>
           </div>
         </Container>
