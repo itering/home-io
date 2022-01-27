@@ -27,7 +27,7 @@ export default () =>
             <Route
                 exact
                 component={AsyncAbout}
-                path='/about'
+                path='/jobs'
             />
             <Route
                 exact
