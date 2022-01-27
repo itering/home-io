@@ -198,7 +198,23 @@ const Home = () => {
         </Container>
       </div>
 
-      <PageFooter />
+      <div className={cx('join-us-section-wrap')}>
+        <Container>
+          <div className={cx('join-us-section-container')}>
+            <h3 className={cx('join-us-section-container-title')}>Join us</h3>
+            <h5 className={cx('join-us-section-container-subtitle')}>Come join us and create a reliable future together!</h5>
+            <p className={cx('join-us-section-container-desc')}>The team has many senior experts engaged in the development and technical research of the blockchain field, and has participated in the development of many blockchain open source projects including Bitshares, Ethereum, NEO and so on.</p>
+            <p className={cx('join-us-section-container-desc')}>We have maintained cooperation with many companies in the industry and have won web3 foundation grant. Our team is located in Singapore, but we have partner companies in Shanghai and Nanjing, China, which can provide multiple jobs.</p>
+            <a href='/' target='_blank' rel='noopener noreferrer' className={cx('join-us-section-container-view-post')}>
+              <span>View Posts</span>
+            </a>
+          </div>
+        </Container>
+      </div>
+
+      <div className={cx('page-footer')}>
+        <PageFooter style={{ background: 'transparent' }} />
+      </div>
     </div>
   );
 };
