@@ -106,7 +106,7 @@ class PageHeader extends Component {
                                     <Nav.Link href="/#product" onClick={this.onClickAnchor}><span
                                         className={styles.NavLink}>{t('header:product')}</span></Nav.Link>
                                     <Nav.Link href="/jobs"><span className={styles.NavLink}>{t('header:jobs')}</span></Nav.Link>
-                                    {curLang.toLowerCase() === 'zh-cn' ? <div className={styles.Language}
+                                    {curLang.toLowerCase && curLang.toLowerCase() === 'zh-cn' ? <div className={styles.Language}
                                                                               onClick={() => this.changeLng('en-us')}>English</div> :
                                         <div className={styles.Language}
                                              onClick={() => this.changeLng('zh-cn')}>中文</div>}
