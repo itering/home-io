@@ -3,7 +3,7 @@ import {Router, Route, Switch} from "react-router-dom";
 import {asyncComponent} from "./components/AsyncComponent";
 import { createBrowserHistory} from "history";
 const AsyncHome = asyncComponent(import("./page/Home"));
-const AsyncHome2 = asyncComponent(import("./page/Home/index2.tsx"));
+const AsyncHome2 = asyncComponent(import("./page/Home/index2"));
 const AsyncNews = asyncComponent(import("./page/News"));
 const AsyncAbout = asyncComponent(import("./page/About"));
 const AsyncNotFound = asyncComponent(import("./page/NotFound"));
