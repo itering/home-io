@@ -14,6 +14,16 @@
 
   "home_page": {
     "slogan": "Promote the massive adoption of blockchain and iterate to a trust-free future",
+    "itering_hero_section_content_desc_1": "Itering is a blockchain technology company, established in Singapore,2018.",
+    "itering_hero_section_content_desc_2": "The blockchain explorer Subscan we developed is a high-precision Web3 explorer which can quickly support Substrate ecological networks. In addition to searching for Block, Extrinsic, Event, and Account, it provides a user-friendly interactive experience in Staking, EVM, Parachain, and other modules. And we also provide customized services for unique functions.",
+    "itering_hero_section_content_desc_3": "We focus on the research and development of blockchain infrastructure, and currently provide technical service for the Darwinia network developed based on the Substrate framework and its ecological applications Wormhole, Evolution Land, etc.",
+    "subscan_section_content_decs_1": "Subscan is a high-precision Web3 explorer that aggregates Substrate ecological networks. As a multi-chain explorer, Subscan has supported dozens of excellent networks. Users can use Subscan to conveniently search and view blockchain data.",
+    "subscan_section_content_decs_2": "The Subscan APIs are safe and stable, rich in types, and easy to use, which can meet the requirements of different fields of projects. We provide developers with a higher free rate limit, and for the users who have higher requirements for APIs, provide advanced customized API services.",
+    "subscan_section_content_decs_3": "Subscan also provides users with tools such as multi-signature, account format conversion, and analysis charts. In addition to supporting the Substrate native module, we have custom functionality tailored for multiple networks.",
+    "projects_section_title": "Some of the organizations using our tech",
+    "projects_section_desc_darwinia": "Darwinia Network built on Substrate, focusing on the construction of future Internet of tokens, has supplied Cross-Chain Message Delivery Service that can be used for any token bridge.",
+    "projects_section_desc_wormhole": "Cross-chain transfer of assets between multiple blockchains can be realized through Wormhole.",
+    "projects_section_desc_evolution": "The first DeFi+NFT cross-chain game with each continent built on different blockchain networks.",
     "view_more": "View More",
     "view_posts": "View Posts",
     "learn_more": "Learn More",

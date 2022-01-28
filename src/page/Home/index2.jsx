@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './styles2.module.scss';
 import classNames from 'classnames/bind';
+import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 
@@ -92,6 +93,9 @@ const ecosystemFriendsDataM = [{
 }];
 
 const Home = () => {
+  const { t } = useTranslation();
+  console.log('t', t('cc'));
+
   return (
     <div className={cx('page-main')}>
       <div className={cx('page-header')}>
@@ -103,8 +107,10 @@ const Home = () => {
           <div className={cx('itering-hero-section-container')}>
             <div className={cx('itering-hero-section-container-content')}>
               <img alt='...' src={iteringHeroSectionLogo} className={cx('itering-hero-section-container-content-logo')} />
-              <h3 className={cx('itering-hero-section-container-content-title')}>Promote the massive adoption of blockchain and iterate to a trust-free future</h3>
-              <p className={cx('itering-hero-section-container-content-desc')}>Itering is a blockchain technology company, established in Singapore,2018. The blockchain explorer Subscan we developed is a high-precision Web3 explorer which can quickly support Substrate ecological networks. In addition to searching for Block, Extrinsic, Event, and Account, it provides a user-friendly interactive experience in Staking, EVM, Parachain, and other modules. And we also provide customized services for unique functions. We focus on the research and development of blockchain infrastructure, and currently provide technical service for the Darwinia network developed based on the Substrate framework and its ecological applications Wormhole, Evolution Land, etc.</p>
+              <h3 className={cx('itering-hero-section-container-content-title')}>{t('home_page:slogan')}</h3>
+              <p className={cx('itering-hero-section-container-content-desc')}>{t('home_page:itering_hero_section_content_desc_1')}</p>
+              <p className={cx('itering-hero-section-container-content-desc')}>{t('home_page:itering_hero_section_content_desc_2')}</p>
+              <p className={cx('itering-hero-section-container-content-desc')}>{t('home_page:itering_hero_section_content_desc_3')}</p>
             </div>
             <img alt='...' src={iteringHero} className={cx('itering-hero-section-container-symbol')} />
             <img alt='...' src={iteringHeroM} className={cx('itering-hero-section-container-symbol-m')} />
@@ -120,11 +126,11 @@ const Home = () => {
             <img alt='...' src={subscanSectionSymbolM} className={cx('subscan-section-container-symbol-m')} />
             <div className={cx('subscan-section-container-content')}>
               <h3 className={cx('subscan-section-container-content-title')}>Subscan Explorer</h3>
-              <p className={cx('subscan-section-container-content-desc')}>Subscan is a high-precision Web3 explorer that aggregates Substrate ecological network. As a multi-chain explorer, subscan has supported dozens of excellent networks. Users can use Subscan to conveniently search and view blockchain data.</p>
-              <p className={cx('subscan-section-container-content-desc')}>The Subscan APIs are safe and stable, rich in types and easy to use, which can meet the requirements of different fields of projects. We provide developers with a higher free rate limit, and for the users who have higher requirements for APIs, provide advanced customized API services.</p>
-              <p className={cx('subscan-section-container-content-desc')}>Subscan also provides users with tools such as multi-signature, account format conversion, and analysis charts. In addition to supporting the Substrate native module, we have custom functionality tailored for multiple networks.</p>
+              <p className={cx('subscan-section-container-content-desc')}>{t('home_page:subscan_section_content_decs_1')}</p>
+              <p className={cx('subscan-section-container-content-desc')}>{t('home_page:subscan_section_content_decs_2')}</p>
+              <p className={cx('subscan-section-container-content-desc')}>{t('home_page:subscan_section_content_decs_3')}</p>
               <a href='https://www.subscan.io/' target='_blank' rel='noopener noreferrer' className={cx('subscan-section-container-content-learn-more')}>
-                <span>Learn More</span>
+                <span>{t('home_page:learn_more')}</span>
               </a>
             </div>
           </div>
@@ -134,13 +140,13 @@ const Home = () => {
       <div className={cx('projects-section-wrap')}>
         <Container>
           <div className={cx('projects-section-container')}>
-            <h3 className={cx('projects-section-container-title')}>Some of the organizations using our tech</h3>
+            <h3 className={cx('projects-section-container-title')}>{t('home_page:projects_section_title')}</h3>
             <div className={cx('projects-section-container-cards')}>
               <div className={cx('projects-section-container-card')}>
                 <img alt='...' src={darwiniaProjectIcon} className={cx('projects-section-container-card-icon')} />
                 <h5 className={cx('projects-section-container-card-title')}>Darwinia Network</h5>
                 <h6 className={cx('projects-section-container-card-subtitle')}>Cross-chain Message Delivery Service</h6>
-                <p className={cx('projects-section-container-card-desc')}>Darwinia Network built on Substrate, focusing on the construction of future Internet of tokens, has supplied Cross-Chain Message Delivery Service that can be used for any token bridge.</p>
+                <p className={cx('projects-section-container-card-desc')}>{t('home_page:projects_section_desc_darwinia')}</p>
                 <div className={cx('projects-section-container-card-social-links')}>
                   <a href='https://darwinia.network' target='_blank' rel='noopener noreferrer'><img alt='...' src={projectsSectionCardWebsiteIcon} /></a>
                   <a href='https://twitter.com/DarwiniaNetwork' target='_blank' rel='noopener noreferrer'><img alt='...' src={projectsSectionCardTwitterIcon} /></a>
@@ -152,7 +158,7 @@ const Home = () => {
                 <img alt='...' src={wormholeProjectIcon} className={cx('projects-section-container-card-icon')} />
                 <h5 className={cx('projects-section-container-card-title')}>Wormhole</h5>
                 <h6 className={cx('projects-section-container-card-subtitle')}>Cross-chain Bridge</h6>
-                <p className={cx('projects-section-container-card-desc')}>Cross-chain transfer of assets between multiple blockchains can be realized through Wormhole.</p>
+                <p className={cx('projects-section-container-card-desc')}>{t('home_page:projects_section_desc_wormhole')}</p>
                 <div className={cx('projects-section-container-card-social-links')}>
                   <a href='https://wormhole.darwinia.network' target='_blank' rel='noopener noreferrer'><img alt='...' src={projectsSectionCardWebsiteIcon} /></a>
                   <a href='https://twitter.com/DarwiniaNetwork' target='_blank' rel='noopener noreferrer'><img alt='...' src={projectsSectionCardTwitterIcon} /></a>
@@ -164,7 +170,7 @@ const Home = () => {
                 <img alt='...' src={evolutionProjectIcon} className={cx('projects-section-container-card-icon')} />
                 <h5 className={cx('projects-section-container-card-title')}>Evolution Land</h5>
                 <h6 className={cx('projects-section-container-card-subtitle')}>DeFi  NFT Game</h6>
-                <p className={cx('projects-section-container-card-desc')}>The first DeFi+NFT cross-chain game with each continent built on different blockchain networks.</p>
+                <p className={cx('projects-section-container-card-desc')}>{t('home_page:projects_section_desc_evolution')}</p>
                 <div className={cx('projects-section-container-card-social-links')}>
                   <a href='https://www.evolution.land' target='_blank' rel='noopener noreferrer'><img alt='...' src={projectsSectionCardWebsiteIcon} /></a>
                   <a href='https://twitter.com/Evolution_Land' target='_blank' rel='noopener noreferrer'><img alt='...' src={projectsSectionCardTwitterIcon} /></a>
@@ -207,7 +213,7 @@ const Home = () => {
             <p className={cx('join-us-section-container-desc')}>The team has many senior experts engaged in the development and technical research of the blockchain field, and has participated in the development of many blockchain open source projects including Bitshares, Ethereum, NEO and so on.</p>
             <p className={cx('join-us-section-container-desc')}>We have maintained cooperation with many companies in the industry and have won web3 foundation grant. Our team is located in Singapore, but we have partner companies in Shanghai and Nanjing, China, which can provide multiple jobs.</p>
             <Link to='/jobs' className={cx('join-us-section-container-view-post')}>
-              <span>View Posts</span>
+              <span>{t('home_page:view_posts')}</span>
             </Link>
           </div>
         </Container>
