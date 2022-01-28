@@ -2,7 +2,7 @@ import React from "react";
 import {Router, Route, Switch} from "react-router-dom";
 import {asyncComponent} from "./components/AsyncComponent";
 import { createBrowserHistory} from "history";
-const AsyncHome = asyncComponent(import("./page/Home"));
+// const AsyncHome = asyncComponent(import("./page/Home"));
 const AsyncHome2 = asyncComponent(import("./page/Home/index2"));
 const AsyncNews = asyncComponent(import("./page/News"));
 const AsyncAbout = asyncComponent(import("./page/About"));
@@ -14,15 +14,15 @@ const history = createBrowserHistory();
 export default () =>
     <Router history={history}>
         <Switch>
-            <Route
+            {/* <Route
                 exact
                 component={AsyncHome}
                 path='/'
-            />
+            /> */}
             <Route
                 exact
                 component={AsyncHome2}
-                path='/index2'
+                path='/'
             />
             <Route
                 exact
