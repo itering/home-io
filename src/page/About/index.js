@@ -97,6 +97,8 @@ class Home extends Component {
                                     <p>{t('about_page:are_you_the_right_person_for_this_role_golang_12')}</p>
                                     <p>{t('about_page:are_you_the_right_person_for_this_role_golang_13')}</p>
                                     <p>{t('about_page:are_you_the_right_person_for_this_role_golang_14')}</p>
+                                    <p>{t('about_page:are_you_the_right_person_for_this_role_golang_15')}</p>
+                                    <p>{t('about_page:are_you_the_right_person_for_this_role_golang_16')}</p>
                                     <div className={styles.rustBtn}>
                                         <a className={styles.linkBtn} target="_blank"
                                            rel="noopener noreferrer"

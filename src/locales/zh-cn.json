@@ -164,6 +164,8 @@
     "are_you_the_right_person_for_this_role_golang_12": "12. 加分项：了解 DevOps 相关概念：容器化应用开发基本准则、CI/CD、Prometheus Client SDK 集成、Kubernetes Liveness Probe 集成等",
     "are_you_the_right_person_for_this_role_golang_13": "13. 加分项：具备其它脚本语言经验，例如 Python、Node.js、Elixir、Ruby 等",
     "are_you_the_right_person_for_this_role_golang_14": "14. 加分项：英语读写能力强",
+    "are_you_the_right_person_for_this_role_golang_15": "",
+    "are_you_the_right_person_for_this_role_golang_16": "",
     "jobs_dba": "中/高级 DBA 工程师（Subscan）",
     "what_will_you_be_doing_dba_1": "1. 管理和维护目前位于 Google Cloud Platform 的多个 MySQL 8.0 数据库实例，关注线上数据库指标和日志",
     "what_will_you_be_doing_dba_2": "2. 与服务端开发工程师合作，通过分表、分库、多副本等方式，持续提升数据库性能和可用性，避免数据库成为木桶效应中的「短板」",

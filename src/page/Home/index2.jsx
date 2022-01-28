@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './styles2.module.scss';
 import classNames from 'classnames/bind';
+import { Link } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 
 import { PageHeader } from '../../components/PageHeader';
@@ -205,9 +206,9 @@ const Home = () => {
             <h5 className={cx('join-us-section-container-subtitle')}>Come join us and create a reliable future together!</h5>
             <p className={cx('join-us-section-container-desc')}>The team has many senior experts engaged in the development and technical research of the blockchain field, and has participated in the development of many blockchain open source projects including Bitshares, Ethereum, NEO and so on.</p>
             <p className={cx('join-us-section-container-desc')}>We have maintained cooperation with many companies in the industry and have won web3 foundation grant. Our team is located in Singapore, but we have partner companies in Shanghai and Nanjing, China, which can provide multiple jobs.</p>
-            <a href='/' target='_blank' rel='noopener noreferrer' className={cx('join-us-section-container-view-post')}>
+            <Link to='/jobs' className={cx('join-us-section-container-view-post')}>
               <span>View Posts</span>
-            </a>
+            </Link>
           </div>
         </Container>
       </div>
