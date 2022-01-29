@@ -208,10 +208,11 @@ const Home = () => {
       <div className={cx('join-us-section-wrap')}>
         <Container>
           <div className={cx('join-us-section-container')}>
-            <h3 className={cx('join-us-section-container-title')}>Join us</h3>
-            <h5 className={cx('join-us-section-container-subtitle')}>Come join us and create a reliable future together!</h5>
-            <p className={cx('join-us-section-container-desc')}>The team has many senior experts engaged in the development and technical research of the blockchain field, and has participated in the development of many blockchain open source projects including Bitshares, Ethereum, NEO and so on.</p>
-            <p className={cx('join-us-section-container-desc')}>We have maintained cooperation with many companies in the industry and have won web3 foundation grant. Our team is located in Singapore, but we have partner companies in Shanghai and Nanjing, China, which can provide multiple jobs.</p>
+            <h3 className={cx('join-us-section-container-title')}>{t('home_page:join_us_section_title')}</h3>
+            <h5 className={cx('join-us-section-container-subtitle')}>{t('home_page:join_us_section_subtitle')}</h5>
+            <p className={cx('join-us-section-container-desc')}>{t('home_page:join_us_section_desc_1')}</p>
+            <p className={cx('join-us-section-container-desc')}>{t('home_page:join_us_section_desc_2')}</p>
+            <p className={cx('join-us-section-container-desc')}>{t('home_page:join_us_section_desc_3')}</p>
             <Link to='/jobs' className={cx('join-us-section-container-view-post')}>
               <span>{t('home_page:view_posts')}</span>
             </Link>
