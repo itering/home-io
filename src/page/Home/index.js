@@ -462,7 +462,7 @@ class Home extends Component {
                 </ul>
                 <div className={styles.deckMobile}>
                     <div className={styles.section1}>
-                        <a id="product"></a>
+                        <span id="product" />
                         <Container>
                             <Row className={styles.row}>
                                 <Col className={styles.col} xs={12} sm={5}>

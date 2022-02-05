@@ -9,6 +9,7 @@ import logo_light from '../../logo-light.svg'
 import menu_icon from './img/menu.png'
 import close_icon from './img/close.png'
 import {withTranslation} from "react-i18next";
+import i18n from '../../locales/i18n';
 
 // const CustomToggle = React.forwardRef(({children, onClick}, ref) => (
 //     <div
@@ -88,7 +89,7 @@ class PageHeader extends Component {
 
 
     render() {
-        const {theme, t, i18n} = this.props
+        const {theme, t} = this.props
         const {visible} = this.state
         let curLang = i18n.language;
         return (
@@ -101,11 +102,11 @@ class PageHeader extends Component {
                                     <img alt="logo" src={theme === 'dark' ? logo_light : logo}/>
                                 </Navbar.Brand>
                                 <Nav className={styles.navLinks}>
+                                    <Nav.Link href="/" onClick={this.onClickAnchor}><span
+                                        className={styles.NavLink}>{t('header:home')}</span></Nav.Link>
                                     <Nav.Link href="/#product" onClick={this.onClickAnchor}><span
                                         className={styles.NavLink}>{t('header:product')}</span></Nav.Link>
-                                    <Nav.Link href="/news" onClick={this.onClickAnchor}><span
-                                        className={styles.NavLink}>{t('header:news')}</span></Nav.Link>
-                                    <Nav.Link href="/about"><span className={styles.NavLink}>{t('header:about')}</span></Nav.Link>
+                                    <Nav.Link href="/jobs"><span className={styles.NavLink}>{t('header:jobs')}</span></Nav.Link>
                                     {curLang.toLowerCase() === 'zh-cn' ? <div className={styles.Language}
                                                                               onClick={() => this.changeLng('en-us')}>English</div> :
                                         <div className={styles.Language}
@@ -130,10 +131,8 @@ class PageHeader extends Component {
                                                 className={styles.NavLink}>{t('header:home')}</span></Nav.Link>
                                             <Nav.Link href="/#product" onClick={this.onClose}><span
                                                 className={styles.NavLink}>{t('header:product')}</span></Nav.Link>
-                                            <Nav.Link href="/news" onClick={this.onClose}><span
-                                                className={styles.NavLink}>{t('header:news')}</span></Nav.Link>
-                                            <Nav.Link href="/about" onClick={this.onClose}><span
-                                                className={styles.NavLink}>{t('header:about')}</span></Nav.Link>
+                                            <Nav.Link href="/jobs" onClick={this.onClose}><span
+                                                className={styles.NavLink}>{t('header:jobs')}</span></Nav.Link>
                                             {curLang.toLowerCase() === 'zh-cn' ? <div className={styles.Language}
                                                                                       onClick={() => this.changeLng('en-us')}>English</div> :
                                                 <div className={styles.Language}
