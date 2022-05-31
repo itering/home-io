@@ -25,7 +25,6 @@ jobs:
           vercel_group: itering
           preview_output: true
           project_name: home-io
-          prod_mode: true
           enable_cache: true
           enable_notify_comment: true
           enable_notify_slack: true
