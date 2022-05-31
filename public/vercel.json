@@ -23,7 +23,7 @@
     }
   ],
   "rewrites": [
-    { "source": "/jobs", "destination": "/index.html" }
+    { "source": "/jobs", "destination": "/about" }
   ]
 }
   
