@@ -16,7 +16,7 @@ import subscanSectionSymbol from './img2/subscan-section-symbol.svg';
 import subscanSectionSymbolM from './img2/subscan-section-symbol-m.svg';
 
 import darwiniaProjectIcon from './img2/darwinia-project-icon.svg';
-import wormholeProjectIcon from './img2/wormhole-project-icon.svg';
+import helixProjectIcon from './img2/helix-project-icon.png';
 import evolutionProjectIcon from './img2/evolution-project-icon.svg';
 
 import projectsSectionCardWebsiteIcon from './img2/projects-section-card-website-icon.svg';
@@ -155,15 +155,15 @@ const Home = () => {
                 </div>
               </div>
               <div className={cx('projects-section-container-card')}>
-                <img alt='...' src={wormholeProjectIcon} className={cx('projects-section-container-card-icon')} />
-                <h5 className={cx('projects-section-container-card-title')}>Wormhole</h5>
+                <img alt='...' src={helixProjectIcon} className={cx('projects-section-container-card-icon')} />
+                <h5 className={cx('projects-section-container-card-title')}>Helix</h5>
                 <h6 className={cx('projects-section-container-card-subtitle')}>Cross-chain Bridge</h6>
-                <p className={cx('projects-section-container-card-desc')}>{t('home_page:projects_section_desc_wormhole')}</p>
+                <p className={cx('projects-section-container-card-desc')}>{t('home_page:projects_section_desc_helix')}</p>
                 <div className={cx('projects-section-container-card-social-links')}>
-                  <a href='https://wormhole.darwinia.network' target='_blank' rel='noopener noreferrer'><img alt='...' src={projectsSectionCardWebsiteIcon} /></a>
-                  <a href='https://twitter.com/DarwiniaNetwork' target='_blank' rel='noopener noreferrer'><img alt='...' src={projectsSectionCardTwitterIcon} /></a>
+                  <a href='https://helixbridge.app/' target='_blank' rel='noopener noreferrer'><img alt='...' src={projectsSectionCardWebsiteIcon} /></a>
+                  <a href='https://twitter.com/helixbridges' target='_blank' rel='noopener noreferrer'><img alt='...' src={projectsSectionCardTwitterIcon} /></a>
                   <a href='https://t.me/DarwiniaNetwork' target='_blank' rel='noopener noreferrer'><img alt='...' src={projectsSectionCardTelegramIcon} /></a>
-                  <a href='https://github.com/darwinia-network/wormhole-ui' target='_blank' rel='noopener noreferrer'><img alt='...' src={projectsSectionCardGithubIcon} /></a>
+                  <a href='https://github.com/helix-bridge' target='_blank' rel='noopener noreferrer'><img alt='...' src={projectsSectionCardGithubIcon} /></a>
                 </div>
               </div>
               <div className={cx('projects-section-container-card')}>
