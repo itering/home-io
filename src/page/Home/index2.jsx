@@ -186,7 +186,7 @@ const Home = () => {
       <div className={cx('eco-friends-section-wrap')}>
         <Container>
           <div className={cx('eco-friends-section-container')}>
-            <h3 className={cx('eco-friends-section-container-title')}>Ecosystem Firends</h3>
+            <h3 className={cx('eco-friends-section-container-title')}>Ecosystem Friends</h3>
             <div className={cx('eco-friends-section-container-friends')}>
               {ecosystemFriendsData.map((value, idx) => (
                 <div className={cx('eco-friends-section-container-friend')} key={idx}>
