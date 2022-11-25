@@ -205,7 +205,7 @@ const Home = () => {
         </Container>
       </div>
 
-      <div className={cx('join-us-section-wrap')}>
+      {/* <div className={cx('join-us-section-wrap')}>
         <Container>
           <div className={cx('join-us-section-container')}>
             <h3 className={cx('join-us-section-container-title')}>{t('home_page:join_us_section_title')}</h3>
@@ -218,7 +218,7 @@ const Home = () => {
             </Link>
           </div>
         </Container>
-      </div>
+      </div> */}
 
       <div className={cx('page-footer')}>
         <PageFooter style={{ background: 'transparent' }} />
