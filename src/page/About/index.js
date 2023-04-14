@@ -57,214 +57,228 @@ class Home extends Component {
                                         <p>{t('about_page:join_p_2')}</p>
                                     </div>
 
-                                    <div className={styles.jobTitle}>
-                                        {t('about_page:jobs_golang')}
-                                    </div>
-                                    <div className={styles.subTitle}>
-                                        {t('about_page:what_will_you_be_doing')}
-                                    </div>
-                                    <p>
-                                        {t('about_page:what_will_you_be_doing_golang_1')}
-                                    </p>
-                                    <p>
-                                        {t('about_page:what_will_you_be_doing_golang_2')}
-                                    </p>
-                                    <p>
-                                        {t('about_page:what_will_you_be_doing_golang_3')}
-                                    </p>
-                                    <div className={styles.subTitle}>
-                                        {t('about_page:are_you_the_right_person_for_this_role')}
-                                    </div>
-                                    <p>
-                                        {t('about_page:are_you_the_right_person_for_this_role_golang_1')}
-                                    </p>
-                                    <p>
-                                        {t('about_page:are_you_the_right_person_for_this_role_golang_2')}
-                                    </p>
-                                    <p>
-                                        {t('about_page:are_you_the_right_person_for_this_role_golang_3')}
-                                    </p>
-                                    <p>
-                                        {t('about_page:are_you_the_right_person_for_this_role_golang_4')}
-                                    </p>
-                                    <p>{t('about_page:are_you_the_right_person_for_this_role_golang_5')}</p>
-                                    <p>{t('about_page:are_you_the_right_person_for_this_role_golang_6')}</p>
-                                    <p>{t('about_page:are_you_the_right_person_for_this_role_golang_7')}</p>
-                                    <p>{t('about_page:are_you_the_right_person_for_this_role_golang_8')}</p>
-                                    <p>{t('about_page:are_you_the_right_person_for_this_role_golang_9')}</p>
-                                    <p>{t('about_page:are_you_the_right_person_for_this_role_golang_10')}</p>
-                                    <p>{t('about_page:are_you_the_right_person_for_this_role_golang_11')}</p>
-                                    <p>{t('about_page:are_you_the_right_person_for_this_role_golang_12')}</p>
-                                    <p>{t('about_page:are_you_the_right_person_for_this_role_golang_13')}</p>
-                                    <p>{t('about_page:are_you_the_right_person_for_this_role_golang_14')}</p>
-                                    <p>{t('about_page:are_you_the_right_person_for_this_role_golang_15')}</p>
-                                    <p>{t('about_page:are_you_the_right_person_for_this_role_golang_16')}</p>
-                                    <div className={styles.rustBtn}>
-                                        <a className={styles.linkBtn} target="_blank"
-                                           rel="noopener noreferrer"
-                                           href="mailto:contact@itering.com">{t('about_page:apply_now')}</a>
-                                    </div>
-
-                                    <div className={styles.jobTitle}>
-                                        {t('about_page:jobs_dba')}
-                                    </div>
-                                    <div className={styles.subTitle}>
-                                        {t('about_page:what_will_you_be_doing')}
-                                    </div>
-                                    <p>{t('about_page:what_will_you_be_doing_dba_1')}</p>
-                                    <p>{t('about_page:what_will_you_be_doing_dba_2')}</p>
-                                    <p>{t('about_page:what_will_you_be_doing_dba_3')}</p>
-                                    <p>{t('about_page:what_will_you_be_doing_dba_4')}</p>
-                                    <p>{t('about_page:what_will_you_be_doing_dba_5')}</p>
-                                    <p>{t('about_page:what_will_you_be_doing_dba_6')}</p>
-                                    <div className={styles.subTitle}>
-                                        {t('about_page:are_you_the_right_person_for_this_role')}
-                                    </div>
-                                    <p>{t('about_page:are_you_the_right_person_for_this_role_dba_1')}</p>
-                                    <p>{t('about_page:are_you_the_right_person_for_this_role_dba_2')}</p>
-                                    <p>{t('about_page:are_you_the_right_person_for_this_role_dba_3')}</p>
-                                    <p>{t('about_page:are_you_the_right_person_for_this_role_dba_4')}</p>
-                                    <p>{t('about_page:are_you_the_right_person_for_this_role_dba_5')}</p>
-                                    <p>{t('about_page:are_you_the_right_person_for_this_role_dba_6')}</p>
-                                    <p>{t('about_page:are_you_the_right_person_for_this_role_dba_7')}</p>
-                                    <p>{t('about_page:are_you_the_right_person_for_this_role_dba_8')}</p>
-                                    <p>{t('about_page:are_you_the_right_person_for_this_role_dba_9')}</p>
-                                    <p>{t('about_page:are_you_the_right_person_for_this_role_dba_10')}</p>
-                                    <p>{t('about_page:are_you_the_right_person_for_this_role_dba_11')}</p>
-                                    <p>{t('about_page:are_you_the_right_person_for_this_role_dba_12')}</p>
-                                    <p>{t('about_page:are_you_the_right_person_for_this_role_dba_13')}</p>
-                                    <div className={styles.rustBtn}>
-                                        <a className={styles.linkBtn} target="_blank"
+                                    {/* <>
+                                        <div className={styles.jobTitle}>
+                                            {t('about_page:jobs_golang')}
+                                        </div>
+                                        <div className={styles.subTitle}>
+                                            {t('about_page:what_will_you_be_doing')}
+                                        </div>
+                                        <p>
+                                            {t('about_page:what_will_you_be_doing_golang_1')}
+                                        </p>
+                                        <p>
+                                            {t('about_page:what_will_you_be_doing_golang_2')}
+                                        </p>
+                                        <p>
+                                            {t('about_page:what_will_you_be_doing_golang_3')}
+                                        </p>
+                                        <div className={styles.subTitle}>
+                                            {t('about_page:are_you_the_right_person_for_this_role')}
+                                        </div>
+                                        <p>
+                                            {t('about_page:are_you_the_right_person_for_this_role_golang_1')}
+                                        </p>
+                                        <p>
+                                            {t('about_page:are_you_the_right_person_for_this_role_golang_2')}
+                                        </p>
+                                        <p>
+                                            {t('about_page:are_you_the_right_person_for_this_role_golang_3')}
+                                        </p>
+                                        <p>
+                                            {t('about_page:are_you_the_right_person_for_this_role_golang_4')}
+                                        </p>
+                                        <p>{t('about_page:are_you_the_right_person_for_this_role_golang_5')}</p>
+                                        <p>{t('about_page:are_you_the_right_person_for_this_role_golang_6')}</p>
+                                        <p>{t('about_page:are_you_the_right_person_for_this_role_golang_7')}</p>
+                                        <p>{t('about_page:are_you_the_right_person_for_this_role_golang_8')}</p>
+                                        <p>{t('about_page:are_you_the_right_person_for_this_role_golang_9')}</p>
+                                        <p>{t('about_page:are_you_the_right_person_for_this_role_golang_10')}</p>
+                                        <p>{t('about_page:are_you_the_right_person_for_this_role_golang_11')}</p>
+                                        <p>{t('about_page:are_you_the_right_person_for_this_role_golang_12')}</p>
+                                        <p>{t('about_page:are_you_the_right_person_for_this_role_golang_13')}</p>
+                                        <p>{t('about_page:are_you_the_right_person_for_this_role_golang_14')}</p>
+                                        <p>{t('about_page:are_you_the_right_person_for_this_role_golang_15')}</p>
+                                        <p>{t('about_page:are_you_the_right_person_for_this_role_golang_16')}</p>
+                                        <div className={styles.rustBtn}>
+                                            <a className={styles.linkBtn} target="_blank"
                                             rel="noopener noreferrer"
                                             href="mailto:contact@itering.com">{t('about_page:apply_now')}</a>
-                                    </div>
+                                        </div>
+                                    </> */}
 
-                                    <div className={styles.jobTitle}>
-                                        {t('about_page:jobs_contract_dev')}
-                                    </div>
-                                    <div className={styles.subTitle}>
-                                        {t('about_page:what_will_you_be_doing')}
-                                    </div>
-                                    <p>{t('about_page:what_will_you_be_doing_contract_dev_1')}</p>
-                                    <p>{t('about_page:what_will_you_be_doing_contract_dev_2')}</p>
-                                    <p>{t('about_page:what_will_you_be_doing_contract_dev_3')}</p>
-                                    <p>{t('about_page:what_will_you_be_doing_contract_dev_4')}</p>
-                                    <div className={styles.subTitle}>
-                                        {t('about_page:are_you_the_right_person_for_this_role')}
-                                    </div>
-                                    <p>{t('about_page:are_you_the_right_person_for_this_role_contract_dev_1')}</p>
-                                    <p>{t('about_page:are_you_the_right_person_for_this_role_contract_dev_2')}</p>
-                                    <p>{t('about_page:are_you_the_right_person_for_this_role_contract_dev_3')}</p>
-                                    <p>{t('about_page:are_you_the_right_person_for_this_role_contract_dev_4')}</p>
-                                    <p>{t('about_page:are_you_the_right_person_for_this_role_contract_dev_5')}</p>
-                                    <p>{t('about_page:are_you_the_right_person_for_this_role_contract_dev_6')}</p>
-                                    <p>{t('about_page:are_you_the_right_person_for_this_role_contract_dev_7')}</p>
-                                    <div className={styles.rustBtn}>
-                                        <a className={styles.linkBtn} target="_blank"
+                                    {/* <>
+                                        <div className={styles.jobTitle}>
+                                            {t('about_page:jobs_dba')}
+                                        </div>
+                                        <div className={styles.subTitle}>
+                                            {t('about_page:what_will_you_be_doing')}
+                                        </div>
+                                        <p>{t('about_page:what_will_you_be_doing_dba_1')}</p>
+                                        <p>{t('about_page:what_will_you_be_doing_dba_2')}</p>
+                                        <p>{t('about_page:what_will_you_be_doing_dba_3')}</p>
+                                        <p>{t('about_page:what_will_you_be_doing_dba_4')}</p>
+                                        <p>{t('about_page:what_will_you_be_doing_dba_5')}</p>
+                                        <p>{t('about_page:what_will_you_be_doing_dba_6')}</p>
+                                        <div className={styles.subTitle}>
+                                            {t('about_page:are_you_the_right_person_for_this_role')}
+                                        </div>
+                                        <p>{t('about_page:are_you_the_right_person_for_this_role_dba_1')}</p>
+                                        <p>{t('about_page:are_you_the_right_person_for_this_role_dba_2')}</p>
+                                        <p>{t('about_page:are_you_the_right_person_for_this_role_dba_3')}</p>
+                                        <p>{t('about_page:are_you_the_right_person_for_this_role_dba_4')}</p>
+                                        <p>{t('about_page:are_you_the_right_person_for_this_role_dba_5')}</p>
+                                        <p>{t('about_page:are_you_the_right_person_for_this_role_dba_6')}</p>
+                                        <p>{t('about_page:are_you_the_right_person_for_this_role_dba_7')}</p>
+                                        <p>{t('about_page:are_you_the_right_person_for_this_role_dba_8')}</p>
+                                        <p>{t('about_page:are_you_the_right_person_for_this_role_dba_9')}</p>
+                                        <p>{t('about_page:are_you_the_right_person_for_this_role_dba_10')}</p>
+                                        <p>{t('about_page:are_you_the_right_person_for_this_role_dba_11')}</p>
+                                        <p>{t('about_page:are_you_the_right_person_for_this_role_dba_12')}</p>
+                                        <p>{t('about_page:are_you_the_right_person_for_this_role_dba_13')}</p>
+                                        <div className={styles.rustBtn}>
+                                            <a className={styles.linkBtn} target="_blank"
+                                                rel="noopener noreferrer"
+                                                href="mailto:contact@itering.com">{t('about_page:apply_now')}</a>
+                                        </div>
+                                    </> */}
+
+                                    {/* <>
+                                        <div className={styles.jobTitle}>
+                                            {t('about_page:jobs_contract_dev')}
+                                        </div>
+                                        <div className={styles.subTitle}>
+                                            {t('about_page:what_will_you_be_doing')}
+                                        </div>
+                                        <p>{t('about_page:what_will_you_be_doing_contract_dev_1')}</p>
+                                        <p>{t('about_page:what_will_you_be_doing_contract_dev_2')}</p>
+                                        <p>{t('about_page:what_will_you_be_doing_contract_dev_3')}</p>
+                                        <p>{t('about_page:what_will_you_be_doing_contract_dev_4')}</p>
+                                        <div className={styles.subTitle}>
+                                            {t('about_page:are_you_the_right_person_for_this_role')}
+                                        </div>
+                                        <p>{t('about_page:are_you_the_right_person_for_this_role_contract_dev_1')}</p>
+                                        <p>{t('about_page:are_you_the_right_person_for_this_role_contract_dev_2')}</p>
+                                        <p>{t('about_page:are_you_the_right_person_for_this_role_contract_dev_3')}</p>
+                                        <p>{t('about_page:are_you_the_right_person_for_this_role_contract_dev_4')}</p>
+                                        <p>{t('about_page:are_you_the_right_person_for_this_role_contract_dev_5')}</p>
+                                        <p>{t('about_page:are_you_the_right_person_for_this_role_contract_dev_6')}</p>
+                                        <p>{t('about_page:are_you_the_right_person_for_this_role_contract_dev_7')}</p>
+                                        <div className={styles.rustBtn}>
+                                            <a className={styles.linkBtn} target="_blank"
+                                                rel="noopener noreferrer"
+                                                href="mailto:contact@itering.com">{t('about_page:apply_now')}</a>
+                                        </div>
+                                    </> */}
+
+
+                                    <>
+                                        <div className={styles.jobTitle}>
+                                            {t('about_page:jobs_front_end')}
+                                        </div>
+                                        <div className={styles.subTitle}>
+                                            {t('about_page:what_will_you_be_doing')}
+                                        </div>
+                                        <p>{t('about_page:what_will_you_be_doing_front_end_1')}</p>
+                                        <div className={styles.subTitle}>
+                                            {t('about_page:are_you_the_right_person_for_this_role')}
+                                        </div>
+                                        <p>{t('about_page:are_you_the_right_person_for_this_role_front_end_1')}</p>
+                                        <p>{t('about_page:are_you_the_right_person_for_this_role_front_end_2')}</p>
+                                        <p>{t('about_page:are_you_the_right_person_for_this_role_front_end_3')}</p>
+                                        <p>{t('about_page:are_you_the_right_person_for_this_role_front_end_4')}</p>
+                                        <p>{t('about_page:are_you_the_right_person_for_this_role_front_end_5')}</p>
+                                        <p>{t('about_page:are_you_the_right_person_for_this_role_front_end_6')}</p>
+                                        <p>{t('about_page:are_you_the_right_person_for_this_role_front_end_7')}</p>
+                                        <p>{t('about_page:are_you_the_right_person_for_this_role_front_end_8')}</p>
+                                        <p>{t('about_page:are_you_the_right_person_for_this_role_front_end_9')}</p>
+                                        <p>{t('about_page:are_you_the_right_person_for_this_role_front_end_10')}</p>
+                                        <div className={styles.techBtn}>
+                                            <a className={styles.linkBtn} target="_blank"
+                                                rel="noopener noreferrer"
+                                                href="mailto:contact@itering.com">{t('about_page:apply_now')}</a>
+                                        </div>
+                                    </>
+
+                                    {/* <>
+                                        <div className={styles.jobTitle}>
+                                            {t('about_page:jobs_full_stack_dev')}
+                                        </div>
+                                        <div className={styles.subTitle}>
+                                            {t('about_page:what_will_you_be_doing')}
+                                        </div>
+                                        <p>{t('about_page:what_will_you_be_doing_full_stack_dev_1')}</p>
+                                        <p>{t('about_page:what_will_you_be_doing_full_stack_dev_2')}</p>
+                                        <p>{t('about_page:what_will_you_be_doing_full_stack_dev_3')}</p>
+                                        <p>{t('about_page:what_will_you_be_doing_full_stack_dev_4')}</p>
+                                        <p>{t('about_page:what_will_you_be_doing_full_stack_dev_5')}</p>
+                                        <div className={styles.subTitle}>
+                                            {t('about_page:are_you_the_right_person_for_this_role')}
+                                        </div>
+                                        <p>{t('about_page:are_you_the_right_person_for_this_role_full_stack_dev_1')}</p>
+                                        <p>{t('about_page:are_you_the_right_person_for_this_role_full_stack_dev_2')}</p>
+                                        <p>{t('about_page:are_you_the_right_person_for_this_role_full_stack_dev_3')}</p>
+                                        <p>{t('about_page:are_you_the_right_person_for_this_role_full_stack_dev_4')}</p>
+                                        <p>{t('about_page:are_you_the_right_person_for_this_role_full_stack_dev_5')}</p>
+                                        <p>{t('about_page:are_you_the_right_person_for_this_role_full_stack_dev_6')}</p>
+                                        <p>{t('about_page:are_you_the_right_person_for_this_role_full_stack_dev_7')}</p>
+                                        <p>{t('about_page:are_you_the_right_person_for_this_role_full_stack_dev_8')}</p>
+                                        <p>{t('about_page:are_you_the_right_person_for_this_role_full_stack_dev_9')}</p>
+                                        <div className={styles.techBtn}>
+                                            <a className={styles.linkBtn} target="_blank"
                                             rel="noopener noreferrer"
                                             href="mailto:contact@itering.com">{t('about_page:apply_now')}</a>
-                                    </div>
+                                        </div>
+                                    </> */}
 
-
-                                    <div className={styles.jobTitle}>
-                                        {t('about_page:jobs_front_end')}
-                                    </div>
-                                    <div className={styles.subTitle}>
-                                        {t('about_page:what_will_you_be_doing')}
-                                    </div>
-                                    <p>{t('about_page:what_will_you_be_doing_front_end_1')}</p>
-                                    <div className={styles.subTitle}>
-                                        {t('about_page:are_you_the_right_person_for_this_role')}
-                                    </div>
-                                    <p>{t('about_page:are_you_the_right_person_for_this_role_front_end_1')}</p>
-                                    <p>{t('about_page:are_you_the_right_person_for_this_role_front_end_2')}</p>
-                                    <p>{t('about_page:are_you_the_right_person_for_this_role_front_end_3')}</p>
-                                    <p>{t('about_page:are_you_the_right_person_for_this_role_front_end_4')}</p>
-                                    <p>{t('about_page:are_you_the_right_person_for_this_role_front_end_5')}</p>
-                                    <p>{t('about_page:are_you_the_right_person_for_this_role_front_end_6')}</p>
-                                    <p>{t('about_page:are_you_the_right_person_for_this_role_front_end_7')}</p>
-                                    <p>{t('about_page:are_you_the_right_person_for_this_role_front_end_8')}</p>
-                                    <p>{t('about_page:are_you_the_right_person_for_this_role_front_end_9')}</p>
-                                    <p>{t('about_page:are_you_the_right_person_for_this_role_front_end_10')}</p>
-                                    <div className={styles.techBtn}>
-                                        <a className={styles.linkBtn} target="_blank"
+                                    {/* <>
+                                        <div className={styles.jobTitle}>
+                                            {t('about_page:jobs_sdk_dev')}
+                                        </div>
+                                        <div className={styles.subTitle}>
+                                            {t('about_page:what_will_you_be_doing')}
+                                        </div>
+                                        <p>
+                                            {t('about_page:what_will_you_be_doing_sdk_dev_1')}
+                                        </p>
+                                        <p>
+                                            {t('about_page:what_will_you_be_doing_sdk_dev_2')}
+                                        </p>
+                                        <div className={styles.subTitle}>
+                                            {t('about_page:are_you_the_right_person_for_this_role')}
+                                        </div>
+                                        <p>{t('about_page:are_you_the_right_person_for_this_role_sdk_dev_1')}</p>
+                                        <p>{t('about_page:are_you_the_right_person_for_this_role_sdk_dev_2')}</p>
+                                        <p>{t('about_page:are_you_the_right_person_for_this_role_sdk_dev_3')}</p>
+                                        <p>{t('about_page:are_you_the_right_person_for_this_role_sdk_dev_4')}</p>
+                                        <p>{t('about_page:are_you_the_right_person_for_this_role_sdk_dev_5')}</p>
+                                        <div className={styles.techBtn}>
+                                            <a className={styles.linkBtn} target="_blank"
                                             rel="noopener noreferrer"
                                             href="mailto:contact@itering.com">{t('about_page:apply_now')}</a>
-                                    </div>
+                                        </div>
+                                    </> */}
 
-                                    <div className={styles.jobTitle}>
-                                        {t('about_page:jobs_full_stack_dev')}
-                                    </div>
-                                    <div className={styles.subTitle}>
-                                        {t('about_page:what_will_you_be_doing')}
-                                    </div>
-                                    <p>{t('about_page:what_will_you_be_doing_full_stack_dev_1')}</p>
-                                    <p>{t('about_page:what_will_you_be_doing_full_stack_dev_2')}</p>
-                                    <p>{t('about_page:what_will_you_be_doing_full_stack_dev_3')}</p>
-                                    <p>{t('about_page:what_will_you_be_doing_full_stack_dev_4')}</p>
-                                    <p>{t('about_page:what_will_you_be_doing_full_stack_dev_5')}</p>
-                                    <div className={styles.subTitle}>
-                                        {t('about_page:are_you_the_right_person_for_this_role')}
-                                    </div>
-                                    <p>{t('about_page:are_you_the_right_person_for_this_role_full_stack_dev_1')}</p>
-                                    <p>{t('about_page:are_you_the_right_person_for_this_role_full_stack_dev_2')}</p>
-                                    <p>{t('about_page:are_you_the_right_person_for_this_role_full_stack_dev_3')}</p>
-                                    <p>{t('about_page:are_you_the_right_person_for_this_role_full_stack_dev_4')}</p>
-                                    <p>{t('about_page:are_you_the_right_person_for_this_role_full_stack_dev_5')}</p>
-                                    <p>{t('about_page:are_you_the_right_person_for_this_role_full_stack_dev_6')}</p>
-                                    <p>{t('about_page:are_you_the_right_person_for_this_role_full_stack_dev_7')}</p>
-                                    <p>{t('about_page:are_you_the_right_person_for_this_role_full_stack_dev_8')}</p>
-                                    <p>{t('about_page:are_you_the_right_person_for_this_role_full_stack_dev_9')}</p>
-                                    <div className={styles.techBtn}>
-                                        <a className={styles.linkBtn} target="_blank"
-                                           rel="noopener noreferrer"
-                                           href="mailto:contact@itering.com">{t('about_page:apply_now')}</a>
-                                    </div>
-
-                                    <div className={styles.jobTitle}>
-                                        {t('about_page:jobs_sdk_dev')}
-                                    </div>
-                                    <div className={styles.subTitle}>
-                                        {t('about_page:what_will_you_be_doing')}
-                                    </div>
-                                    <p>
-                                        {t('about_page:what_will_you_be_doing_sdk_dev_1')}
-                                    </p>
-                                    <p>
-                                        {t('about_page:what_will_you_be_doing_sdk_dev_2')}
-                                    </p>
-                                    <div className={styles.subTitle}>
-                                        {t('about_page:are_you_the_right_person_for_this_role')}
-                                    </div>
-                                    <p>{t('about_page:are_you_the_right_person_for_this_role_sdk_dev_1')}</p>
-                                    <p>{t('about_page:are_you_the_right_person_for_this_role_sdk_dev_2')}</p>
-                                    <p>{t('about_page:are_you_the_right_person_for_this_role_sdk_dev_3')}</p>
-                                    <p>{t('about_page:are_you_the_right_person_for_this_role_sdk_dev_4')}</p>
-                                    <p>{t('about_page:are_you_the_right_person_for_this_role_sdk_dev_5')}</p>
-                                    <div className={styles.techBtn}>
-                                        <a className={styles.linkBtn} target="_blank"
-                                           rel="noopener noreferrer"
-                                           href="mailto:contact@itering.com">{t('about_page:apply_now')}</a>
-                                    </div>
-
-                                    <div className={styles.jobTitle}>{t('about_page:jobs_ui_ux')}</div>
-                                    <div className={styles.subTitle}>{t('about_page:what_will_you_be_doing')}</div>
-                                    <p>{t('about_page:what_will_you_be_doing_ui_ux_1')}</p>
-                                    <p>{t('about_page:what_will_you_be_doing_ui_ux_2')}</p>
-                                    <p>{t('about_page:what_will_you_be_doing_ui_ux_3')}</p>
-                                    <p>{t('about_page:what_will_you_be_doing_ui_ux_4')}</p>
-                                    <div className={styles.subTitle}>{t('about_page:are_you_the_right_person_for_this_role')}</div>
-                                    <p>{t('about_page:are_you_the_right_person_for_this_role_ui_ux_1')}</p>
-                                    <p>{t('about_page:are_you_the_right_person_for_this_role_ui_ux_2')}</p>
-                                    <p>{t('about_page:are_you_the_right_person_for_this_role_ui_ux_3')}</p>
-                                    <p>{t('about_page:are_you_the_right_person_for_this_role_ui_ux_4')}</p>
-                                    <p>{t('about_page:are_you_the_right_person_for_this_role_ui_ux_5')}</p>
-                                    <div className={styles.techBtn}>
-                                        <a className={styles.linkBtn} target="_blank"
-                                           rel="noopener noreferrer"
-                                           href="mailto:contact@itering.com">{t('about_page:apply_now')}
-                                        </a>
-                                    </div>
+                                    {/* <>
+                                        <div className={styles.jobTitle}>{t('about_page:jobs_ui_ux')}</div>
+                                        <div className={styles.subTitle}>{t('about_page:what_will_you_be_doing')}</div>
+                                        <p>{t('about_page:what_will_you_be_doing_ui_ux_1')}</p>
+                                        <p>{t('about_page:what_will_you_be_doing_ui_ux_2')}</p>
+                                        <p>{t('about_page:what_will_you_be_doing_ui_ux_3')}</p>
+                                        <p>{t('about_page:what_will_you_be_doing_ui_ux_4')}</p>
+                                        <div className={styles.subTitle}>{t('about_page:are_you_the_right_person_for_this_role')}</div>
+                                        <p>{t('about_page:are_you_the_right_person_for_this_role_ui_ux_1')}</p>
+                                        <p>{t('about_page:are_you_the_right_person_for_this_role_ui_ux_2')}</p>
+                                        <p>{t('about_page:are_you_the_right_person_for_this_role_ui_ux_3')}</p>
+                                        <p>{t('about_page:are_you_the_right_person_for_this_role_ui_ux_4')}</p>
+                                        <p>{t('about_page:are_you_the_right_person_for_this_role_ui_ux_5')}</p>
+                                        <div className={styles.techBtn}>
+                                            <a className={styles.linkBtn} target="_blank"
+                                            rel="noopener noreferrer"
+                                            href="mailto:contact@itering.com">{t('about_page:apply_now')}
+                                            </a>
+                                        </div>
+                                    </> */}
 
                                 </div>
                                 <div className={styles.tips}>
