@@ -1,18 +1,5 @@
 @import "../../style/index";
 
-.lngBtn{
-  width: 24px;
-  height: 24px;
-  background: url("./img/lng.svg") top center no-repeat;
-  background-size: contain;
-  padding: $nav-link-padding-y 0 $nav-link-padding-y $nav-link-padding-x;
-  @extend .extend-link:hover;
-}
-.lngBtnLight {
-  @extend .lngBtn;
-  background: url("./img/lng-light.svg") top center no-repeat;
-}
-
 .mobileMenu {
   display: none;
 }
