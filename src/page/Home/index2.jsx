@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './styles2.module.scss';
 import classNames from 'classnames/bind';
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 
 import { PageHeader } from '../../components/PageHeader';

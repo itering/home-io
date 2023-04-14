@@ -11,7 +11,7 @@ const AsyncNotFound = asyncComponent(import("./page/NotFound"));
 const history = createBrowserHistory();
 
 
-export default () =>
+const Routes = () =>
     <Router history={history}>
         <Switch>
             {/* <Route
@@ -38,3 +38,5 @@ export default () =>
             <Route component={AsyncNotFound}/>
         </Switch>
     </Router>
+
+export default Routes;
