@@ -165,6 +165,68 @@ class Home extends Component {
                                     </> */}
 
                   <>
+                    <div className={styles.jobTitle}>
+                      Web3 Technical Blockchain Evangelist (Darwinia Network - Darwinia Ecosystem Growth)
+                    </div>
+                    <div className={styles.subTitle}>{t("about_page:what_will_you_be_doing")}</div>
+                    <p>
+                      1. Engage the Darwinia community through presentations and speaking engagements and represent the
+                      company at all developer-focused Hackathons, Conferences, and Online Events
+                    </p>
+                    <p>
+                      2. Support translating the engineering team's progress and development into simple concepts for a
+                      global community Telegram Channel, Discord server, Twitter + Medium Blogs, and YouTube explainer
+                      videos
+                    </p>
+                    <p>
+                      3. Host regular video sessions explaining recent changes, progress, and why they are essential,
+                      with an ability to highlight the most positive aspects of each
+                    </p>
+                    <p>
+                      4. Create written tutorials and guides, conduct live workshops, and write out intelligent,
+                      well-thought-out answers to technical questions
+                    </p>
+                    <p>5. Provide support for integration partners</p>
+                    <div className={styles.subTitle}>{t("about_page:are_you_the_right_person_for_this_role")}</div>
+                    <div style={{ marginTop: 10 }}>
+                      <span style={{ fontStyle: "italic" }}>The ideal candidate for us has:</span>
+                    </div>
+                    <p>1. 1+ years experience in blockchain community engagement and management</p>
+                    <p>2. Excellent writing/speaking/listening communication skills in English</p>
+                    <p>3. Public speaking experience</p>
+                    <p>4. An excellent communicator and can swiftly liaise between engineering and marketing teams</p>
+                    <p>
+                      5. Passionate about the crypto-asset industry, is eager to improve and hone their knowledge in the
+                      crypto space
+                    </p>
+                    <p>6. A problem solver and proactively troubleshoot issues blocking your path</p>
+                    <p>
+                      7. Entrepreneurial mindset with a strong sense of ownership, empathy, and determination to get
+                      things done
+                    </p>
+                    <p>
+                      8. Direct experience working in a remote-first environment and being able to work independently
+                      while collaborating closely with a fast-growing team
+                    </p>
+                    <p>9. Bonus: Familiar with blockchain-related technical principles</p>
+                    <p>10. Bonus: Understand Substrate and have experience working with this framework</p>
+                    <p>
+                      11. Bonus: Follow open source communities, provide GitHub accounts or other technical forum
+                      accounts, and personal technical blog addresses
+                    </p>
+                    <div className={styles.techBtn}>
+                      <a
+                        className={styles.linkBtn}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="mailto:contact@itering.com"
+                      >
+                        {t("about_page:apply_now")}
+                      </a>
+                    </div>
+                  </>
+
+                  {/* <>
                     <div className={styles.jobTitle}>{t("about_page:jobs_front_end")}</div>
                     <div className={styles.subTitle}>{t("about_page:what_will_you_be_doing")}</div>
                     <p>{t("about_page:what_will_you_be_doing_front_end_1")}</p>
@@ -189,7 +251,7 @@ class Home extends Component {
                         {t("about_page:apply_now")}
                       </a>
                     </div>
-                  </>
+                  </> */}
 
                   {/* <>
                                         <div className={styles.jobTitle}>
