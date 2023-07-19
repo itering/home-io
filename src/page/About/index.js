@@ -189,7 +189,7 @@ class Home extends Component {
                     <p>5. Provide support for integration partners</p>
                     <div className={styles.subTitle}>{t("about_page:are_you_the_right_person_for_this_role")}</div>
                     <div style={{ marginTop: 10 }}>
-                      <span style={{ fontStyle: "italic" }}>The ideal candidate for us has:</span>
+                      <span>The ideal candidate for us has:</span>
                     </div>
                     <p>1. 1+ years experience in blockchain community engagement and management</p>
                     <p>2. Excellent writing/speaking/listening communication skills in English</p>
