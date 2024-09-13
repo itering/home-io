@@ -28,6 +28,6 @@ jobs:
           project_name: home-io
           enable_cache: true
           enable_notify_slack: true
-          slack_channel: public-itering-dcdao
+          slack_channel: public-darwinia-devs
           slack_webhook: ${{ secrets.SLACK_INCOMING_WEBHOOK_URL }}
 
