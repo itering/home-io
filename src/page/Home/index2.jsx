@@ -97,7 +97,7 @@ const Home = () => {
           <div className={cx('itering-hero-section-container')}>
             <div className={cx('itering-hero-section-container-content')}>
               {/* <img alt='...' src={iteringHeroSectionLogo} className={cx('itering-hero-section-container-content-logo')} /> */}
-              <h3 className={cx('itering-hero-section-container-content-title')}>Research, invest, build the trust-free future.</h3>
+              <h3 className={cx('itering-hero-section-container-content-title')}>Research, Invest, Build The Trust-Free Future.</h3>
               <p className={cx('itering-hero-section-container-content-desc')}>As a forward-looking Venture Production Studio, Itering is dedicated to building and incubating products that achieve both product-market fit and team-product fit, driving the adoption of Web3 and blockchain technology. We believe that trust-free systems will fundamentally transform the global business, finance, and data landscapes.</p>
               <p className={cx('itering-hero-section-container-content-desc')}>Based in Asia but connected to the world, we operate with a global perspective, driving the adoption and evolution of blockchain technology on an international scale. Itering believes in the power of expertise and knowledge to lead innovation and transformation across the industry.</p>
             </div>
