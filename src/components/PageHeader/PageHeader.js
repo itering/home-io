@@ -102,9 +102,9 @@ class PageHeader extends Component {
                                     <img alt="logo" src={theme === 'dark' ? logo_light : logo}/>
                                 </Navbar.Brand>
                                 <Nav className={styles.navLinks}>
-                                    <Nav.Link href="/#product" onClick={this.onClickAnchor}><span
-                                        className={styles.NavLink}>{t('header:product')}</span></Nav.Link>
-                                    <a rel="noopener noreferrer" target="_blank" href="https://apply.workable.com/itering" className={styles.NavLink}>Careers</a>
+                                    <Nav.Link href="/#our_portfolio" onClick={this.onClickAnchor}><span
+                                        className={styles.NavLink}>Work</span></Nav.Link>
+                                    <a rel="noopener noreferrer" target="_blank" href="https://apply.workable.com/itering" className={styles.NavLink} style={{ marginLeft: 12 }}>Careers</a>
                                 </Nav>
                                 <div className={styles.mobileMenu} onClick={this.showDrawer}>
                                     <img alt="menu" className={styles.menuIcon} src={menu_icon}/>
@@ -121,8 +121,8 @@ class PageHeader extends Component {
                                             <img alt="close" onClick={this.onClose} src={close_icon}/>
                                         </div>
                                         <Nav className={styles.linkContent}>
-                                            <Nav.Link href="/#product" onClick={this.onClose}><span
-                                                className={styles.NavLink}>{t('header:product')}</span></Nav.Link>
+                                            <Nav.Link href="/#our_portfolio" onClick={this.onClose}><span
+                                                className={styles.NavLink}>Work</span></Nav.Link>
                                             <a rel="noopener noreferrer" target="_blank" href="https://apply.workable.com/itering" className={styles.NavLink}>Careers</a>
                                         </Nav>
                                         <PageFooter/>
