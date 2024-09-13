@@ -4,7 +4,7 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 import browserDetector from './browserDetector'
 
 import en_us from './en-us'
-import zh_cn from './zh-cn'
+// import zh_cn from './zh-cn'
 
 const languageDetector = new LanguageDetector();
 languageDetector.addDetector(browserDetector);
@@ -17,9 +17,9 @@ const resources = {
     en: {
         ...en_us
     },
-    zh: {
-        ...zh_cn
-    }
+    // zh: {
+    //     ...zh_cn
+    // }
 };
 
 i18n
