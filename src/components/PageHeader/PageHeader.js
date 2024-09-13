@@ -102,8 +102,6 @@ class PageHeader extends Component {
                                     <img alt="logo" src={theme === 'dark' ? logo_light : logo}/>
                                 </Navbar.Brand>
                                 <Nav className={styles.navLinks}>
-                                    <Nav.Link href="/" onClick={this.onClickAnchor}><span
-                                        className={styles.NavLink}>{t('header:home')}</span></Nav.Link>
                                     <Nav.Link href="/#product" onClick={this.onClickAnchor}><span
                                         className={styles.NavLink}>{t('header:product')}</span></Nav.Link>
                                     <Nav.Link href="/jobs"><span className={styles.NavLink}>{t('header:jobs')}</span></Nav.Link>
@@ -127,8 +125,6 @@ class PageHeader extends Component {
                                             <img alt="close" onClick={this.onClose} src={close_icon}/>
                                         </div>
                                         <Nav className={styles.linkContent}>
-                                            <Nav.Link href="/" onClick={this.onClose}><span
-                                                className={styles.NavLink}>{t('header:home')}</span></Nav.Link>
                                             <Nav.Link href="/#product" onClick={this.onClose}><span
                                                 className={styles.NavLink}>{t('header:product')}</span></Nav.Link>
                                             <Nav.Link href="/jobs" onClick={this.onClose}><span
