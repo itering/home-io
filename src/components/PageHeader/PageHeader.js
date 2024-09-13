@@ -104,7 +104,7 @@ class PageHeader extends Component {
                                 <Nav className={styles.navLinks}>
                                     <Nav.Link href="/#product" onClick={this.onClickAnchor}><span
                                         className={styles.NavLink}>{t('header:product')}</span></Nav.Link>
-                                    <Nav.Link href="/jobs"><span className={styles.NavLink}>{t('header:jobs')}</span></Nav.Link>
+                                    <a rel="noopener noreferrer" target="_blank" href="https://apply.workable.com/itering" className={styles.NavLink}>Careers</a>
                                 </Nav>
                                 <div className={styles.mobileMenu} onClick={this.showDrawer}>
                                     <img alt="menu" className={styles.menuIcon} src={menu_icon}/>
@@ -123,8 +123,7 @@ class PageHeader extends Component {
                                         <Nav className={styles.linkContent}>
                                             <Nav.Link href="/#product" onClick={this.onClose}><span
                                                 className={styles.NavLink}>{t('header:product')}</span></Nav.Link>
-                                            <Nav.Link href="/jobs" onClick={this.onClose}><span
-                                                className={styles.NavLink}>{t('header:jobs')}</span></Nav.Link>
+                                            <a rel="noopener noreferrer" target="_blank" href="https://apply.workable.com/itering" className={styles.NavLink}>Careers</a>
                                         </Nav>
                                         <PageFooter/>
                                     </div>
