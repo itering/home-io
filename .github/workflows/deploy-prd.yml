@@ -12,24 +12,16 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - uses: actions/checkout@v2
-        with:
-          repository: itering/actions
-          path: .github/actions
-          persist-credentials: false
-          ssh-key: "${{ secrets.ITERING_ACTIONS_DEPLOY_KEY }}"
-
-      - uses: ./.github/actions/smart-vercel
+      - uses: darwinia-network/devops/actions/smart-vercel@main
         name: Deploy to Vercel
-        id: smart-vercel
         with:
           vercel_token: ${{ secrets.VERCEL_TOKEN }}
           vercel_group: itering
           preview_output: true
           project_name: home-io
+          dist_path: out
           prod_mode: true
           enable_cache: true
           enable_notify_slack: true
           slack_channel: public-darwinia-devs
           slack_webhook: ${{ secrets.SLACK_INCOMING_WEBHOOK_URL }}
-
