@@ -1,0 +1,25 @@
+name: Deploy staging
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: darwinia-network/devops/actions/smart-vercel@main
+        name: Deploy to Vercel
+        with:
+          vercel_token: ${{ secrets.VERCEL_TOKEN }}
+          vercel_group: itering
+          preview_output: true
+          project_name: home-io
+          dist_path: out
+          enable_cache: true
+          enable_notify_slack: true
+          slack_channel: public-darwinia-devs
+          slack_webhook: ${{ secrets.SLACK_INCOMING_WEBHOOK_URL }}
