@@ -28,7 +28,7 @@ const structuredData = {
       },
       {
         '@type': 'EntryPoint',
-        urlTemplate: 'https://apply.workable.com/itering/',
+        urlTemplate: 'https://itering-io.breezy.hr/',
         name: 'CAREERS'
       },
       {
