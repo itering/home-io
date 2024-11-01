@@ -110,7 +110,7 @@ export default function MobileNav() {
                     className="text-center"
                   >
                     <Link
-                      href="https://apply.workable.com/itering/"
+                      href="https://itering-io.breezy.hr/"
                       className="block text-[16px] font-semibold leading-[24px] tracking-[1px] text-white"
                       onClick={() => setIsOpen(false)}
                     >
