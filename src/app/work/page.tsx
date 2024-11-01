@@ -55,7 +55,7 @@ const structuredData = {
       '@type': 'Project',
       name: 'Helixbox',
       description: 'A Multi-Chain DeFi Application Suite Built On EVM Infrastructure',
-      url: 'https://www.helixbox.io/'
+      url: 'https://helix.box/'
     },
     {
       '@type': 'Project',
@@ -181,7 +181,7 @@ export default function Work() {
               </div>
             </div>
             <Link
-              href="https://helixbridge.app"
+              href="https://helix.box/"
               target="_blank"
               rel="noopener noreferrer"
               className="hidden h-[52px] w-[170px] items-center justify-center gap-[10px] rounded-[32px] bg-gradient-to-br from-[#0085FF] to-[#0085FF] text-[18px] font-bold capitalize leading-[32px] transition-all duration-300 hover:scale-105 hover:shadow-lg hover:brightness-110 lg:flex"
@@ -193,7 +193,7 @@ export default function Work() {
 
           <div className="flex flex-col items-start gap-[20px]">
             <p className="text-left text-[16px] font-light leading-[26px] text-white/70 lg:text-[20px] lg:leading-[32px]">
-              Helix offers services such as cross-chain token bridge, liquidity aggregation and
+              Helixbox offers services such as cross-chain token bridge, liquidity aggregation and
               sharing, asset swaps, lending, and a variety of DeFi product combinations. It provides
               users with a secure, fast, low-cost, and low-slippage interaction experience.
             </p>
@@ -203,9 +203,9 @@ export default function Work() {
               seamlessly integrating with other DeFi protocols.
             </p>
             <p className="text-left text-[16px] font-light leading-[26px] text-white/70 lg:text-[20px] lg:leading-[32px]">
-              Helix&apos;s DEX and other DeFi services gather diverse liquidity sources to reduce
+              Helixbox&apos;s DEX and other DeFi services gather diverse liquidity sources to reduce
               transaction fees, minimize slippage, and prevent MEV attacks. By integrating with
-              high-quality DeFi applications, Helix maximizes user returns and minimizes costs while
+              high-quality DeFi applications, Helixbox maximizes user returns and minimizes costs while
               ensuring transaction security.
             </p>
             <Link
