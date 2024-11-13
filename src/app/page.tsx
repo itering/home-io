@@ -28,7 +28,7 @@ const structuredData = {
       },
       {
         '@type': 'EntryPoint',
-        urlTemplate: 'https://itering-io.breezy.hr/',
+        urlTemplate: 'https://hirevise.com/itering',
         name: 'CAREERS'
       },
       {
