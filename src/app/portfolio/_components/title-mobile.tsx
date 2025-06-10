@@ -6,18 +6,18 @@ const positions = [
   {
     size: { height: 185, width: 113 },
     zIndex: 20,
-    src: '/images/pages/work/hero/mobile/object-1.png'
+    src: '/images/pages/portfolio/hero/mobile/object-1.png'
   },
   {
     position: { left: '50%', top: '50%', transform: 'translate(-50%, -50%)' },
     size: { height: 262, width: 262 },
     zIndex: 0,
-    src: '/images/pages/work/hero/mobile/object-2.png'
+    src: '/images/pages/portfolio/hero/mobile/object-2.png'
   },
   {
     size: { height: 174, width: 106 },
     zIndex: 0,
-    src: '/images/pages/work/hero/mobile/object-3.png'
+    src: '/images/pages/portfolio/hero/mobile/object-3.png'
   }
 ];
 export default function TitleMobile() {

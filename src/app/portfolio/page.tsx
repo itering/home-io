@@ -87,7 +87,7 @@ export default function Work() {
           <div className="flex w-full items-center justify-between">
             <div className="flex items-center gap-[50px]">
               <Image
-                src="/images/pages/work/subscan.svg"
+                src="/images/pages/portfolio/subscan.svg"
                 alt="Subscan Logo"
                 className="hidden size-[55px] rounded-full lg:inline lg:size-[110px]"
                 width={110}
@@ -96,7 +96,7 @@ export default function Work() {
               <div className="space-y-[20px] lg:space-y-[10px]">
                 <div className="flex items-center gap-[20px]">
                   <Image
-                    src="/images/pages/work/subscan.svg"
+                    src="/images/pages/portfolio/subscan.svg"
                     alt="Subscan Logo"
                     className="size-[55px] rounded-full lg:hidden"
                     width={55}
@@ -158,7 +158,7 @@ export default function Work() {
           <div className="flex w-full items-center justify-between">
             <div className="flex items-center gap-[50px]">
               <Image
-                src="/images/pages/work/helixbox.svg"
+                src="/images/pages/portfolio/helixbox.svg"
                 alt="Helixbox Logo"
                 className="hidden size-[55px] rounded-full lg:inline lg:size-[110px]"
                 width={110}
@@ -167,7 +167,7 @@ export default function Work() {
               <div className="space-y-[20px] lg:space-y-[10px]">
                 <div className="flex items-center gap-[20px]">
                   <Image
-                    src="/images/pages/work/helixbox.svg"
+                    src="/images/pages/portfolio/helixbox.svg"
                     alt="Helixbox Logo"
                     className="size-[55px] rounded-full lg:hidden"
                     width={55}
@@ -230,7 +230,7 @@ export default function Work() {
           <div className="flex w-full items-center justify-between">
             <div className="flex items-center gap-[50px]">
               <Image
-                src="https://degov.ai/icon.png"
+                src="/images/pages/portfolio/degov.svg"
                 alt="degov.ai Logo"
                 className="hidden size-[55px] rounded-full lg:inline lg:size-[110px]"
                 width={110}
@@ -239,7 +239,7 @@ export default function Work() {
               <div className="space-y-[20px] lg:space-y-[10px]">
                 <div className="flex items-center gap-[20px]">
                   <Image
-                    src="https://degov.ai/icon.png"
+                    src="/images/pages/portfolio/degov.svg"
                     alt="degov.ai Logo"
                     className="size-[55px] rounded-full lg:hidden"
                     width={55}
@@ -248,7 +248,7 @@ export default function Work() {
                   <h2 className="text-[26px] font-bold leading-normal lg:text-[50px]">DEGOV.AI</h2>
                 </div>
                 <p className="text-[18px] font-semibold leading-[26px] tracking-[1px] text-white lg:text-[24px] lg:font-medium lg:leading-[30px] lg:text-white/70">
-                  A AI-powered platform for decentralized governance, built on the Openzeppelin contracts.
+                  The AI-Powered DAO Governance Platform
                 </p>
               </div>
             </div>
@@ -265,10 +265,10 @@ export default function Work() {
 
           <div className="flex flex-col items-start gap-[20px]">
             <p className="text-left text-[16px] font-light leading-[26px] text-white/70 lg:text-[20px] lg:leading-[32px]">
-             
+              DeGov.AI is an innovative platform that enhances decentralized autonomous organization (DAO) governance through the power of artificial intelligence. Built upon OpenZeppelin&apos;s proven Governor contracts, DeGov.AI offers an intuitive interface for streamlined proposal creation, voting processes, and treasury management.
             </p>
             <p className="text-left text-[16px] font-light leading-[26px] text-white/70 lg:text-[20px] lg:leading-[32px]">
-             
+              By harnessing AI-driven insights into proposal content, voting behavior, and treasury dynamics, DeGov.AI simplifies DAO governance, making it more accessible and engaging for all participants. This leads to increased community involvement and more informed decision-making.
             </p>
             <Link
               href="https://degov.ai/"

@@ -71,7 +71,7 @@ export default function Title() {
         {positions.map((_, i) => (
           <motion.img
             key={i}
-            src={`/images/pages/work/hero/object-${i + 1}.png`}
+            src={`/images/pages/portfolio/hero/object-${i + 1}.png`}
             alt={`3D Object ${i + 1}`}
             className="absolute"
             custom={i}
