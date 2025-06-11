@@ -33,7 +33,7 @@ export default function Header() {
           />
         </Link>
 
-        <NavLink href="/work">Work</NavLink>
+        <NavLink href="/portfolio">Portfolio</NavLink>
 
         <Link
           href="https://hirevise.com/itering"
