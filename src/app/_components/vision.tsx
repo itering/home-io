@@ -26,9 +26,7 @@ export default function Vision() {
         ref={ref2}
         style={styles2}
       >
-        As a forward-looking Venture Production Studio, Itering is dedicated to building and
-        incubating products that achieve both product-market fit and team-product fit, driving the
-        adoption of Web3 and blockchain technology
+          As a forward-looking Venture Studio, Itering focuses on market research, incubation, and strategic investment to accelerate the adoption of AI and crypto technologies through aligned teams and market-driven innovation.
       </p>
       <div className="grid grid-cols-1 gap-[50px] lg:grid-cols-3 lg:justify-items-center lg:py-[50px]">
         <div

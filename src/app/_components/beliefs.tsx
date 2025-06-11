@@ -6,18 +6,21 @@ import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 
 const beliefs = [
   {
-    text: "Web3's potential to create new markets and drive transformative change empowers individuals and communities",
+    text: "Web3’s potential to create new markets and empower communities is amplified by AI’s force-multiplying effect.",
     imagePath: '/images/pages/index/beliefs-1.png'
   },
   {
-    text: "With expertise and agility, we push innovation's boundaries while focusing on long-term value",
+    text: "With expertise and agility, we push the boundaries of innovation, focusing on long-term value and intelligent, intent-driven user experiences." ,
     imagePath: '/images/pages/index/beliefs-2.png'
   },
   {
-    text: 'Decentralized future transform data, finance, and services with transparency, security, and collaboration',
-    imagePath: '/images/pages/index/beliefs-3.png'
+    text: "A decentralized future transforms data, finance, and services—through transparency, collaboration, and adaptive AI.", 
+     imagePath: '/images/pages/index/beliefs-3.png'
   }
 ];
+
+
+
 
 export default function Beliefs() {
   const { ref: ref1, animatedStyles: styles1 } = useScrollAnimation();

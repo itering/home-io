@@ -3,8 +3,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { MagicCard } from '@/components/magic-card';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import Title from '@/app/work/_components/title';
-import TitleMobile from '@/app/work/_components/title-mobile';
+import Title from '@/app/portfolio/_components/title';
+import TitleMobile from '@/app/portfolio/_components/title-mobile';
 import { StructuredData } from '@/components/StructuredData';
 
 const structuredData = {
@@ -36,8 +36,8 @@ const structuredData = {
     },
     {
       '@type': 'WebPage',
-      '@id': 'https://itering.io/work#webpage',
-      url: 'https://itering.io/work.html',
+      '@id': 'https://itering.io/portfolio#webpage',
+      url: 'https://itering.io/portfolio.html',
       name: 'Itering - Research, Invest, Build The Trust-Free Future.',
       isPartOf: { '@id': 'https://itering.io/#website' },
       about: { '@id': 'https://itering.io/#organization' },
@@ -87,7 +87,7 @@ export default function Work() {
           <div className="flex w-full items-center justify-between">
             <div className="flex items-center gap-[50px]">
               <Image
-                src="/images/pages/work/subscan.svg"
+                src="/images/pages/portfolio/subscan.svg"
                 alt="Subscan Logo"
                 className="hidden size-[55px] rounded-full lg:inline lg:size-[110px]"
                 width={110}
@@ -96,7 +96,7 @@ export default function Work() {
               <div className="space-y-[20px] lg:space-y-[10px]">
                 <div className="flex items-center gap-[20px]">
                   <Image
-                    src="/images/pages/work/subscan.svg"
+                    src="/images/pages/portfolio/subscan.svg"
                     alt="Subscan Logo"
                     className="size-[55px] rounded-full lg:hidden"
                     width={55}
@@ -158,7 +158,7 @@ export default function Work() {
           <div className="flex w-full items-center justify-between">
             <div className="flex items-center gap-[50px]">
               <Image
-                src="/images/pages/work/helixbox.svg"
+                src="/images/pages/portfolio/helixbox.svg"
                 alt="Helixbox Logo"
                 className="hidden size-[55px] rounded-full lg:inline lg:size-[110px]"
                 width={110}
@@ -167,7 +167,7 @@ export default function Work() {
               <div className="space-y-[20px] lg:space-y-[10px]">
                 <div className="flex items-center gap-[20px]">
                   <Image
-                    src="/images/pages/work/helixbox.svg"
+                    src="/images/pages/portfolio/helixbox.svg"
                     alt="Helixbox Logo"
                     className="size-[55px] rounded-full lg:hidden"
                     width={55}
@@ -176,7 +176,7 @@ export default function Work() {
                   <h2 className="text-[26px] font-bold leading-normal lg:text-[50px]">Helixbox</h2>
                 </div>
                 <p className="text-[18px] font-semibold leading-[26px] tracking-[1px] text-white lg:text-[24px] lg:font-medium lg:leading-[30px] lg:text-white/70">
-                  A multi-chain DeFi application suite built on EVM infrastructure
+                  An AI-driven DeFi Terminal for intent-based, seamless interaction.
                 </p>
               </div>
             </div>
@@ -230,8 +230,8 @@ export default function Work() {
           <div className="flex w-full items-center justify-between">
             <div className="flex items-center gap-[50px]">
               <Image
-                src="/images/pages/work/ringDAO.svg"
-                alt="RingDAO Logo"
+                src="/images/pages/portfolio/degov.svg"
+                alt="degov.ai Logo"
                 className="hidden size-[55px] rounded-full lg:inline lg:size-[110px]"
                 width={110}
                 height={110}
@@ -239,21 +239,21 @@ export default function Work() {
               <div className="space-y-[20px] lg:space-y-[10px]">
                 <div className="flex items-center gap-[20px]">
                   <Image
-                    src="/images/pages/work/ringDAO.svg"
-                    alt="RingDAO Logo"
+                    src="/images/pages/portfolio/degov.svg"
+                    alt="degov.ai Logo"
                     className="size-[55px] rounded-full lg:hidden"
                     width={55}
                     height={55}
                   />
-                  <h2 className="text-[26px] font-bold leading-normal lg:text-[50px]">RingDAO</h2>
+                  <h2 className="text-[26px] font-bold leading-normal lg:text-[50px]">DEGOV.AI</h2>
                 </div>
                 <p className="text-[18px] font-semibold leading-[26px] tracking-[1px] text-white lg:text-[24px] lg:font-medium lg:leading-[30px] lg:text-white/70">
-                  Empowering chains to communicate, powering abstraction to innovate
+                  The AI-Powered DAO Governance Platform
                 </p>
               </div>
             </div>
             <Link
-              href="https://ringdao.com/"
+              href="https://degov.ai/"
               target="_blank"
               rel="noopener noreferrer"
               className="hidden h-[52px] w-[170px] items-center justify-center gap-[10px] rounded-[32px] bg-gradient-to-br from-[#fff] to-[#fff] text-[18px] font-bold capitalize leading-[32px] text-black transition-all duration-300 hover:scale-105 hover:shadow-lg hover:brightness-110 lg:flex"
@@ -265,18 +265,13 @@ export default function Work() {
 
           <div className="flex flex-col items-start gap-[20px]">
             <p className="text-left text-[16px] font-light leading-[26px] text-white/70 lg:text-[20px] lg:leading-[32px]">
-              RingDAO is a decentralized organization composed of experienced blockchain technology
-              experts from various continents. The core value of this organization is to research
-              and develop the most efficient cross-chain technology.
+              DeGov.AI is an innovative platform that enhances decentralized autonomous organization (DAO) governance through the power of artificial intelligence. Built upon OpenZeppelin&apos;s proven Governor contracts, DeGov.AI offers an intuitive interface for streamlined proposal creation, voting processes, and treasury management.
             </p>
             <p className="text-left text-[16px] font-light leading-[26px] text-white/70 lg:text-[20px] lg:leading-[32px]">
-              By enabling communication between chains, RingDAO aims to drive massive adoption and
-              innovation in the blockchain space. The name &quot;RingDAO&quot; is derived from one
-              of the organization&apos;s projects, the Darwinia Network, whose native token is
-              called RING.
+              By harnessing AI-driven insights into proposal content, voting behavior, and treasury dynamics, DeGov.AI simplifies DAO governance, making it more accessible and engaging for all participants. This leads to increased community involvement and more informed decision-making.
             </p>
             <Link
-              href="https://ringdao.com/"
+              href="https://degov.ai/"
               target="_blank"
               rel="noopener noreferrer"
               className="mx-auto flex h-[34px] w-[160px] items-center justify-center gap-[10px] rounded-[32px] bg-gradient-to-br from-[#fff] to-[#fff] text-[16px] font-bold capitalize leading-[32px] text-black transition-all duration-300 hover:scale-105 hover:shadow-lg hover:brightness-110 lg:hidden"
