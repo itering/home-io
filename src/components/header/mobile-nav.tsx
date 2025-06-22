@@ -94,11 +94,11 @@ export default function MobileNav() {
                     className="text-center"
                   >
                     <Link
-                      href="/work"
+                      href="/portfolio"
                       className="block text-[16px] font-semibold leading-[24px] tracking-[1px] text-white"
                       onClick={() => setIsOpen(false)}
                     >
-                      WORK
+                      Portfolio
                     </Link>
                   </motion.li>
 

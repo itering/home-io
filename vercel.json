@@ -23,7 +23,7 @@
       }
     ],
     "rewrites": [
-      { "source": "/work", "destination": "/work.html" }
+      { "source": "/portfolio", "destination": "/portfolio.html" }
     ]
   }
   
