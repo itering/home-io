@@ -50,6 +50,13 @@ export default function Partners() {
           width={199}
           height={45.75}
         />
+        <Image
+          src="/images/pages/index/partners/helixbox.svg"
+          alt="Helixbox"
+          className="h-[45.75px] w-[233.13px] flex-shrink-0"
+          width={233.13}
+          height={45.75}
+        />
       </div>
 
       <div className="w-full space-y-[20px] md:hidden">
@@ -96,6 +103,15 @@ export default function Partners() {
             alt="RingDAO"
             className="h-[22.875px] w-[99.5px] flex-shrink-0"
             width={99.5}
+            height={22.875}
+          />
+        </div>
+        <div className="flex items-center justify-center">
+          <Image
+            src="/images/pages/index/partners/helixbox.svg"
+            alt="Helixbox"
+            className="h-[22.875px] w-[116.57px] flex-shrink-0"
+            width={116.57}
             height={22.875}
           />
         </div>
