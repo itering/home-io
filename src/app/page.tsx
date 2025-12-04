@@ -23,11 +23,6 @@ const structuredData = {
     target: [
       {
         '@type': 'EntryPoint',
-        urlTemplate: 'https://itering.io/portfolio.html',
-        name: 'PORTFOLIO'
-      },
-      {
-        '@type': 'EntryPoint',
         urlTemplate: 'https://hirevise.com/itering',
         name: 'CAREERS'
       },
