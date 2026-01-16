@@ -94,22 +94,6 @@ export default function MobileNav() {
                     className="text-center"
                   >
                     <Link
-                      href="https://hirevise.com/itering"
-                      className="block text-[16px] font-semibold leading-[24px] tracking-[1px] text-white"
-                      onClick={() => setIsOpen(false)}
-                    >
-                      CAREERS
-                    </Link>
-                  </motion.li>
-
-                  <motion.li
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: 20 }}
-                    transition={{ delay: 0.3 }}
-                    className="text-center"
-                  >
-                    <Link
                       href="mailto:contact@itering.io"
                       className="block text-[16px] font-semibold leading-[24px] tracking-[1px] text-white"
                       onClick={() => setIsOpen(false)}
