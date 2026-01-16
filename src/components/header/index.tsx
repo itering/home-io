@@ -20,14 +20,6 @@ export default function Header() {
 
         <div className="flex items-center gap-10">
           <Link
-            href="https://hirevise.com/itering"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="relative hidden text-[16px] font-normal uppercase leading-6 tracking-[1px] text-white after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:origin-bottom-right after:scale-x-0 after:bg-white after:transition-transform after:duration-300 after:ease-out hover:after:origin-bottom-left hover:after:scale-x-100 md:block"
-          >
-            Careers
-          </Link>
-          <Link
             href="mailto:contact@itering.io"
             className="relative hidden text-[16px] font-normal uppercase leading-6 tracking-[1px] text-white after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:origin-bottom-right after:scale-x-0 after:bg-white after:transition-transform after:duration-300 after:ease-out hover:after:origin-bottom-left hover:after:scale-x-100 md:block"
           >
