@@ -75,7 +75,7 @@ export default function Culture() {
           />
           <h3 className="text-[34px] font-bold leading-normal tracking-[2px]">Innovation</h3>
           <p className="text-center text-[16px] font-light leading-[22px] text-white/70 lg:text-left lg:text-[24px] lg:leading-[32px]">
-            As a Crypto Native organization, we don’t just observe Web3 trends; we actively shape
+            As an AI Native organization, we don’t just observe Web3 trends; we actively shape
             them. Our commitment lies in driving forward the transformative movement of this new
             era, creating value by staying ahead of the curve.
           </p>

@@ -26,7 +26,7 @@ export default function Vision() {
         ref={ref2}
         style={styles2}
       >
-          As a forward-looking Venture Studio, Itering focuses on market research, incubation, and strategic investment to accelerate the adoption of AI and crypto technologies through aligned teams and market-driven innovation.
+          As a forward-looking Venture Studio, Itering focuses on market research, incubation, and strategic investment to accelerate the adoption of AI technologies through aligned teams and market-driven innovation.
       </p>
       <div className="grid grid-cols-1 gap-[50px] lg:grid-cols-3 lg:justify-items-center lg:py-[50px]">
         <div
@@ -127,7 +127,7 @@ export default function Vision() {
           >
             <p>
               We harness the power of expertise to drive innovation and create cutting-edge
-              solutions in the blockchain space.
+              solutions in the AI space.
             </p>
           </motion.div>
           <Image
@@ -145,7 +145,7 @@ export default function Vision() {
           </h3>
           <p className="block text-[16px] font-normal leading-[26px] lg:hidden">
             We harness the power of expertise to drive innovation and create cutting-edge solutions
-            in the blockchain space.
+            in the AI space.
           </p>
         </div>
       </div>

@@ -68,7 +68,7 @@ export default function Products() {
         <div className="flex flex-col items-center justify-between gap-[10px] lg:flex-row lg:gap-[50px]">
           <div className="order-2 space-y-[10px] lg:order-1" ref={ref4} style={styles4}>
             <h3 className="text-center text-[34px] font-medium capitalize leading-normal tracking-[2px] lg:text-left lg:text-[54px]">
-              DeFAI
+              AI
             </h3>
             <p className="text-center text-[16px] font-light leading-[32px] text-white/70 lg:text-left lg:text-[24px]">
              Redefining decentralized finance by integrating AI-driven intent detection and execution logic—making liquidity access smarter, faster, and more transparent.
