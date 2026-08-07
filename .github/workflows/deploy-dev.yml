@@ -8,7 +8,7 @@ jobs:
     name: Deploy
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v6
 
       - uses: darwinia-network/devops/actions/smart-vercel@main
         name: Deploy to Vercel
@@ -17,6 +17,11 @@ jobs:
           vercel_group: itering
           preview_output: true
           project_name: home-io
+          node_version: '24'
+          cache_type: npm
+          cache_path: ~/.npm
+          script_install: npm ci
+          script_build: npm run build
           dist_path: out
           enable_cache: true
           enable_notify_comment: true
