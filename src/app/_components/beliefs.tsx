@@ -117,8 +117,8 @@ export default function Beliefs() {
             height={275}
           />
           <p className="text-center text-[20px] font-medium leading-[30px]">
-            Web3&apos;s potential to create new markets and drive transformative change empowers
-            individuals and communities
+            Web3’s potential to create new markets and empower communities is amplified by AI’s
+            force-multiplying effect.
           </p>
         </div>
 
@@ -135,8 +135,8 @@ export default function Beliefs() {
             height={275}
           />
           <p className="text-center text-[20px] font-medium leading-[30px]">
-            With expertise and agility, we push innovation&apos;s boundaries while focusing on
-            long-term value
+            With expertise and agility, we push the boundaries of innovation, focusing on long-term
+            value and intelligent, intent-driven user experiences.
           </p>
         </div>
 
@@ -153,8 +153,8 @@ export default function Beliefs() {
             height={275}
           />
           <p className="text-center text-[20px] font-medium leading-[30px]">
-            Decentralized future transform data, finance, and services with transparency, security,
-            and collaboration
+            A decentralized future transforms data, finance, and services—through transparency,
+            collaboration, and adaptive AI.
           </p>
         </div>
       </div>

@@ -26,7 +26,7 @@ export default function Products() {
       </h2>
       <h2 className="flex flex-col items-center justify-center text-[50px] font-normal uppercase leading-normal lg:hidden">
         <span>WE&apos;RE</span>
-        <span>ENABLING</span>
+        <span>BUILDING</span>
       </h2>
       <div className="flex flex-col gap-[60px] lg:gap-[100px]">
         <div className="flex flex-col items-center justify-between gap-0 lg:flex-row lg:gap-[50px]">
@@ -82,7 +82,7 @@ export default function Products() {
             <div className="flex h-full w-full items-center justify-center bg-black">
               <Image
                 src="/images/pages/index/products-2.png"
-                alt="DeFi"
+                alt="AI"
                 className="image-scale-hover mb-[50px] h-[117.886px] w-[335px] lg:h-[16.088vw] lg:max-h-[278px] lg:w-[45.72vw] lg:max-w-[790px]"
                 width={790}
                 height={278}
@@ -91,7 +91,7 @@ export default function Products() {
           </div>
           <Image
             src="/images/pages/index/products-2.png"
-            alt="DeFi"
+            alt="AI"
             className="image-scale-hover h-[117.886px] w-[335px] lg:hidden"
             width={335}
             height={117.886}
