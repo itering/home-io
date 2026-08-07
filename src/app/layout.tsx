@@ -38,7 +38,7 @@ const euclidCircularA = localFont({
 export const metadata: Metadata = {
   title: 'Itering - Research, Invest, Build The Trust-Free Future',
   description: 'Itering - Research, Invest, Build The Trust-Free Future',
-  keywords: 'Trust-Free, Itering, Venture Production Studio, Data, DeFi',
+  keywords: 'Trust-Free, Itering, Venture Production Studio, Data, AI',
   authors: [{ name: 'Itering' }],
   openGraph: {
     title: 'Itering - Research, Invest, Build The Trust-Free Future',

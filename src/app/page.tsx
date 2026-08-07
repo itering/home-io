@@ -22,11 +22,6 @@ const structuredData = {
     '@type': 'ReadAction',
     target: [
       {
-        '@type': 'EntryPoint',
-        urlTemplate: 'https://hirevise.com/itering',
-        name: 'CAREERS'
-      },
-      {
         '@type': 'ContactPoint',
         email: 'contact@itering.io',
         name: 'CONTACT US'
