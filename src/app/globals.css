@@ -1,6 +1,29 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@theme {
+  --breakpoint-3xl: 108rem;
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+
+  @media (width >= 64rem) {
+    padding-inline: 2.5rem;
+  }
+
+  @media (width >= 80rem) {
+    padding-inline: 3.125rem;
+  }
+
+  @media (width >= 96rem) {
+    padding-inline: 6rem;
+  }
+
+  @media (width >= 108rem) {
+    padding-inline: 10.125rem;
+  }
+}
 
 @layer utilities {
   .scrollbar-hide {

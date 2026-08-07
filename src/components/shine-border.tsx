@@ -37,7 +37,7 @@ export function ShineBorder({
         } as React.CSSProperties
       }
       className={cn(
-        'relative grid min-h-[60px] w-fit min-w-[300px] place-items-center rounded-[--border-radius] bg-white p-3 text-black dark:bg-black dark:text-white',
+        'relative grid min-h-[60px] w-fit min-w-[300px] place-items-center rounded-(--border-radius) bg-white p-3 text-black dark:bg-black dark:text-white',
         className
       )}
     >
@@ -51,7 +51,7 @@ export function ShineBorder({
             '--background-radial-gradient': `radial-gradient(transparent,transparent, ${color instanceof Array ? color.join(',') : color},transparent,transparent)`
           } as React.CSSProperties
         }
-        className={`before:bg-shine-size motion-safe:before:animate-shine before:absolute before:inset-0 before:aspect-square before:size-full before:rounded-[--border-radius] before:p-[--border-width] before:will-change-[background-position] before:content-[""] before:![-webkit-mask-composite:xor] before:[background-image:--background-radial-gradient] before:[background-size:300%_300%] before:![mask-composite:exclude] before:[mask:--mask-linear-gradient]`}
+        className={`before:bg-shine-size motion-safe:before:animate-shine before:absolute before:inset-0 before:aspect-square before:size-full before:rounded-(--border-radius) before:p-(--border-width) before:will-change-[background-position] before:content-[""] before:[-webkit-mask-composite:xor]! before:[background-image:var(--background-radial-gradient)] before:[background-size:300%_300%] before:[mask-composite:exclude]! before:[mask:var(--mask-linear-gradient)]`}
       ></div>
       {children}
     </div>
