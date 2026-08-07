@@ -7,53 +7,39 @@ export default function Partners() {
 
   return (
     <section className="container pb-[100px] pt-0 lg:py-[100px]" ref={ref1} style={styles1}>
-      <div className="scrollbar-hide hidden items-center justify-between overflow-auto bg-gradient-to-r from-transparent via-[rgba(0,119,255,0.3)] to-transparent py-[20px] backdrop-blur-md md:flex md:gap-[50px]">
+      <div className="hidden grid-cols-5 items-center gap-[20px] bg-gradient-to-r from-transparent via-[rgba(0,119,255,0.3)] to-transparent py-[20px] backdrop-blur-md md:grid lg:gap-[30px] 2xl:gap-[40px]">
         <Image
           src="/images/pages/index/partners/snz.svg"
           alt="SNZ"
-          className="h-[45.75px] w-[86.925px] flex-shrink-0"
+          className="h-auto w-[86.925px] max-w-full justify-self-center"
           width={86.925}
           height={45.75}
         />
         <Image
-          src="/images/pages/index/partners/degate.svg"
-          alt="DeGate"
-          className="h-[30.5px] w-[149.45px] flex-shrink-0"
-          width={149.45}
-          height={30.5}
-        />
-        <Image
           src="/images/pages/index/partners/hashkey.svg"
           alt="HASHKEY"
-          className="h-[28.975px] w-[180.712px] flex-shrink-0"
+          className="h-auto w-[180.712px] max-w-full justify-self-center"
           width={180.712}
           height={28.975}
         />
         <Image
           src="/images/pages/index/partners/web3-foundation.svg"
           alt="3"
-          className="h-[61px] w-[144.112px] flex-shrink-0"
+          className="h-auto w-[144.112px] max-w-full justify-self-center"
           width={144.112}
           height={61}
         />
         <Image
           src="/images/pages/index/partners/parity.svg"
           alt="Parity"
-          className="h-[50.325px] w-[199.012px] flex-shrink-0"
+          className="h-auto w-[199.012px] max-w-full justify-self-center"
           width={199.012}
           height={50.325}
         />
         <Image
-          src="/images/pages/index/partners/ringdao.svg"
-          alt="RingDAO"
-          className="h-[45.75px] w-[199px] flex-shrink-0"
-          width={199}
-          height={45.75}
-        />
-        <Image
           src="/images/pages/index/partners/helixbox.svg"
           alt="Helixbox"
-          className="h-[45.75px] w-[233.13px] flex-shrink-0"
+          className="h-auto w-[233.13px] max-w-full justify-self-center"
           width={233.13}
           height={45.75}
         />
@@ -67,13 +53,6 @@ export default function Partners() {
             className="h-[22.875px] w-[43.463px] flex-shrink-0"
             width={43.463}
             height={22.875}
-          />
-          <Image
-            src="/images/pages/index/partners/degate.svg"
-            alt="DeGate"
-            className="h-[15.25px] w-[74.725px] flex-shrink-0"
-            width={74.725}
-            height={15.25}
           />
           <Image
             src="/images/pages/index/partners/hashkey.svg"
@@ -97,13 +76,6 @@ export default function Partners() {
             className="h-[25.162px] w-[99.506px] flex-shrink-0"
             width={99.506}
             height={25.162}
-          />
-          <Image
-            src="/images/pages/index/partners/ringdao.svg"
-            alt="RingDAO"
-            className="h-[22.875px] w-[99.5px] flex-shrink-0"
-            width={99.5}
-            height={22.875}
           />
         </div>
         <div className="flex items-center justify-center">
