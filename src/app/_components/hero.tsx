@@ -12,7 +12,7 @@ export default function Hero() {
       <Image
         src="/images/pages/index/hero.png"
         alt="hero"
-        className="ml-0 h-[353px] w-[335px] object-cover lg:-ml-[50px] lg:h-[50.69vw] lg:max-h-[876px] lg:w-[44.15vw] lg:max-w-[763px] 2xl:-ml-[100px]"
+        className="ml-0 h-[353px] w-[335px] object-contain lg:-ml-[50px] lg:h-[50.69vw] lg:max-h-[876px] lg:w-[44.15vw] lg:max-w-[763px] lg:object-cover 2xl:-ml-[100px]"
         ref={ref1}
         style={styles1}
         width={763}
