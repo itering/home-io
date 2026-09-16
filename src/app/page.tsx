@@ -13,7 +13,7 @@ const structuredData = {
   url: 'https://itering.com/',
   logo: 'https://itering.com/images/favicon/favicon512.png',
   description: 'RESEARCH. BUILD. DEPLOY. THE AI NATIVE FUTURE',
-  sameAs: ['https://x.com/itering_io', 'https://github.com/itering'],
+  sameAs: ['https://x.com/Itering_Tech', 'https://github.com/itering'],
   mainEntityOfPage: {
     '@type': 'WebPage',
     '@id': 'https://itering.com/'

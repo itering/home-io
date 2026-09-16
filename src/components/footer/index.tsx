@@ -28,7 +28,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="https://x.com/itering_io"
+                  href="https://x.com/Itering_Tech"
                   className="text-[20px] font-light uppercase leading-[32px] text-white/70 transition-opacity duration-300 hover:opacity-70"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -72,7 +72,7 @@ export default function Footer() {
             <ul className="flex items-center gap-[20px]">
               <li>
                 <Link
-                  href="https://x.com/itering_io"
+                  href="https://x.com/Itering_Tech"
                   className="text-[20px] font-light uppercase leading-[32px] text-white/70 transition-opacity duration-300 hover:opacity-70"
                   target="_blank"
                   rel="noopener noreferrer"
