@@ -19,23 +19,23 @@ export default function Hero() {
         height={876}
       />
 
-      <div className="flex flex-col items-end gap-[26px] font-bold uppercase leading-normal">
+      <div className="flex flex-col items-end gap-[26px] leading-normal font-bold uppercase">
         <p
-          className="font-sans text-[13px] font-medium tracking-[4.612px] text-white/60 lg:text-[28px] 3xl:text-[32px]"
+          className="3xl:text-[32px] font-sans text-[13px] font-medium tracking-[4.612px] text-white/60 lg:text-[28px]"
           ref={ref2}
           style={styles2}
         >
-          Research, invest, build The
+          RESEARCH. BUILD. DEPLOY.
         </p>
         <h1
           className="flex flex-col items-center uppercase lg:items-end"
           ref={ref3}
           style={styles3}
         >
-          <span className="block whitespace-nowrap font-sans text-[45px] font-extrabold tracking-[4.612px] text-white lg:text-[80px] lg:leading-[80px] 3xl:text-[100px] 3xl:leading-[100px]">
-            TRUST-FREE
+          <span className="3xl:text-[80px] 3xl:leading-[100px] block font-sans text-[36px] font-extrabold tracking-[4.612px] whitespace-nowrap text-white lg:text-[60px] lg:leading-[80px]">
+            THE AI NATIVE
           </span>
-          <span className="block font-sans text-[45px] font-extrabold tracking-[4.612px] text-white lg:text-[80px] lg:leading-[80px] 3xl:text-[100px] 3xl:leading-[100px]">
+          <span className="3xl:text-[80px] 3xl:leading-[100px] block font-sans text-[36px] font-extrabold tracking-[4.612px] text-white lg:text-[60px] lg:leading-[80px]">
             FUTURE
           </span>
           <span

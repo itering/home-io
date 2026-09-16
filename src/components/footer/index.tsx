@@ -38,7 +38,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="mailto:contact@itering.io"
+                  href="mailto:contact@itering.com"
                   className="text-[20px] font-light uppercase leading-[32px] text-white/70 transition-opacity duration-300 hover:opacity-70"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -82,7 +82,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="mailto:contact@itering.io"
+                  href="mailto:contact@itering.com"
                   className="text-[20px] font-light uppercase leading-[32px] text-white/70 transition-opacity duration-300 hover:opacity-70"
                   target="_blank"
                   rel="noopener noreferrer"

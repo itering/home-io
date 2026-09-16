@@ -15,16 +15,19 @@ export default function Products() {
   });
   const { ref: ref5, animatedStyles: styles5 } = useScrollAnimation({ delay: 0.3 });
 
+  const { ref: ref6, animatedStyles: styles6 } = useScrollAnimation({ delay: 0.2 });
+  const { ref: ref7, animatedStyles: styles7 } = useScrollAnimation({ delay: 0.2 });
+
   return (
     <section className="container space-y-[60px] py-[100px] lg:space-y-[100px]">
       <h2
-        className="hidden text-[110px] font-normal uppercase leading-normal lg:block"
+        className="hidden text-[110px] leading-normal font-normal uppercase lg:block"
         ref={ref1}
         style={styles1}
       >
         WE&apos;RE BUILDING
       </h2>
-      <h2 className="flex flex-col items-center justify-center text-[50px] font-normal uppercase leading-normal lg:hidden">
+      <h2 className="flex flex-col items-center justify-center text-[50px] leading-normal font-normal uppercase lg:hidden">
         <span>WE&apos;RE</span>
         <span>BUILDING</span>
       </h2>
@@ -54,25 +57,41 @@ export default function Products() {
           />
 
           <div className="space-y-[10px]" ref={ref3} style={styles3}>
-            <h3 className="text-center text-[34px] font-medium capitalize leading-normal tracking-[2px] lg:text-left lg:text-[54px]">
-              Data
+            <h3 className="text-center text-[34px] leading-normal font-medium tracking-[2px] lg:text-left lg:text-[54px]">
+              Hast AIP
             </h3>
-            <p className="text-center text-[16px] font-light leading-[32px] text-white/70 lg:text-left lg:text-[24px]">
-              Delivering comprehensive blockchain data query and exploration services, combined with
-              scenario-based intelligent analysis to unlock deeper data applications across various
-              contexts.
+            <p className="text-center text-[16px] leading-[32px] font-light text-white/70 lg:text-left lg:text-[24px]">
+              Hast AIP is an AI platform and workbench built from the Hast team’s frontline FDE
+              delivery experience. It connects private data, internal systems, and expert processes
+              into governed AI workflows—Hast Agent handles day-to-day business execution, Hast GTM
+              drives growth and customer acquisition, and the FDE team brings AIP on-site to take
+              your first workflow from prototype to production.
             </p>
+            <a
+              href="https://hast.so/"
+              className="block text-center text-[16px] text-white/70 underline underline-offset-4 hover:text-white lg:text-left"
+            >
+              Learn more ↗
+            </a>
           </div>
         </div>
 
         <div className="flex flex-col items-center justify-between gap-[10px] lg:flex-row lg:gap-[50px]">
           <div className="order-2 space-y-[10px] lg:order-1" ref={ref4} style={styles4}>
-            <h3 className="text-center text-[34px] font-medium capitalize leading-normal tracking-[2px] lg:text-left lg:text-[54px]">
-              AI
+            <h3 className="text-center text-[34px] leading-normal font-medium tracking-[2px] lg:text-left lg:text-[54px]">
+              Hast FDE
             </h3>
-            <p className="text-center text-[16px] font-light leading-[32px] text-white/70 lg:text-left lg:text-[24px]">
-             Redefining decentralized finance by integrating AI-driven intent detection and execution logic—making liquidity access smarter, faster, and more transparent.
+            <p className="text-center text-[16px] leading-[32px] font-light text-white/70 lg:text-left lg:text-[24px]">
+              Hast connects private data, internal systems, and expert workflows into governed AI
+              workflows. Combining platform capabilities with Forward-Deployed Engineering, we take
+              enterprise AI projects from prototype to production.
             </p>
+            <a
+              href="https://hast.so/en/fde"
+              className="block text-center text-[16px] text-white/70 underline underline-offset-4 hover:text-white lg:text-left"
+            >
+              Learn more ↗
+            </a>
           </div>
           <div
             className="border-container order-1 hidden w-full flex-shrink-0 items-center justify-center rounded-[35px] opacity-90 lg:order-2 lg:flex lg:h-[19.56vw] lg:max-h-[338px] lg:w-[49.18vw] lg:max-w-[850px]"
@@ -96,6 +115,48 @@ export default function Products() {
             width={335}
             height={117.886}
           />
+        </div>
+
+        <div className="flex flex-col items-center justify-between gap-0 lg:flex-row lg:gap-[50px]">
+          <div
+            className="border-container hidden w-full flex-shrink-0 items-center justify-center rounded-[35px] lg:flex lg:h-[15.86vw] lg:max-h-[274px] lg:w-[49.18vw] lg:max-w-[850px]"
+            ref={ref6}
+            style={styles6}
+          >
+            <div className="flex h-full w-full items-center justify-center bg-black">
+              <Image
+                src="/images/pages/index/products-1.png"
+                alt="Data"
+                className="image-scale-hover h-[116px] w-[335px] lg:h-[12.384vw] lg:max-h-[214px] lg:w-[35.7vw] lg:max-w-[617px]"
+                width={617}
+                height={214}
+              />
+            </div>
+          </div>
+          <Image
+            src="/images/pages/index/products-1.png"
+            alt="Data"
+            className="image-scale-hover mb-[50px] h-[116px] w-[335px] lg:hidden"
+            width={335}
+            height={116}
+          />
+
+          <div className="space-y-[10px]" ref={ref7} style={styles7}>
+            <h3 className="text-center text-[34px] leading-normal font-medium tracking-[2px] lg:text-left lg:text-[54px]">
+              Hast Agent
+            </h3>
+            <p className="text-center text-[16px] leading-[32px] font-light text-white/70 lg:text-left lg:text-[24px]">
+              Hast Agent is an AI workspace for work that keeps moving. Tell it what you want to
+              accomplish and it will plan, use coding and browser tools, run tasks in parallel, and
+              return the process, files, and ready-to-use results.
+            </p>
+            <a
+              href="https://hast.so/en/agent"
+              className="block text-center text-[16px] text-white/70 underline underline-offset-4 hover:text-white lg:text-left"
+            >
+              Learn more ↗
+            </a>
+          </div>
         </div>
       </div>
     </section>

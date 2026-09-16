@@ -36,16 +36,16 @@ const euclidCircularA = localFont({
 });
 
 export const metadata: Metadata = {
-  title: 'Itering - Research, Invest, Build The Trust-Free Future',
-  description: 'Itering - Research, Invest, Build The Trust-Free Future',
-  keywords: 'Trust-Free, Itering, Venture Production Studio, Data, AI',
+  title: 'Itering — RESEARCH. BUILD. DEPLOY. THE AI NATIVE FUTURE',
+  description: 'Itering — RESEARCH. BUILD. DEPLOY. THE AI NATIVE FUTURE',
+  keywords: 'Itering, AI Native, Hast AIP, Hast FDE, Hast Agent',
   authors: [{ name: 'Itering' }],
   openGraph: {
-    title: 'Itering - Research, Invest, Build The Trust-Free Future',
-    description: 'Itering - Research, Invest, Build The Trust-Free Future',
+    title: 'Itering — RESEARCH. BUILD. DEPLOY. THE AI NATIVE FUTURE',
+    description: 'Itering — RESEARCH. BUILD. DEPLOY. THE AI NATIVE FUTURE',
     images: [
       {
-        url: 'https://itering.io/images/favicon/favicon512.png',
+        url: 'https://itering.com/images/favicon/favicon512.png',
         width: 512,
         height: 512,
         alt: 'Itering Logo'
@@ -54,13 +54,13 @@ export const metadata: Metadata = {
     type: 'website',
     siteName: 'Itering',
     locale: 'en_US',
-    url: 'https://itering.io'
+    url: 'https://itering.com'
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Itering - Research, Invest, Build The Trust-Free Future',
-    description: 'Itering - Research, Invest, Build The Trust-Free Future',
-    images: ['https://itering.io/images/favicon/favicon512.png']
+    title: 'Itering — RESEARCH. BUILD. DEPLOY. THE AI NATIVE FUTURE',
+    description: 'Itering — RESEARCH. BUILD. DEPLOY. THE AI NATIVE FUTURE',
+    images: ['https://itering.com/images/favicon/favicon512.png']
   },
   icons: {
     icon: [
@@ -77,7 +77,7 @@ export const metadata: Metadata = {
   },
   other: {
     'og:site_name': 'Itering',
-    canonical: 'https://itering.io'
+    canonical: 'https://itering.com'
   }
 };
 
@@ -89,7 +89,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${euclidCircularA.variable} bg-black text-white antialiased`}>
-        <div className="min-w-screen h-screen">
+        <div className="h-screen min-w-screen">
           <Header />
           <main>{children}</main>
           <Footer />

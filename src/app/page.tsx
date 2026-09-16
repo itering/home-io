@@ -10,58 +10,48 @@ const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'InternetCompany',
   name: 'Itering',
-  url: 'https://itering.io/',
-  logo: 'https://itering.io/images/favicon/favicon512.png',
-  description: 'Itering - Research, Invest, Build The Trust-Free Future.',
+  url: 'https://itering.com/',
+  logo: 'https://itering.com/images/favicon/favicon512.png',
+  description: 'RESEARCH. BUILD. DEPLOY. THE AI NATIVE FUTURE',
   sameAs: ['https://x.com/itering_io', 'https://github.com/itering'],
   mainEntityOfPage: {
     '@type': 'WebPage',
-    '@id': 'https://itering.io/'
+    '@id': 'https://itering.com/'
   },
   potentialAction: {
     '@type': 'ReadAction',
     target: [
       {
         '@type': 'ContactPoint',
-        email: 'contact@itering.io',
+        email: 'contact@itering.com',
         name: 'CONTACT US'
       }
     ]
   },
-  slogan: 'Itering - Research, Invest, Build The Trust-Free Future.',
-  knowsAbout: [
-    'Web3',
-    'Blockchain technology',
-    'Decentralized finance (DeFi)',
-    'Data solutions',
-    'Trust-free systems',
-    'Connected to the world',
-    'Power of expertise'
-  ],
+  slogan: 'RESEARCH. BUILD. DEPLOY. THE AI NATIVE FUTURE',
+  knowsAbout: ['AI Native', 'AI workflows', 'Forward-Deployed Engineering', 'AI agents'],
   makesOffer: [
     {
       '@type': 'Offer',
-      itemOffered: {
-        '@type': 'Service',
-        name: 'Data Solutions',
-        description:
-          'Delivering comprehensive blockchain data solutions with high performance and reliability to power the next generation of Web3 applications.'
-      }
+      itemOffered: { '@type': 'Service', name: 'Hast AIP', url: 'https://hast.so/' }
+    },
+    {
+      '@type': 'Offer',
+      itemOffered: { '@type': 'Service', name: 'Hast FDE', url: 'https://hast.so/en/fde' }
     },
     {
       '@type': 'Offer',
       itemOffered: {
-        '@type': 'Service',
-        name: 'DeFi Solutions',
-        description:
-          'Revolutionizing financial services through decentralized protocols, enabling seamless, secure, and efficient transactions in the Web3 ecosystem.'
+        '@type': 'SoftwareApplication',
+        name: 'Hast Agent',
+        url: 'https://hast.so/en/agent'
       }
     }
   ],
   brand: {
     '@type': 'Brand',
     name: 'Itering',
-    slogan: 'Research, Invest, Build The Trust-Free Future'
+    slogan: 'RESEARCH. BUILD. DEPLOY. THE AI NATIVE FUTURE'
   },
   memberOf: [
     { '@type': 'Organization', name: 'SNZ' },
@@ -82,6 +72,17 @@ export default function Home() {
       <Products />
       <Culture />
       <Partners />
+      <section className="container space-y-[30px] py-[100px] text-center">
+        <h2 className="text-[28px] leading-normal lg:text-[54px]">
+          Embrace the AI future. Build the next generation of companies, products, and systems.
+        </h2>
+        <a
+          href="mailto:contact@itering.com"
+          className="inline-block text-[20px] underline underline-offset-8"
+        >
+          Contact us
+        </a>
+      </section>
       <StructuredData data={structuredData} />
     </>
   );

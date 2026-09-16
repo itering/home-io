@@ -15,18 +15,18 @@ export default function Vision() {
   return (
     <motion.section className="container space-y-0 py-[100px] lg:space-y-[50px]">
       <h2
-        className="mb-[20px] text-center text-[50px] font-normal uppercase leading-normal lg:mb-0 lg:text-end lg:text-[110px]"
+        className="mb-[20px] text-center text-[50px] leading-normal font-normal uppercase lg:mb-0 lg:text-end lg:text-[110px]"
         ref={ref1}
         style={styles1}
       >
-        Our Vision
+        Our Studio
       </h2>
       <p
-        className="pb-[60px] text-center text-[20px] font-medium leading-[30px] lg:mb-0 lg:text-end lg:text-[34px] lg:font-normal lg:leading-[44px]"
+        className="pb-[60px] text-center text-[20px] leading-[30px] font-medium lg:mb-0 lg:text-end lg:text-[34px] lg:leading-[44px] lg:font-normal"
         ref={ref2}
         style={styles2}
       >
-          As a forward-looking Venture Studio, Itering focuses on market research, incubation, and strategic investment to accelerate the adoption of AI technologies through aligned teams and market-driven innovation.
+        Itering was built for an age where humans and agents work together.
       </p>
       <div className="grid grid-cols-1 gap-[50px] lg:grid-cols-3 lg:justify-items-center lg:py-[50px]">
         <div
@@ -43,29 +43,25 @@ export default function Vision() {
               y: hoveredIndex === 0 ? 0 : 20
             }}
             transition={{ duration: 0.3, ease: 'easeInOut' }}
-            className="absolute inset-0 hidden h-full w-full items-center justify-center rounded-[40px] bg-[#161b26]/70 px-[20px] text-[16px] font-normal leading-[32px] backdrop-blur-[5px] lg:flex lg:px-[30px] xl:text-[24px]"
+            className="absolute inset-0 hidden h-full w-full items-center justify-center rounded-[40px] bg-[#161b26]/70 px-[20px] text-[16px] leading-[32px] font-normal backdrop-blur-[5px] lg:flex lg:px-[30px] xl:text-[20px]"
           >
-            <p>
-              We believe that trust-free systems will fundamentally transform the global business,
-              finance, and data landscapes.
-            </p>
+            <p>Agents are part of daily work, pairing human judgment with agent execution.</p>
           </motion.div>
           <Image
             src="/images/pages/index/vision-1.png"
-            alt="Trust-free systems"
+            alt="Human + Agent team"
             className="h-[230px] w-[230px] lg:h-[13.31vw] lg:max-h-[230px] lg:w-[13.31vw] lg:max-w-[230px]"
             width={230}
             height={230}
           />
           <h3
             className="lead-[40px] text-[28px] font-medium lg:h-[84px] lg:text-[30px] lg:leading-[44px]"
-            title="Trust-free systems"
+            title="Human + Agent team"
           >
-            Trust-free systems
+            Human + Agent team
           </h3>
-          <p className="block text-[16px] font-normal leading-[26px] lg:hidden">
-            We believe that trust-free systems will fundamentally transform the global business,
-            finance, and data landscapes.
+          <p className="block text-[16px] leading-[26px] font-normal lg:hidden">
+            Agents are part of daily work, pairing human judgment with agent execution.
           </p>
         </div>
 
@@ -83,29 +79,25 @@ export default function Vision() {
               y: hoveredIndex === 1 ? 0 : 20
             }}
             transition={{ duration: 0.3, ease: 'easeInOut' }}
-            className="absolute inset-0 hidden h-full w-full items-center justify-center rounded-[40px] bg-[#161b26]/70 px-[20px] text-[16px] font-normal leading-[32px] backdrop-blur-[5px] lg:flex lg:px-[30px] xl:text-[24px]"
+            className="absolute inset-0 hidden h-full w-full items-center justify-center rounded-[40px] bg-[#161b26]/70 px-[20px] text-[16px] leading-[32px] font-normal backdrop-blur-[5px] lg:flex lg:px-[30px] xl:text-[20px]"
           >
-            <p>
-              Our vision is to create a globally connected ecosystem that breaks down barriers and
-              fosters collaboration.
-            </p>
+            <p>Research matters, but delivery matters more.</p>
           </motion.div>
           <Image
             src="/images/pages/index/vision-2.png"
-            alt="Connected to the world"
+            alt="Built to deliver"
             className="h-[230px] w-[230px] lg:h-[13.31vw] lg:max-h-[230px] lg:w-[13.31vw] lg:max-w-[230px]"
             width={230}
             height={230}
           />
           <h3
             className="lead-[40px] text-[28px] font-medium lg:h-[84px] lg:text-[30px] lg:leading-[44px]"
-            title="Connected to the world"
+            title="Built to deliver"
           >
-            Connected to the world
+            Built to deliver
           </h3>
-          <p className="block text-[16px] font-normal leading-[26px] lg:hidden">
-            Our vision is to create a globally connected ecosystem that breaks down barriers and
-            fosters collaboration.
+          <p className="block text-[16px] leading-[26px] font-normal lg:hidden">
+            Research matters, but delivery matters more.
           </p>
         </div>
 
@@ -123,29 +115,29 @@ export default function Vision() {
               y: hoveredIndex === 2 ? 0 : 20
             }}
             transition={{ duration: 0.3, ease: 'easeInOut' }}
-            className="absolute inset-0 hidden h-full w-full items-center justify-center rounded-[40px] bg-[#161b26]/70 px-[20px] text-[16px] font-normal leading-[32px] backdrop-blur-[5px] lg:flex lg:px-[30px] xl:text-[24px]"
+            className="absolute inset-0 hidden h-full w-full items-center justify-center rounded-[40px] bg-[#161b26]/70 px-[20px] text-[16px] leading-[32px] font-normal backdrop-blur-[5px] lg:flex lg:px-[30px] xl:text-[20px]"
           >
             <p>
-              We harness the power of expertise to drive innovation and create cutting-edge
-              solutions in the AI space.
+              Our team brings real experience from traditional industries and from building and
+              operating complex Web3 products, enabling us to put AI to work across sectors.
             </p>
           </motion.div>
           <Image
             src="/images/pages/index/vision-3.png"
-            alt="Power of expertise"
+            alt="Battle-tested experience"
             className="h-[230px] w-[230px] lg:h-[13.31vw] lg:max-h-[230px] lg:w-[13.31vw] lg:max-w-[230px]"
             width={230}
             height={230}
           />
           <h3
             className="lead-[40px] text-[28px] font-medium lg:h-[84px] lg:text-[30px] lg:leading-[44px]"
-            title="Power of expertise"
+            title="Battle-tested experience"
           >
-            Power of expertise
+            Battle-tested experience
           </h3>
-          <p className="block text-[16px] font-normal leading-[26px] lg:hidden">
-            We harness the power of expertise to drive innovation and create cutting-edge solutions
-            in the AI space.
+          <p className="block text-[16px] leading-[26px] font-normal lg:hidden">
+            Our team brings real experience from traditional industries and from building and
+            operating complex Web3 products, enabling us to put AI to work across sectors.
           </p>
         </div>
       </div>
