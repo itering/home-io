@@ -1,8 +1,18 @@
 'use client';
 import Image from 'next/image';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
+import { useLanguage } from '@/lib/language';
+import { cn } from '@/lib/utils';
 
 export default function Culture() {
+  const { copy, language } = useLanguage();
+  const [humanAgent, delivery, experience, asia] = copy.culture.items;
+  const bodyClassName = cn(
+    'text-center font-light text-white/70 lg:text-left',
+    language === 'zh-HK'
+      ? 'text-[15px] leading-[30px] lg:text-[19px] lg:leading-[38px]'
+      : 'text-[15px] leading-[28px] lg:text-[20px] lg:leading-[34px]'
+  );
   const { ref: ref1, animatedStyles: styles1 } = useScrollAnimation();
   const { ref: ref2, animatedStyles: styles2 } = useScrollAnimation({ delay: 0.2 });
   const { ref: ref3, animatedStyles: styles3 } = useScrollAnimation({ delay: 0.3 });
@@ -11,17 +21,22 @@ export default function Culture() {
   const { ref: ref5, animatedStyles: styles5 } = useScrollAnimation({ delay: 0.5 });
 
   return (
-    <section className="container space-y-[60px] py-[100px] lg:space-y-[100px]">
+    <section
+      id="team"
+      className="container scroll-mt-[80px] space-y-[50px] py-[80px] lg:scroll-mt-[120px] lg:space-y-[70px] lg:py-[90px]"
+    >
       <h2
-        className="hidden text-[110px] leading-normal font-normal uppercase lg:block"
+        className="flex flex-col text-center text-[50px] leading-normal font-normal uppercase lg:text-left lg:text-[90px]"
         ref={ref1}
         style={styles1}
       >
-        Company Culture
-      </h2>
-      <h2 className="flex flex-col items-center justify-center text-[50px] leading-normal font-normal uppercase lg:hidden">
-        <span>Company</span>
-        <span>Culture</span>
+        <span>{copy.culture.headingDesktop}</span>
+        <span
+          className="mx-auto inline-block h-[8px] w-[192px] rounded-[40px] lg:mx-0"
+          style={{
+            background: 'linear-gradient(90deg, #0000C8 0%, #6AC6FF 100%)'
+          }}
+        ></span>
       </h2>
       <div className="grid grid-cols-1 gap-[60px] lg:grid-cols-2 lg:gap-[100px]">
         <article
@@ -31,19 +46,20 @@ export default function Culture() {
         >
           <Image
             src="/images/pages/index/culture-1.png"
-            alt="Human + Agent team"
+            alt={humanAgent.imageAlt}
             className="image-scale-hover size-[180px]"
             width={180}
             height={180}
           />
-          <h3 className="text-[34px] leading-normal font-bold tracking-[2px]">
-            Human + Agent team
-          </h3>
-          <p className="text-center text-[16px] leading-[22px] font-light text-white/70 lg:text-left lg:text-[24px] lg:leading-[32px]">
-            Humans and agent colleagues work at roughly a 1:1 ratio. Agents are part of daily work,
-            pairing human judgment with agent execution. We practice this model ourselves and bring
-            it to our clients.
-          </p>
+          <div className="space-y-[10px] text-center lg:text-left">
+            <span className="block text-[20px] leading-normal font-light tracking-[2px] text-white/70">
+              {humanAgent.number}
+            </span>
+            <h3 className="text-[34px] leading-normal font-bold tracking-[2px]">
+              {humanAgent.title}
+            </h3>
+          </div>
+          <p className={bodyClassName}>{humanAgent.body}</p>
         </article>
         <article
           className="flex w-full flex-col items-center justify-center space-y-[40px] lg:block"
@@ -52,16 +68,20 @@ export default function Culture() {
         >
           <Image
             src="/images/pages/index/culture-2.png"
-            alt="Built to deliver"
+            alt={delivery.imageAlt}
             className="image-scale-hover size-[180px]"
             width={180}
             height={180}
           />
-          <h3 className="text-[34px] leading-normal font-bold tracking-[2px]">Built to deliver</h3>
-          <p className="text-center text-[16px] leading-[22px] font-light text-white/70 lg:text-left lg:text-[24px] lg:leading-[32px]">
-            Research matters, but delivery matters more. We take ideas through engineering,
-            real-world validation, and production deployment.
-          </p>
+          <div className="space-y-[10px] text-center lg:text-left">
+            <span className="block text-[20px] leading-normal font-light tracking-[2px] text-white/70">
+              {delivery.number}
+            </span>
+            <h3 className="text-[34px] leading-normal font-bold tracking-[2px]">
+              {delivery.title}
+            </h3>
+          </div>
+          <p className={bodyClassName}>{delivery.body}</p>
         </article>
         <article
           className="flex w-full flex-col items-center justify-center space-y-[40px] lg:block"
@@ -70,18 +90,20 @@ export default function Culture() {
         >
           <Image
             src="/images/pages/index/culture-3.png"
-            alt="Battle-tested experience"
+            alt={experience.imageAlt}
             className="image-scale-hover size-[180px]"
             width={180}
             height={180}
           />
-          <h3 className="text-[34px] leading-normal font-bold tracking-[2px]">
-            Battle-tested experience
-          </h3>
-          <p className="text-center text-[16px] leading-[22px] font-light text-white/70 lg:text-left lg:text-[24px] lg:leading-[32px]">
-            Our team brings real experience from traditional industries and from building and
-            operating complex Web3 products, enabling us to put AI to work across sectors.
-          </p>
+          <div className="space-y-[10px] text-center lg:text-left">
+            <span className="block text-[20px] leading-normal font-light tracking-[2px] text-white/70">
+              {experience.number}
+            </span>
+            <h3 className="text-[34px] leading-normal font-bold tracking-[2px]">
+              {experience.title}
+            </h3>
+          </div>
+          <p className={bodyClassName}>{experience.body}</p>
         </article>
         <article
           className="flex w-full flex-col items-center justify-center space-y-[40px] lg:block"
@@ -90,16 +112,18 @@ export default function Culture() {
         >
           <Image
             src="/images/pages/index/vision-2.png"
-            alt="Rooted in Asia"
+            alt={asia.imageAlt}
             className="image-scale-hover size-[180px]"
             width={180}
             height={180}
           />
-          <h3 className="text-[34px] leading-normal font-bold tracking-[2px]">Rooted in Asia</h3>
-          <p className="text-center text-[16px] leading-[22px] font-light text-white/70 lg:text-left lg:text-[24px] lg:leading-[32px]">
-            Headquartered in Singapore and active across Asia, we connect frontier technology with
-            local operations and collaborate across markets, cultures, and industries.
-          </p>
+          <div className="space-y-[10px] text-center lg:text-left">
+            <span className="block text-[20px] leading-normal font-light tracking-[2px] text-white/70">
+              {asia.number}
+            </span>
+            <h3 className="text-[34px] leading-normal font-bold tracking-[2px]">{asia.title}</h3>
+          </div>
+          <p className={bodyClassName}>{asia.body}</p>
         </article>
       </div>
     </section>

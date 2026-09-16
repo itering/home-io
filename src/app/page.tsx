@@ -1,9 +1,9 @@
 import Hero from '@/app/_components/hero';
-import Vision from '@/app/_components/vision';
 import Beliefs from '@/app/_components/beliefs';
 import Products from '@/app/_components/products';
 import Culture from '@/app/_components/culture';
 import Partners from '@/app/_components/partners';
+import ContactCta from '@/app/_components/contact-cta';
 import { StructuredData } from '@/components/StructuredData';
 
 const structuredData = {
@@ -67,22 +67,11 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Vision />
-      <Beliefs />
       <Products />
       <Culture />
       <Partners />
-      <section className="container space-y-[30px] py-[100px] text-center">
-        <h2 className="text-[28px] leading-normal lg:text-[54px]">
-          Embrace the AI future. Build the next generation of companies, products, and systems.
-        </h2>
-        <a
-          href="mailto:contact@itering.com"
-          className="inline-block text-[20px] underline underline-offset-8"
-        >
-          Contact us
-        </a>
-      </section>
+      <Beliefs />
+      <ContactCta />
       <StructuredData data={structuredData} />
     </>
   );

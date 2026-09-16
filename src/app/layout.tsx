@@ -3,6 +3,7 @@ import localFont from 'next/font/local';
 import './globals.css';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
+import { LanguageProvider } from '@/lib/language';
 
 const euclidCircularA = localFont({
   src: [
@@ -90,9 +91,11 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${euclidCircularA.variable} bg-black text-white antialiased`}>
         <div className="h-screen min-w-screen">
-          <Header />
-          <main>{children}</main>
-          <Footer />
+          <LanguageProvider>
+            <Header />
+            <main>{children}</main>
+            <Footer />
+          </LanguageProvider>
         </div>
       </body>
     </html>
