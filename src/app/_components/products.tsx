@@ -55,20 +55,20 @@ export default function Products() {
           >
             <div className="flex h-full w-full items-center justify-center bg-black">
               <Image
-                src="/images/pages/index/products-1.png"
-                alt={aip.imageAlt}
-                className="image-scale-hover h-[116px] w-[335px] lg:h-[12.384vw] lg:max-h-[214px] lg:w-[35.7vw] lg:max-w-[617px]"
-                width={617}
-                height={214}
+                src="/images/pages/index/hast-aip-v2.png"
+                alt={aip.title}
+                className="image-scale-hover h-auto w-[335px] lg:w-[45.72vw] lg:max-w-[790px]"
+                width={2304}
+                height={800}
               />
             </div>
           </div>
           <Image
-            src="/images/pages/index/products-1.png"
-            alt={aip.imageAlt}
-            className="image-scale-hover mb-[50px] h-[116px] w-[335px] lg:hidden"
-            width={335}
-            height={116}
+            src="/images/pages/index/hast-aip-v2.png"
+            alt={aip.title}
+            className="image-scale-hover mb-[50px] h-auto w-[335px] lg:hidden"
+            width={2304}
+            height={800}
           />
 
           <div className="space-y-[10px]" ref={ref3} style={styles3}>
@@ -105,20 +105,20 @@ export default function Products() {
           >
             <div className="flex h-full w-full items-center justify-center bg-black">
               <Image
-                src="/images/pages/index/products-2.png"
-                alt={fde.imageAlt}
-                className="image-scale-hover mb-[50px] h-[117.886px] w-[335px] lg:h-[16.088vw] lg:max-h-[278px] lg:w-[45.72vw] lg:max-w-[790px]"
-                width={790}
-                height={278}
+                src="/images/pages/index/hast-fde.png"
+                alt={fde.title}
+                className="image-scale-hover mb-[50px] h-auto w-[335px] lg:w-[45.72vw] lg:max-w-[790px]"
+                width={2304}
+                height={800}
               />
             </div>
           </div>
           <Image
-            src="/images/pages/index/products-2.png"
-            alt={fde.imageAlt}
-            className="image-scale-hover h-[117.886px] w-[335px] lg:hidden"
-            width={335}
-            height={117.886}
+            src="/images/pages/index/hast-fde.png"
+            alt={fde.title}
+            className="image-scale-hover h-auto w-[335px] lg:hidden"
+            width={2304}
+            height={800}
           />
         </div>
 
@@ -130,20 +130,20 @@ export default function Products() {
           >
             <div className="flex h-full w-full items-center justify-center bg-black">
               <Image
-                src="/images/pages/index/products-1.png"
-                alt={agent.imageAlt}
-                className="image-scale-hover h-[116px] w-[335px] lg:h-[12.384vw] lg:max-h-[214px] lg:w-[35.7vw] lg:max-w-[617px]"
-                width={617}
-                height={214}
+                src="/images/pages/index/hast-agent-v6.png"
+                alt={agent.title}
+                className="image-scale-hover h-auto w-[285px] lg:w-[38.86vw] lg:max-w-[672px]"
+                width={2304}
+                height={800}
               />
             </div>
           </div>
           <Image
-            src="/images/pages/index/products-1.png"
-            alt={agent.imageAlt}
-            className="image-scale-hover mb-[50px] h-[116px] w-[335px] lg:hidden"
-            width={335}
-            height={116}
+            src="/images/pages/index/hast-agent-v6.png"
+            alt={agent.title}
+            className="image-scale-hover mb-[50px] h-auto w-[285px] lg:hidden"
+            width={2304}
+            height={800}
           />
 
           <div className="space-y-[10px]" ref={ref7} style={styles7}>
