@@ -24,7 +24,7 @@ export default function Partners() {
         />
         <Image
           src="/images/pages/index/partners/web3-foundation.svg"
-          alt="3"
+          alt="Web3 Foundation"
           className="h-auto w-[144.112px] max-w-full justify-self-center"
           width={144.112}
           height={61}
@@ -65,7 +65,7 @@ export default function Partners() {
         <div className="flex items-center justify-center gap-[30px]">
           <Image
             src="/images/pages/index/partners/web3-foundation.svg"
-            alt="3"
+            alt="Web3 Foundation"
             className="h-[30.5px] w-[72.056px] flex-shrink-0"
             width={72.056}
             height={30.5}

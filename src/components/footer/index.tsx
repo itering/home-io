@@ -1,6 +1,11 @@
+'use client';
+
 import Link from 'next/link';
 import Image from 'next/image';
+import { useLanguage } from '@/lib/language';
+
 export default function Footer() {
+  const { copy } = useLanguage();
   const currentYear = new Date().getFullYear();
   return (
     <>
@@ -23,7 +28,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Brand Kit
+                  {copy.footer.brandKit}
                 </Link>
               </li>
               <li>

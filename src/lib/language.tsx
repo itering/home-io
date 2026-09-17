@@ -89,6 +89,9 @@ export const siteCopy = {
     },
     contact: {
       cta: 'Contact us'
+    },
+    footer: {
+      brandKit: 'Brand Kit'
     }
   },
   'zh-HK': {
@@ -170,6 +173,9 @@ export const siteCopy = {
     },
     contact: {
       cta: '聯絡我們'
+    },
+    footer: {
+      brandKit: '品牌資源'
     }
   }
 } as const;
