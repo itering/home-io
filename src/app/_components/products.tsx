@@ -1,8 +1,18 @@
 'use client';
 import Image from 'next/image';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
+import { useLanguage } from '@/lib/language';
+import { cn } from '@/lib/utils';
 
 export default function Products() {
+  const { copy, language } = useLanguage();
+  const [aip, fde, agent] = copy.products.items;
+  const bodyClassName = cn(
+    'text-center font-light text-white/70 lg:text-left',
+    language === 'zh-HK'
+      ? 'text-[15px] leading-[30px] lg:text-[19px] lg:leading-[38px]'
+      : 'text-[15px] leading-[28px] lg:text-[20px] lg:leading-[34px]'
+  );
   const { ref: ref1, animatedStyles: styles1 } = useScrollAnimation();
   const { ref: ref2, animatedStyles: styles2 } = useScrollAnimation({
     delay: 0.2,
@@ -15,18 +25,26 @@ export default function Products() {
   });
   const { ref: ref5, animatedStyles: styles5 } = useScrollAnimation({ delay: 0.3 });
 
+  const { ref: ref6, animatedStyles: styles6 } = useScrollAnimation({ delay: 0.2 });
+  const { ref: ref7, animatedStyles: styles7 } = useScrollAnimation({ delay: 0.2 });
+
   return (
-    <section className="container space-y-[60px] py-[100px] lg:space-y-[100px]">
+    <section
+      id="products-services"
+      className="container scroll-mt-[80px] space-y-[50px] py-[80px] lg:scroll-mt-[120px] lg:space-y-[70px] lg:py-[90px]"
+    >
       <h2
-        className="hidden text-[110px] font-normal uppercase leading-normal lg:block"
+        className="flex flex-col text-center text-[50px] leading-normal font-normal uppercase lg:text-left lg:text-[90px]"
         ref={ref1}
         style={styles1}
       >
-        WE&apos;RE BUILDING
-      </h2>
-      <h2 className="flex flex-col items-center justify-center text-[50px] font-normal uppercase leading-normal lg:hidden">
-        <span>WE&apos;RE</span>
-        <span>BUILDING</span>
+        <span>{copy.products.headingDesktop}</span>
+        <span
+          className="mx-auto inline-block h-[8px] w-[192px] rounded-[40px] lg:mx-0"
+          style={{
+            background: 'linear-gradient(90deg, #0000C8 0%, #6AC6FF 100%)'
+          }}
+        ></span>
       </h2>
       <div className="flex flex-col gap-[60px] lg:gap-[100px]">
         <div className="flex flex-col items-center justify-between gap-0 lg:flex-row lg:gap-[50px]">
@@ -37,42 +55,48 @@ export default function Products() {
           >
             <div className="flex h-full w-full items-center justify-center bg-black">
               <Image
-                src="/images/pages/index/products-1.png"
-                alt="Data"
-                className="image-scale-hover h-[116px] w-[335px] lg:h-[12.384vw] lg:max-h-[214px] lg:w-[35.7vw] lg:max-w-[617px]"
-                width={617}
-                height={214}
+                src="/images/pages/index/hast-aip-2x.webp"
+                alt={aip.title}
+                className="image-scale-hover h-auto w-[335px] lg:w-[45.72vw] lg:max-w-[790px]"
+                width={1580}
+                height={549}
               />
             </div>
           </div>
           <Image
-            src="/images/pages/index/products-1.png"
-            alt="Data"
-            className="image-scale-hover mb-[50px] h-[116px] w-[335px] lg:hidden"
-            width={335}
-            height={116}
+            src="/images/pages/index/hast-aip-2x.webp"
+            alt={aip.title}
+            className="image-scale-hover mb-[50px] h-auto w-[335px] lg:hidden"
+            width={1580}
+            height={549}
           />
 
           <div className="space-y-[10px]" ref={ref3} style={styles3}>
-            <h3 className="text-center text-[34px] font-medium capitalize leading-normal tracking-[2px] lg:text-left lg:text-[54px]">
-              Data
+            <h3 className="text-center text-[34px] leading-normal font-medium tracking-[2px] lg:text-left lg:text-[54px]">
+              {aip.title}
             </h3>
-            <p className="text-center text-[16px] font-light leading-[32px] text-white/70 lg:text-left lg:text-[24px]">
-              Delivering comprehensive blockchain data query and exploration services, combined with
-              scenario-based intelligent analysis to unlock deeper data applications across various
-              contexts.
-            </p>
+            <p className={bodyClassName}>{aip.body}</p>
+            <a
+              href={aip.href}
+              className="block text-center text-[16px] text-white/70 underline underline-offset-4 hover:text-white lg:text-left"
+            >
+              {copy.products.learnMore}
+            </a>
           </div>
         </div>
 
         <div className="flex flex-col items-center justify-between gap-[10px] lg:flex-row lg:gap-[50px]">
           <div className="order-2 space-y-[10px] lg:order-1" ref={ref4} style={styles4}>
-            <h3 className="text-center text-[34px] font-medium capitalize leading-normal tracking-[2px] lg:text-left lg:text-[54px]">
-              AI
+            <h3 className="text-center text-[34px] leading-normal font-medium tracking-[2px] lg:text-left lg:text-[54px]">
+              {fde.title}
             </h3>
-            <p className="text-center text-[16px] font-light leading-[32px] text-white/70 lg:text-left lg:text-[24px]">
-             Redefining decentralized finance by integrating AI-driven intent detection and execution logic—making liquidity access smarter, faster, and more transparent.
-            </p>
+            <p className={bodyClassName}>{fde.body}</p>
+            <a
+              href={fde.href}
+              className="block text-center text-[16px] text-white/70 underline underline-offset-4 hover:text-white lg:text-left"
+            >
+              {copy.products.learnMore}
+            </a>
           </div>
           <div
             className="border-container order-1 hidden w-full flex-shrink-0 items-center justify-center rounded-[35px] opacity-90 lg:order-2 lg:flex lg:h-[19.56vw] lg:max-h-[338px] lg:w-[49.18vw] lg:max-w-[850px]"
@@ -81,21 +105,59 @@ export default function Products() {
           >
             <div className="flex h-full w-full items-center justify-center bg-black">
               <Image
-                src="/images/pages/index/products-2.png"
-                alt="AI"
-                className="image-scale-hover mb-[50px] h-[117.886px] w-[335px] lg:h-[16.088vw] lg:max-h-[278px] lg:w-[45.72vw] lg:max-w-[790px]"
-                width={790}
-                height={278}
+                src="/images/pages/index/hast-fde-2x.webp"
+                alt={fde.title}
+                className="brightness-[1.22] hover:brightness-[1.342] image-scale-hover mb-[50px] h-auto w-[335px] lg:w-[45.72vw] lg:max-w-[790px]"
+                width={1580}
+                height={549}
               />
             </div>
           </div>
           <Image
-            src="/images/pages/index/products-2.png"
-            alt="AI"
-            className="image-scale-hover h-[117.886px] w-[335px] lg:hidden"
-            width={335}
-            height={117.886}
+            src="/images/pages/index/hast-fde-2x.webp"
+            alt={fde.title}
+            className="brightness-[1.22] hover:brightness-[1.342] image-scale-hover h-auto w-[335px] lg:hidden"
+            width={1580}
+            height={549}
           />
+        </div>
+
+        <div className="flex flex-col items-center justify-between gap-0 lg:flex-row lg:gap-[50px]">
+          <div
+            className="border-container hidden w-full flex-shrink-0 items-center justify-center rounded-[35px] lg:flex lg:h-[15.86vw] lg:max-h-[274px] lg:w-[49.18vw] lg:max-w-[850px]"
+            ref={ref6}
+            style={styles6}
+          >
+            <div className="flex h-full w-full items-center justify-center bg-black">
+              <Image
+                src="/images/pages/index/hast-agent-2x.webp"
+                alt={agent.title}
+                className="brightness-[1.45] hover:brightness-[1.595] image-scale-hover h-auto w-[285px] lg:w-[38.86vw] lg:max-w-[672px]"
+                width={1344}
+                height={467}
+              />
+            </div>
+          </div>
+          <Image
+            src="/images/pages/index/hast-agent-2x.webp"
+            alt={agent.title}
+            className="brightness-[1.45] hover:brightness-[1.595] image-scale-hover mb-[50px] h-auto w-[285px] lg:hidden"
+            width={1344}
+            height={467}
+          />
+
+          <div className="space-y-[10px]" ref={ref7} style={styles7}>
+            <h3 className="text-center text-[34px] leading-normal font-medium tracking-[2px] lg:text-left lg:text-[54px]">
+              {agent.title}
+            </h3>
+            <p className={bodyClassName}>{agent.body}</p>
+            <a
+              href={agent.href}
+              className="block text-center text-[16px] text-white/70 underline underline-offset-4 hover:text-white lg:text-left"
+            >
+              {copy.products.learnMore}
+            </a>
+          </div>
         </div>
       </div>
     </section>

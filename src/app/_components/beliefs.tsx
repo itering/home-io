@@ -1,161 +1,91 @@
 'use client';
 import Image from 'next/image';
-import { useRef } from 'react';
-import { motion, useScroll, useTransform } from 'motion/react';
+import { useEffect, useState } from 'react';
+import { motion } from 'motion/react';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
+import { useLanguage } from '@/lib/language';
 
-const beliefs = [
-  {
-    text: "Web3’s potential to create new markets and empower communities is amplified by AI’s force-multiplying effect.",
-    imagePath: '/images/pages/index/beliefs-1.png'
-  },
-  {
-    text: "With expertise and agility, we push the boundaries of innovation, focusing on long-term value and intelligent, intent-driven user experiences." ,
-    imagePath: '/images/pages/index/beliefs-2.png'
-  },
-  {
-    text: "A decentralized future transforms data, finance, and services—through transparency, collaboration, and adaptive AI.", 
-     imagePath: '/images/pages/index/beliefs-3.png'
-  }
+const beliefImages = [
+  '/images/pages/index/beliefs-1.png',
+  '/images/pages/index/beliefs-2.png',
+  '/images/pages/index/beliefs-3.png'
 ];
 
-
-
-
 export default function Beliefs() {
+  const { copy } = useLanguage();
+  const beliefs = copy.beliefs.statements.map((text, index) => ({
+    text,
+    imagePath: beliefImages[index]
+  }));
+  const beliefCount = beliefs.length;
+  const [activeIndex, setActiveIndex] = useState(0);
   const { ref: ref1, animatedStyles: styles1 } = useScrollAnimation();
-
-  const containerRef = useRef<HTMLElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ['start start', 'end end']
-  });
-  const imageOpacity1 = useTransform(scrollYProgress, [0, 0.25, 0.35], [1, 1, 0]);
-  const imageOpacity2 = useTransform(scrollYProgress, [0.3, 0.55, 0.65], [0, 1, 0]);
-  const imageOpacity3 = useTransform(scrollYProgress, [0.6, 0.96, 0.96], [0, 1, 1]);
-  const imageOpacities = [imageOpacity1, imageOpacity2, imageOpacity3];
-
-  const titleTranslateY = useTransform(scrollYProgress, [0.96, 1], [0, -50]);
-  const titleOpacity = useTransform(scrollYProgress, [0.96, 1], [1, 0]);
-
   const { ref: ref2, animatedStyles: styles2 } = useScrollAnimation({
     delay: 0.2
   });
-  const { ref: ref3, animatedStyles: styles3 } = useScrollAnimation({
-    delay: 0.3
-  });
-  const { ref: ref4, animatedStyles: styles4 } = useScrollAnimation({
-    delay: 0.4
-  });
-  const { ref: ref5, animatedStyles: styles5 } = useScrollAnimation({
-    delay: 0.5
-  });
+
+  useEffect(() => {
+    const interval = window.setInterval(() => {
+      setActiveIndex((current) => (current + 1) % beliefCount);
+    }, 4500);
+
+    return () => window.clearInterval(interval);
+  }, [beliefCount]);
 
   return (
-    <section ref={containerRef} className="relative py-[100px] lg:py-0">
-      <motion.div
-        className="sticky top-0 hidden bg-transparent pb-[20px] backdrop-blur-[50px] lg:block"
-        style={{ y: titleTranslateY, opacity: titleOpacity }}
-      >
-        <h2
-          className="container flex flex-col text-[110px] font-normal uppercase leading-normal"
-          ref={ref1}
-          style={styles1}
-        >
-          <span>WE BELIEVE</span>
-          <span
-            className="inline-block h-[9px] w-[192px] rounded-[40px]"
-            style={{
-              background: 'linear-gradient(90deg, #0000C8 0%, #6AC6FF 100%)'
-            }}
-          ></span>
-        </h2>
-      </motion.div>
-      <div className="container hidden justify-between lg:flex lg:gap-[100px]">
-        <div className="w-[44.21vw] max-w-[764px]">
-          {beliefs.map((belief, index) => (
-            <div key={index} className="flex h-screen items-center">
-              <p className="text-[44px] font-normal leading-[60px]">{belief.text}</p>
-            </div>
-          ))}
-        </div>
-        <div className="sticky top-0 h-screen w-[29.98vw] max-w-[518px]">
-          <div className="relative flex h-full w-full items-center justify-center">
+    <section className="container py-[70px] lg:py-[90px]">
+      <div className="grid grid-cols-1 items-center gap-[50px] lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:gap-[80px]">
+        <div ref={ref1} style={styles1} className="space-y-[40px]">
+          <h2 className="flex flex-col text-center text-[50px] leading-normal font-normal uppercase lg:text-left lg:text-[90px]">
+            <span>{copy.beliefs.heading}</span>
+            <span
+              className="mx-auto inline-block h-[8px] w-[192px] rounded-[40px] lg:mx-0"
+              style={{
+                background: 'linear-gradient(90deg, #0000C8 0%, #6AC6FF 100%)'
+              }}
+            ></span>
+          </h2>
+          <div className="relative min-h-[180px] lg:min-h-[220px]" aria-live="polite">
             {beliefs.map((belief, index) => (
               <motion.div
                 key={index}
-                className="absolute inset-0 bg-contain bg-center bg-no-repeat"
-                style={{
-                  opacity: imageOpacities[index],
-                  backgroundImage: `url(${belief.imagePath})`
+                className="absolute inset-0 flex items-center"
+                animate={{
+                  opacity: activeIndex === index ? 1 : 0,
+                  y: activeIndex === index ? 0 : 18
                 }}
-              ></motion.div>
+                initial={false}
+                transition={{ duration: 0.8, ease: 'easeInOut' }}
+              >
+                <p className="text-center text-[24px] leading-[36px] font-normal lg:text-left lg:text-[34px] lg:leading-[48px]">
+                  {belief.text}
+                </p>
+              </motion.div>
             ))}
           </div>
         </div>
-      </div>
 
-      {/* mobile */}
-      <h2
-        className="container mb-[50px] text-center text-[50px] font-normal uppercase leading-normal lg:hidden"
-        ref={ref2}
-        style={styles2}
-      >
-        WE BELIEVE
-      </h2>
-      <div className="container flex w-full flex-col items-center gap-[50px] lg:hidden">
-        <div
-          className="flex flex-col items-center justify-center gap-[50px]"
-          ref={ref3}
-          style={styles3}
-        >
-          <Image
-            src="/images/pages/index/beliefs-1.png"
-            alt="belief"
-            className="size-[275px]"
-            width={275}
-            height={275}
-          />
-          <p className="text-center text-[20px] font-medium leading-[30px]">
-            Web3’s potential to create new markets and empower communities is amplified by AI’s
-            force-multiplying effect.
-          </p>
-        </div>
-
-        <div
-          className="flex flex-col items-center justify-center gap-[50px]"
-          ref={ref4}
-          style={styles4}
-        >
-          <Image
-            src="/images/pages/index/beliefs-2.png"
-            alt="belief"
-            className="size-[275px]"
-            width={275}
-            height={275}
-          />
-          <p className="text-center text-[20px] font-medium leading-[30px]">
-            With expertise and agility, we push the boundaries of innovation, focusing on long-term
-            value and intelligent, intent-driven user experiences.
-          </p>
-        </div>
-
-        <div
-          className="flex flex-col items-center justify-center gap-[50px]"
-          ref={ref5}
-          style={styles5}
-        >
-          <Image
-            src="/images/pages/index/beliefs-3.png"
-            alt="belief"
-            className="size-[275px]"
-            width={275}
-            height={275}
-          />
-          <p className="text-center text-[20px] font-medium leading-[30px]">
-            A decentralized future transforms data, finance, and services—through transparency,
-            collaboration, and adaptive AI.
-          </p>
+        <div ref={ref2} style={styles2} className="relative mx-auto h-[300px] w-full max-w-[430px]">
+          {beliefs.map((belief, index) => (
+            <motion.div
+              key={belief.imagePath}
+              className="absolute inset-0 flex items-center justify-center"
+              animate={{
+                opacity: activeIndex === index ? 1 : 0,
+                scale: activeIndex === index ? 1 : 0.96
+              }}
+              initial={false}
+              transition={{ duration: 0.8, ease: 'easeInOut' }}
+            >
+              <Image
+                src={belief.imagePath}
+                alt={copy.beliefs.imageAlt}
+                className="size-[260px] object-contain lg:size-[360px]"
+                width={360}
+                height={360}
+              />
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>

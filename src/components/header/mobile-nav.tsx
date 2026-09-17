@@ -3,9 +3,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useCallback, useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
+import LanguageSwitcher from './language-switcher';
+import { useLanguage } from '@/lib/language';
 
 export default function MobileNav() {
   const [isOpen, setIsOpen] = useState(false);
+  const { copy } = useLanguage();
 
   const getScrollbarWidth = useCallback(() => {
     return window.innerWidth - document.documentElement.clientWidth;
@@ -50,14 +53,14 @@ export default function MobileNav() {
             >
               <button
                 onClick={() => setIsOpen(false)}
-                className="absolute right-4 top-4 text-gray-500 hover:text-gray-700"
+                className="absolute top-4 right-4 text-gray-500 hover:text-gray-700"
               >
                 {/* <X size={24} /> */}
                 <Image src="/images/close.svg" alt="close menu" width={34} height={34} />
               </button>
 
               <nav>
-                <ul className="space-y-[90px]">
+                <ul className="space-y-[54px]">
                   <motion.li
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -78,11 +81,11 @@ export default function MobileNav() {
                     className="text-center"
                   >
                     <Link
-                      href="/"
-                      className="block text-[16px] font-semibold leading-[24px] tracking-[1px] text-white"
+                      href="#products-services"
+                      className="block text-[16px] leading-[24px] font-semibold tracking-[1px] text-white"
                       onClick={() => setIsOpen(false)}
                     >
-                      HOME
+                      {copy.nav.products}
                     </Link>
                   </motion.li>
 
@@ -94,12 +97,38 @@ export default function MobileNav() {
                     className="text-center"
                   >
                     <Link
-                      href="mailto:contact@itering.io"
-                      className="block text-[16px] font-semibold leading-[24px] tracking-[1px] text-white"
+                      href="#team"
+                      className="block text-[16px] leading-[24px] font-semibold tracking-[1px] text-white"
                       onClick={() => setIsOpen(false)}
                     >
-                      CONTACT US
+                      {copy.nav.team}
                     </Link>
+                  </motion.li>
+
+                  <motion.li
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: 20 }}
+                    transition={{ delay: 0.3 }}
+                    className="text-center"
+                  >
+                    <Link
+                      href="mailto:contact@itering.com"
+                      className="block text-[16px] leading-[24px] font-semibold tracking-[1px] text-white"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      {copy.nav.contact}
+                    </Link>
+                  </motion.li>
+
+                  <motion.li
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: 20 }}
+                    transition={{ delay: 0.4 }}
+                    className="flex justify-center"
+                  >
+                    <LanguageSwitcher variant="mobile" />
                   </motion.li>
                 </ul>
               </nav>

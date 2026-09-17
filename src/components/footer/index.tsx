@@ -1,6 +1,11 @@
+'use client';
+
 import Link from 'next/link';
 import Image from 'next/image';
+import { useLanguage } from '@/lib/language';
+
 export default function Footer() {
+  const { copy } = useLanguage();
   const currentYear = new Date().getFullYear();
   return (
     <>
@@ -23,12 +28,12 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Brand Kit
+                  {copy.footer.brandKit}
                 </Link>
               </li>
               <li>
                 <Link
-                  href="https://x.com/itering_io"
+                  href="https://x.com/Itering_Tech"
                   className="text-[20px] font-light uppercase leading-[32px] text-white/70 transition-opacity duration-300 hover:opacity-70"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -38,7 +43,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="mailto:contact@itering.io"
+                  href="mailto:contact@itering.com"
                   className="text-[20px] font-light uppercase leading-[32px] text-white/70 transition-opacity duration-300 hover:opacity-70"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -72,7 +77,7 @@ export default function Footer() {
             <ul className="flex items-center gap-[20px]">
               <li>
                 <Link
-                  href="https://x.com/itering_io"
+                  href="https://x.com/Itering_Tech"
                   className="text-[20px] font-light uppercase leading-[32px] text-white/70 transition-opacity duration-300 hover:opacity-70"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -82,7 +87,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="mailto:contact@itering.io"
+                  href="mailto:contact@itering.com"
                   className="text-[20px] font-light uppercase leading-[32px] text-white/70 transition-opacity duration-300 hover:opacity-70"
                   target="_blank"
                   rel="noopener noreferrer"
