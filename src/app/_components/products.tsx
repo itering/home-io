@@ -55,20 +55,20 @@ export default function Products() {
           >
             <div className="flex h-full w-full items-center justify-center bg-black">
               <Image
-                src="/images/pages/index/hast-aip-v2.png"
+                src="/images/pages/index/hast-aip-2x.webp"
                 alt={aip.title}
                 className="image-scale-hover h-auto w-[335px] lg:w-[45.72vw] lg:max-w-[790px]"
-                width={2304}
-                height={800}
+                width={1580}
+                height={549}
               />
             </div>
           </div>
           <Image
-            src="/images/pages/index/hast-aip-v2.png"
+            src="/images/pages/index/hast-aip-2x.webp"
             alt={aip.title}
             className="image-scale-hover mb-[50px] h-auto w-[335px] lg:hidden"
-            width={2304}
-            height={800}
+            width={1580}
+            height={549}
           />
 
           <div className="space-y-[10px]" ref={ref3} style={styles3}>
@@ -105,20 +105,20 @@ export default function Products() {
           >
             <div className="flex h-full w-full items-center justify-center bg-black">
               <Image
-                src="/images/pages/index/hast-fde.png"
+                src="/images/pages/index/hast-fde-2x.webp"
                 alt={fde.title}
                 className="brightness-[1.22] hover:brightness-[1.342] image-scale-hover mb-[50px] h-auto w-[335px] lg:w-[45.72vw] lg:max-w-[790px]"
-                width={2304}
-                height={800}
+                width={1580}
+                height={549}
               />
             </div>
           </div>
           <Image
-            src="/images/pages/index/hast-fde.png"
+            src="/images/pages/index/hast-fde-2x.webp"
             alt={fde.title}
             className="brightness-[1.22] hover:brightness-[1.342] image-scale-hover h-auto w-[335px] lg:hidden"
-            width={2304}
-            height={800}
+            width={1580}
+            height={549}
           />
         </div>
 
@@ -130,20 +130,20 @@ export default function Products() {
           >
             <div className="flex h-full w-full items-center justify-center bg-black">
               <Image
-                src="/images/pages/index/hast-agent-v6.png"
+                src="/images/pages/index/hast-agent-2x.webp"
                 alt={agent.title}
                 className="brightness-[1.45] hover:brightness-[1.595] image-scale-hover h-auto w-[285px] lg:w-[38.86vw] lg:max-w-[672px]"
-                width={2304}
-                height={800}
+                width={1344}
+                height={467}
               />
             </div>
           </div>
           <Image
-            src="/images/pages/index/hast-agent-v6.png"
+            src="/images/pages/index/hast-agent-2x.webp"
             alt={agent.title}
             className="brightness-[1.45] hover:brightness-[1.595] image-scale-hover mb-[50px] h-auto w-[285px] lg:hidden"
-            width={2304}
-            height={800}
+            width={1344}
+            height={467}
           />
 
           <div className="space-y-[10px]" ref={ref7} style={styles7}>
