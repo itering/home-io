@@ -88,7 +88,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `try {
+  const language = localStorage.getItem('itering.language');
+  if (language === 'zh-CN' || language === 'zh-HK') {
+    document.documentElement.setAttribute('data-language-pending', '');
+  }
+} catch {}`
+          }}
+        />
+      </head>
       <body className={`${euclidCircularA.variable} bg-black text-white antialiased`}>
         <div className="h-screen min-w-screen">
           <LanguageProvider>

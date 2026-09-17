@@ -9,7 +9,7 @@ export default function Products() {
   const [aip, fde, agent] = copy.products.items;
   const bodyClassName = cn(
     'text-center font-light text-white/70 lg:text-left',
-    language === 'zh-HK'
+    language === 'zh-HK' || language === 'zh-CN'
       ? 'text-[15px] leading-[30px] lg:text-[19px] lg:leading-[38px]'
       : 'text-[15px] leading-[28px] lg:text-[20px] lg:leading-[34px]'
   );
