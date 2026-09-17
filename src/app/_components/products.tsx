@@ -107,7 +107,7 @@ export default function Products() {
               <Image
                 src="/images/pages/index/hast-fde.png"
                 alt={fde.title}
-                className="image-scale-hover mb-[50px] h-auto w-[335px] lg:w-[45.72vw] lg:max-w-[790px]"
+                className="brightness-[1.22] hover:brightness-[1.342] image-scale-hover mb-[50px] h-auto w-[335px] lg:w-[45.72vw] lg:max-w-[790px]"
                 width={2304}
                 height={800}
               />
@@ -116,7 +116,7 @@ export default function Products() {
           <Image
             src="/images/pages/index/hast-fde.png"
             alt={fde.title}
-            className="image-scale-hover h-auto w-[335px] lg:hidden"
+            className="brightness-[1.22] hover:brightness-[1.342] image-scale-hover h-auto w-[335px] lg:hidden"
             width={2304}
             height={800}
           />
@@ -132,7 +132,7 @@ export default function Products() {
               <Image
                 src="/images/pages/index/hast-agent-v6.png"
                 alt={agent.title}
-                className="image-scale-hover h-auto w-[285px] lg:w-[38.86vw] lg:max-w-[672px]"
+                className="brightness-[1.45] hover:brightness-[1.595] image-scale-hover h-auto w-[285px] lg:w-[38.86vw] lg:max-w-[672px]"
                 width={2304}
                 height={800}
               />
@@ -141,7 +141,7 @@ export default function Products() {
           <Image
             src="/images/pages/index/hast-agent-v6.png"
             alt={agent.title}
-            className="image-scale-hover mb-[50px] h-auto w-[285px] lg:hidden"
+            className="brightness-[1.45] hover:brightness-[1.595] image-scale-hover mb-[50px] h-auto w-[285px] lg:hidden"
             width={2304}
             height={800}
           />
