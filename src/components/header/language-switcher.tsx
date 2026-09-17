@@ -44,7 +44,7 @@ export default function LanguageSwitcher({
         aria-label={copy.nav.language}
         aria-expanded={isOpen}
         className={cn(
-          'inline-flex items-center justify-center rounded-full border border-white/20 bg-white/[0.03] text-white/80 transition duration-300 hover:border-white/45 hover:text-white',
+          'inline-flex cursor-pointer items-center justify-center rounded-full border border-white/20 bg-white/[0.03] text-white/80 transition duration-300 hover:border-white/45 hover:text-white',
           variant === 'desktop' ? 'size-[42px]' : 'size-[52px]'
         )}
         onClick={() => setIsOpen((current) => !current)}
@@ -65,7 +65,7 @@ export default function LanguageSwitcher({
               type="button"
               aria-current={language === item.code ? 'true' : undefined}
               className={cn(
-                'flex w-full items-center justify-between rounded-[6px] px-[12px] py-[10px] text-left text-[14px] leading-[20px] tracking-[0.6px] transition duration-200',
+                'flex w-full cursor-pointer items-center justify-between rounded-[6px] px-[12px] py-[10px] text-left text-[14px] leading-[20px] tracking-[0.6px] transition duration-200',
                 language === item.code
                   ? 'bg-white text-black'
                   : 'text-white/70 hover:bg-white/10 hover:text-white'
