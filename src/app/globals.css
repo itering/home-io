@@ -4,6 +4,11 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Keep static English content hidden until a saved Chinese preference is restored. */
+html[data-language-pending] [data-language-ready='false'] {
+  visibility: hidden;
+}
+
 @theme {
   --breakpoint-3xl: 108rem;
 }
